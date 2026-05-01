@@ -39,6 +39,9 @@ nonequilibrium dissipative structures.
 
 4B — Minimal Dynamical Model
 
+Cubic term (−C³) ensures saturation and prevents unbounded growth,
+which is characteristic of dissipative nonlinear systems.
+
 Let:
 
 dC/dt = rC − C³
@@ -49,6 +52,7 @@ where:
 C(t) — coherence
 r(t) — internal control parameter
 P(t) — dissipative load
+
 
 ---
 
