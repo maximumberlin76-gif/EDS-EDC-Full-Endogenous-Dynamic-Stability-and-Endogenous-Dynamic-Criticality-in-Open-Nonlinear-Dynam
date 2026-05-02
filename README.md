@@ -135,14 +135,21 @@ t = v^(−1/3) τ
 
 Compute derivative:
 
-C = v^(1/3) y
+C = v^(1/3) y  
 
-t = v^(−1/3) τ
+t = v^(−1/3) τ  
 
 Then:
 
 dC/dt = (dC/dτ) / (dt/dτ)
-= v^(1/3) dy/dτ / v^(−1/3)
+
+dC/dτ = v^(1/3) dy/dτ  
+
+dt/dτ = v^(−1/3)
+
+Thus:
+
+dC/dt = v^(1/3) dy/dτ / v^(−1/3)  
 = v^(2/3) dy/dτ
 
 Substitution:
