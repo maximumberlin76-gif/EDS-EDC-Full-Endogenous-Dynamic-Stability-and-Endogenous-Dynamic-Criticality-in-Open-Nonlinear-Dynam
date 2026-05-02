@@ -1,148 +1,131 @@
-Endogenous Dynamic Criticality (EDC)
+# Endogenous Dynamic Criticality (EDC)
 
-Overview
+## Overview
 
-Endogenous Dynamic Criticality (EDC) defines a class of nonlinear open dissipative systems in which the control parameter is not externally imposed, but generated internally through system dynamics.
+Endogenous Dynamic Criticality (EDC) defines a class of nonlinear open dissipative systems in which the control parameter is generated internally rather than imposed externally.
 
-In such systems, structure, stability, and critical behavior emerge from the balance between coherence (organization) and dissipative consumption (loss).
+Structure, stability, and critical transitions emerge from the balance between coherence (organization) and dissipative consumption (loss).
 
 This framework unifies nonlinear dynamics, open-system thermodynamics, and information-based structure formation.
 
 ---
 
-System Class
+## System Class
 
-EDC applies strictly to:
+EDC applies strictly to systems that satisfy all three conditions:
 
-- Nonlinear systems
-- Open systems (exchange with environment)
-- Dissipative systems (irreversible loss present)
+- Nonlinear dynamics  
+- Openness (exchange with environment)  
+- Dissipation (irreversible loss)  
 
-Without these three conditions, the model is not valid.
+If any condition is not met, the model is not applicable.
 
 ---
 
-Core Dynamics
+## Core Dynamics
 
-The system is defined by the coupled equations:
+The system is defined by:
 
-dC/dt = rC − C^3
+dC/dt = rC − C³  
 dr/dt = μ(P − C)
 
 Where:
 
-- C(t) — coherence (degree of structural organization)
-- P(t) — dissipative consumption (loss/extraction)
-- r(t) — control parameter (internally generated)
-- μ — coupling coefficient
-
-Interpretation:
-
-- Growth term: rC → amplification of structure
-- Saturation: −C^3 → nonlinear stabilization
-- Feedback: μ(P − C) → endogenous parameter drift
+- C(t) — coherence (structural organization)  
+- P(t) — dissipative consumption  
+- r(t) — endogenous control parameter  
+- μ — coupling coefficient  
 
 ---
 
-Endogenous Drift
+## Endogenous Drift
 
-Unlike classical systems:
+The control parameter is not external:
 
-- r is not external
-- r evolves dynamically
+- r evolves dynamically  
+- the system drives itself toward criticality  
 
-Near criticality:
+Near the critical region:
 
-r(t) ≈ v t
-v = μP
-
-This creates a self-driven approach to the critical point.
+r(t) ≈ v t  
+v = μP  
 
 ---
 
-Universal Scaling Law
+## Scaling Law (Core Result)
 
-EDC systems exhibit delayed transition behavior:
+Near criticality, the system reduces to a universal normal form:
 
-t_delay ~ v^(-1/3)
+dC/dt = v t C − C³  
 
-This scaling emerges from:
+Rescaling:
 
-- cubic nonlinearity
-- slow internal drift
+C = v^(1/3) y  
+t = v^(−1/3) τ  
 
-This is a universal signature of endogenous critical systems.
+gives:
+
+dy/dτ = τy − y³  
+
+This establishes **scale invariance** of the dynamics.
 
 ---
 
-Stability Criterion (Marnov Criterion)
+## Delay Scaling
+
+The bifurcation delay follows:
+
+t_delay ~ v^(−1/3)  
+t_delay ~ (μP)^(−1/3)
+
+This is the key observable signature of EDC systems.
+
+---
+
+## Stability Criterion (Marnov Criterion)
 
 A necessary condition for structural persistence:
 
 C(t) > P(t)
 
-Where:
-
-- C = coherence (organized structure)
-- P = dissipation (loss/destruction)
-
 Implications:
 
-- C > P → structure is maintained
-- C = P → critical boundary
-- C < P → structural collapse
-
-This is the minimum condition for dynamic stability.
+- C > P → stable structure  
+- C = P → critical boundary  
+- C < P → collapse  
 
 ---
 
-Meaning (M)
+## Meaning (M)
 
 Meaning is defined as:
 
 M = stable informational attractor
 
-That is:
+A configuration that:
 
-A reproducible, coherent configuration of the system that persists over time.
+- is reproducible  
+- maintains coherence  
+- persists over time  
 
-Meaning exists if and only if:
+Meaning exists iff:
 
-C > P
+C > P  
 
-Thus, meaning is not abstract — it is a physical property of stable structure.
+Thus, meaning is a physical property of stable structure.
 
 ---
 
-Interpretation
+## Interpretation
 
-EDC reframes structure formation as:
+EDC describes structure formation as:
 
-- balance between organization and dissipation
-- emergence of stable attractors
-- internally driven critical transitions
+- balance of coherence and dissipation  
+- emergence of stable attractors  
+- internally driven critical transitions  
 
-This connects:
+It connects:
 
-- nonlinear dynamics
-- thermodynamics of open systems
+- nonlinear dynamics  
+- thermodynamics of open systems  
 - information and structure
-
----
-
-Repository Structure
-
-/docs — core theory (single source of truth)
-/old  — deprecated materials
-
----
-
-Status
-
-This repository is a clean reinitialization.
-
-All previous fragmented versions are deprecated.
-
-The current version is the canonical baseline.
-
----
