@@ -3,6 +3,17 @@
 
 ---
 
+## Quick Navigation
+
+- Executive Summary → [README_EXECUTIVE.md](README_EXECUTIVE.md)  
+- Full Derivation → [README_APPENDIX.md](README_APPENDIX.md)  
+- Stability & Bifurcation → [APPENDIX_DYNAMICS.md](APPENDIX_DYNAMICS.md)  
+- Oscillator Model → [APPENDIX_OSCILLATORS.md](APPENDIX_OSCILLATORS.md)  
+- Case Studies → [cases/](cases/)  
+- Postscriptum → [postscriptum.md](postscriptum.md)
+
+---
+
 ## Overview
 
 Endogenous Dynamic Stability (EDS) defines a universal condition for the viability of nonlinear open dissipative systems.
@@ -46,6 +57,7 @@ Where:
 - P(t) — load (external demand, extraction)  
 - D(t) — dissipation (losses, entropy production)  
 
+
 ---
 
 ## Stability Condition
@@ -64,6 +76,7 @@ Interpretation:
 
 Time dependence is implicit: t denotes continuous time,
 with discrete formulation given by Δt in the one-step stability condition.
+
 
 ---
 
@@ -94,6 +107,7 @@ C(t) > P(t)
 Thus, the differential and integral formulations
 define the same stability boundary.
 
+
 ---
 
 ## Dynamic Regime (EDC)
@@ -113,6 +127,7 @@ Where:
 - r(t) — endogenous control parameter  
 - μ — coupling coefficient  
 
+
 ---
 
 ## Endogenous Drift
@@ -129,6 +144,7 @@ v = μP
 
 The system approaches the critical point through its own dynamics.
 
+
 ---
 
 ## Scaling Law (Core Result)
@@ -138,6 +154,7 @@ In the critical regime, the system reduces to:
 dC/dt = v t C − C³  
 
 This represents a slow passage through a bifurcation with an endogenous control parameter.
+
 
 ---
 
@@ -176,6 +193,7 @@ Divide by v^(2/3):
 
 dy/dτ = τy − y³  
 
+
 ---
 
 ### Universal Form
@@ -204,6 +222,7 @@ This establishes:
   
 ---
 
+
 ## Delay Scaling
 
 The transition delay follows:
@@ -211,6 +230,7 @@ The transition delay follows:
 t_delay ~ v^(−1/3)  
 
 t_delay ~ (μP)^(−1/3)
+
 
 ---
 
