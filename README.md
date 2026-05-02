@@ -87,6 +87,7 @@ Near the stability boundary, the system enters a critical regime.
 The dynamics are governed by:
 
 dC/dt = rC − C³  
+
 dr/dt = μ(P − C)
 
 Where:
@@ -107,6 +108,7 @@ r is not imposed externally.
 Near criticality:
 
 r(t) ≈ v t  
+
 v = μP  
 
 The system approaches the critical point through its own dynamics.
@@ -128,11 +130,13 @@ This represents a slow passage through a bifurcation with an endogenous control 
 Introduce dimensionless variables:
 
 C = v^(1/3) y  
+
 t = v^(−1/3) τ  
 
 Compute derivative:
 
 C = v^(1/3) y
+
 t = v^(−1/3) τ
 
 Then:
@@ -182,6 +186,7 @@ This establishes:
 The transition delay follows:
 
 t_delay ~ v^(−1/3)  
+
 t_delay ~ (μP)^(−1/3)
 
 ---
