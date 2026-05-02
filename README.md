@@ -259,8 +259,20 @@ Applicable to:
 
 ---
 
+## Appendix (Full Mathematical Derivation)
+
+A complete and explicit derivation of scaling and rescaling,
+including all intermediate steps, is provided in: 
+
+[README_APPENDIX.md](README_APPENDIX.md)
+
+---
+
 ## Status
 
 Canonical formulation.
 
 Includes full scaling law and dynamic regime.
+
+
+
