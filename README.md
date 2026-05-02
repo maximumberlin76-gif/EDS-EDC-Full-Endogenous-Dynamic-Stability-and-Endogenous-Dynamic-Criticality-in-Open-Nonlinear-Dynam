@@ -1,38 +1,86 @@
-# Endogenous Dynamic Criticality (EDC)
+# Endogenous Dynamic Stability (EDS)  
+## with Endogenous Dynamic Criticality (EDC)
+
+---
 
 ## Overview
 
-Endogenous Dynamic Criticality (EDC) defines a class of nonlinear open dissipative systems in which the control parameter is generated internally rather than imposed externally.
+Endogenous Dynamic Stability (EDS) defines a universal condition for the viability of nonlinear open dissipative systems.
 
-Structure, stability, and critical transitions emerge from the balance between coherence (organization) and dissipative consumption (loss).
+It formalizes stability as a dynamically maintained balance between synthesis, load, and dissipation.
 
-This framework unifies nonlinear dynamics, open-system thermodynamics, and information-based structure formation.
+Endogenous Dynamic Criticality (EDC) is the dynamical regime of the same system near the stability boundary, where internally generated dynamics drive the system toward a critical transition.
 
----
+This is a single theoretical framework with two levels:
 
-## System Class
-
-EDC applies strictly to systems that satisfy all three conditions:
-
-- Nonlinear dynamics  
-- Openness (exchange with environment)  
-- Dissipation (irreversible loss)  
-
-If any condition is not met, the model is not applicable.
+- **EDS** — structural stability condition  
+- **EDC** — dynamic evolution near criticality  
 
 ---
 
-## Core Dynamics
+## Core Principle (EDS)
 
 The system is defined by:
+
+Δ(t) = S(t) − P(t) − D(t)
+
+Where:
+
+- S(t) — synthesis (structure formation)  
+- P(t) — load (external demand, extraction)  
+- D(t) — dissipation (losses, entropy production)  
+
+---
+
+## Stability Condition
+
+A system remains viable only if:
+
+∫(S − P − D) dt > 0  
+
+over a given time horizon.
+
+Interpretation:
+
+- Δ > 0 → growth  
+- Δ = 0 → quasi-stationary state  
+- Δ < 0 → degradation  
+
+---
+
+## Transition to Dynamic Form
+
+Define coherence:
+
+C(t) ~ ∫(S − D) dt  
+
+Then:
+
+dC/dt ≈ S − D  
+
+Load P remains external.
+
+This yields the minimal stability condition:
+
+C(t) > P(t)
+
+(Marnov Stability Criterion)
+
+---
+
+## Dynamic Regime (EDC)
+
+Near the stability boundary, the system enters a critical regime.
+
+The dynamics are governed by:
 
 dC/dt = rC − C³  
 dr/dt = μ(P − C)
 
 Where:
 
-- C(t) — coherence (structural organization)  
-- P(t) — dissipative consumption  
+- C(t) — coherence  
+- P(t) — load  
 - r(t) — endogenous control parameter  
 - μ — coupling coefficient  
 
@@ -40,59 +88,84 @@ Where:
 
 ## Endogenous Drift
 
-The control parameter is not external:
+The control parameter is internally generated:
 
-- r evolves dynamically  
-- the system drives itself toward criticality  
+r is not imposed externally.
 
-Near the critical region:
+Near criticality:
 
 r(t) ≈ v t  
 v = μP  
+
+The system approaches the critical point through its own dynamics.
 
 ---
 
 ## Scaling Law (Core Result)
 
-Near criticality, the system reduces to a universal normal form:
+In the critical regime, the system reduces to:
 
 dC/dt = v t C − C³  
 
-Rescaling:
+This represents a slow passage through a bifurcation with an endogenous control parameter.
+
+---
+
+### Rescaling
+
+Introduce dimensionless variables:
 
 C = v^(1/3) y  
 t = v^(−1/3) τ  
 
-gives:
+Substitution:
+
+v^(2/3) dy/dτ = v^(2/3)(τy − y³)
+
+Divide by v^(2/3):
 
 dy/dτ = τy − y³  
 
-This establishes **scale invariance** of the dynamics.
+---
+
+### Universal Form
+
+The equation:
+
+dy/dτ = τy − y³  
+
+is parameter-free.
+
+All system-specific parameters are absorbed into scaling.
+
+This establishes:
+
+- universality  
+- scale invariance  
+- independence from microscopic details  
 
 ---
 
 ## Delay Scaling
 
-The bifurcation delay follows:
+The transition delay follows:
 
 t_delay ~ v^(−1/3)  
 t_delay ~ (μP)^(−1/3)
 
-This is the key observable signature of EDC systems.
-
 ---
 
-## Stability Criterion (Marnov Criterion)
+## Physical Interpretation
 
-A necessary condition for structural persistence:
+- slower drift (v ↓) → longer delay  
+- higher load (P ↑) → faster transition  
+- response is nonlinear and delayed  
 
-C(t) > P(t)
+The exponent:
 
-Implications:
+−1/3  
 
-- C > P → stable structure  
-- C = P → critical boundary  
-- C < P → collapse  
+is the universal signature of endogenous dynamic criticality.
 
 ---
 
@@ -100,7 +173,7 @@ Implications:
 
 Meaning is defined as:
 
-M = stable informational attractor
+M = stable informational attractor  
 
 A configuration that:
 
@@ -108,7 +181,7 @@ A configuration that:
 - maintains coherence  
 - persists over time  
 
-Meaning exists iff:
+Meaning exists if and only if:
 
 C > P  
 
@@ -118,14 +191,33 @@ Thus, meaning is a physical property of stable structure.
 
 ## Interpretation
 
-EDC describes structure formation as:
+EDS defines whether a system remains viable.
 
-- balance of coherence and dissipation  
-- emergence of stable attractors  
-- internally driven critical transitions  
+EDC defines how the system approaches and undergoes transition.
 
-It connects:
+Together they describe:
 
-- nonlinear dynamics  
-- thermodynamics of open systems  
-- information and structure
+- formation of structure  
+- maintenance of stability  
+- loss of coherence  
+- critical transformation  
+
+---
+
+## Scope
+
+Applicable to:
+
+- physical systems  
+- biological systems  
+- cognition  
+- socio-economic systems  
+- technological systems (including AI)  
+
+---
+
+## Status
+
+Canonical formulation.
+
+Includes full scaling law and dynamic regime.
