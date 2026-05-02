@@ -127,6 +127,17 @@ Introduce dimensionless variables:
 C = v^(1/3) y  
 t = v^(−1/3) τ  
 
+Compute derivative:
+
+C = v^(1/3) y
+t = v^(−1/3) τ
+
+Then:
+
+dC/dt = (dC/dτ) / (dt/dτ)
+= v^(1/3) dy/dτ / v^(−1/3)
+= v^(2/3) dy/dτ
+
 Substitution:
 
 v^(2/3) dy/dτ = v^(2/3)(τy − y³)
@@ -138,6 +149,14 @@ dy/dτ = τy − y³
 ---
 
 ### Universal Form
+
+This universality holds under the following conditions:
+
+- cubic saturation dominates nonlinear dynamics
+- control parameter evolves smoothly (r ≈ vt)
+- the system is open and dissipative
+
+Outside these conditions, alternative scaling behavior may arise.
 
 The equation:
 
