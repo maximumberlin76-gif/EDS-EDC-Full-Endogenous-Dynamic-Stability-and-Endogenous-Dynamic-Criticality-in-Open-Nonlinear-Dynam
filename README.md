@@ -284,6 +284,12 @@ including all intermediate steps, is provided in:
 
 ---
 
+## Appendix — Stability and Bifurcation
+
+Local stability, Jacobian analysis, Lyapunov structure,
+and Hopf bifurcation are provided in:
+
+[APPENDIX_DYNAMICS.md](APPENDIX_DYNAMICS.md)
 ## Status
 
 Canonical formulation.
