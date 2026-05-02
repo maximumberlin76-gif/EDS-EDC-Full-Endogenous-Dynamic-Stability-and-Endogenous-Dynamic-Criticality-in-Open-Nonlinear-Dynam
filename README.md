@@ -214,6 +214,44 @@ t_delay ~ (μP)^(−1/3)
 
 ---
 
+## Minimal Working Model
+
+The EDS/EDC framework can be represented through an ensemble of nonlinear coupled oscillators.
+
+For phase dynamics:
+
+dφᵢ/dt = ωᵢ + (K/N) Σⱼ sin(φⱼ − φᵢ) + F_ext sin(ω_ext t − φᵢ) + η
+
+Where:
+
+- φᵢ — phase of the i-th oscillator  
+- ωᵢ — natural frequency  
+- K — coupling strength  
+- F_ext — external coherent forcing  
+- ω_ext — external forcing frequency  
+- η — stochastic noise  
+
+The global coherence order parameter is:
+
+R = |(1/N) Σⱼ exp(iφⱼ)|
+
+Where:
+
+- R → 1 indicates phase synchronization  
+- R → 0 indicates incoherent dynamics  
+
+In EDS terms:
+
+R serves as a measurable proxy for coherence C.
+
+External coherent forcing can increase R, reduce effective phase noise, and shift the system toward the stable regime:
+
+C(t) > P(t)
+
+Thus, synchronization provides an operational bridge between the abstract stability criterion and measurable physical systems.
+
+---
+
 ## Physical Interpretation
 
 - slower drift (v ↓) → longer delay  
