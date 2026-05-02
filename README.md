@@ -14,6 +14,14 @@
 
 ---
 
+## Full Monograph
+
+A complete structured version of the theory is available in:
+
+[BOOK.md](BOOK.md)
+
+----
+
 ## Overview
 
 Endogenous Dynamic Stability (EDS) defines a universal condition for the viability of nonlinear open dissipative systems.
