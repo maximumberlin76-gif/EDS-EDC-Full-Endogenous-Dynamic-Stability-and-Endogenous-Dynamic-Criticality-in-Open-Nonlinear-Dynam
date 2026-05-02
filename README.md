@@ -66,6 +66,15 @@ C(t) > P(t)
 
 (Marnov Stability Criterion)
 
+This condition is equivalent to the integral form:
+
+C(t) > P(t)
+⇔
+∫(S − P − D) dt > 0
+
+Thus, the differential and integral formulations
+define the same stability boundary.
+
 ---
 
 ## Dynamic Regime (EDC)
