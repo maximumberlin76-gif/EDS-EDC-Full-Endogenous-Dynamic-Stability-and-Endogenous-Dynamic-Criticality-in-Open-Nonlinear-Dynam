@@ -173,8 +173,8 @@ This establishes:
 
 - universality  
 - scale invariance  
-- independence from microscopic details  
-
+- independence from microscopic details within the defined universality domain
+  
 ---
 
 ## Delay Scaling
