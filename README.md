@@ -18,6 +18,22 @@ This is a single theoretical framework with two levels:
 
 ---
 
+## Core Chain
+
+S − P − D = 0          → quasi-stationary balance  
+       ↓  
+C = ∫(S − D)dt > P    → Marnov Stability Criterion  
+       ↓  
+dC/dt = rC − C³       → EDC dynamics  
+       ↓  
+r(t) ≈ v t            → endogenous drift  
+       ↓  
+dy/dτ = τy − y³       → canonical form  
+       ↓  
+t_delay ~ v^(−1/3)    → scaling law
+
+---
+
 ## Core Principle (EDS)
 
 The system is defined by:
