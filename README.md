@@ -46,6 +46,9 @@ Interpretation:
 - Δ = 0 → quasi-stationary state  
 - Δ < 0 → degradation  
 
+Time dependence is implicit: t denotes continuous time,
+with discrete formulation given by Δt in the one-step stability condition.
+
 ---
 
 ## Transition to Dynamic Form
