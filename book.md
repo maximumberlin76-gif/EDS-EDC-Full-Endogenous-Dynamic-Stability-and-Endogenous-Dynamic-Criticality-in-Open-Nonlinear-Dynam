@@ -1,5 +1,5 @@
 # Endogenous Dynamic Stability  
-(Full Monograph — Draft v0.1)
+(Full Monograph — Draft v0.2)
 
 Author: Maksym Marnov (Alchimist)  
 Year: 2026  
@@ -14,53 +14,85 @@ Year: 2026
 
 ---
 
-## PART II — Dynamics
+## PART II — System Regimes
+
+- Separation vs synthesis  
+- Coherent (resonant) regime  
+- Interaction as phase alignment  
+
+---
+
+## PART III — Core Dynamics
 
 - Stability criterion  
 - Coherence accumulation  
 - Exchange vs synthesis  
+- Balance equation dC/dt = S − P − D  
 
 ---
 
-## PART III — Physical Interpretation
+## PART IV — Civilizational Control Loop
 
-- Energy flow  
-- Dissipation and entropy  
-- Open systems  
+- Intergenerational stability  
+- Meaning and attractors  
+- Ethical constraint E(t)  
+- Dynamic stability (integral condition)  
+- Bifurcation risk  
 
 ---
 
-## PART IV — Endogenous Dynamic Criticality (EDC)
+## PART V — Microphysical Level
+
+- Coherence and decoherence  
+- Wave dynamics  
+- Response functions χ(ω,k)  
+- Casimir effect  
+- Resonant quantum systems  
+
+---
+
+## PART VI — Human Dynamics
+
+- Oscillator model of human system  
+- Recovery vs load  
+- Optimal dissipation  
+- Creativity regime  
+- System fatigue  
+
+---
+
+## PART VII — Endogenous Dynamic Criticality (EDC)
 
 - Minimal dynamical model  
-- Stability analysis  
-- Delay scaling  
+- Scaling law (−1/3)  
+- Delay dynamics  
+- Universality conditions  
 - Limitations  
 
 ---
 
-## PART V — Case Studies
+## PART VIII — Case Studies
 
-- Physical systems  
+- Plasma synchronization  
 - Biological systems  
 - Human systems  
 - Socio-economic systems  
-- AI systems  
+- AI / control systems  
 
 ---
 
-## PART VI — Control and Parameters
+## PART IX — Control and Parameters
 
-- α, β, γ  
-- Parameter influence  
-- System regulation  
+- Parameter roles (α, β, γ)  
+- Regulation strategies  
+- Stability control loops  
 
 ---
 
-## PART VII — Limits and Applicability
+## PART X — Limits and Applicability
 
+- Domain of validity  
 - Model constraints  
-- Validity domain  
 - Known limitations  
 
 ---
@@ -68,11 +100,12 @@ Year: 2026
 ## APPENDIX
 
 - Information-constrained attractors  
-- Control interpretation (feedback systems)  
+- Control interpretation  
 - Resonance and coherence  
+- Full mathematical derivations  
 
 ---
 
 ## Status
 
-Draft v0.1 — structure defined
+Draft v0.2 — structure aligned with repository
