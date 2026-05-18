@@ -101,153 +101,177 @@ Operational time variable.
 
 ## Stability Condition
 
-A system remains viable only if:
+A system remains operationally viable only if:
 
-∫(S − P − D) dt > 0  
+∫(S(t) − P(t) − D(t))dt > 0
 
-over a given time horizon.
+over a given operational time horizon.
 
-Interpretation:
+Operational interpretation:
 
-- Δ > 0 → growth  
-- Δ = 0 → quasi-stationary state  
-- Δ < 0 → degradation  
+- Δ(t) > 0 → structural growth and retained operational continuity;
 
-Time dependence is implicit: t denotes continuous time,
-with discrete formulation given by Δt in the one-step stability condition.
+- Δ(t) = 0 → quasi-stationary operational balance;
 
+- Δ(t) < 0 → structural degradation and fragmentation.
+
+Time dependence is implicit:
+
+- t denotes operational time;
+- Δ(t) denotes instantaneous operational structural balance.
 
 ---
 
 ## Transition to Dynamic Form
 
-Define coherence:
+Define structural regeneration and retained operational continuity:
 
-C(t) ~ ∫(S − D) dt  
+C(t)
 
-Then:
+Operationally:
 
-dC/dt ≈ S − D  
+- C(t) represents structural regeneration;
+- retained structural continuity;
+- and restorative structural capacity.
 
-Load P remains external.
+The regenerative operational dynamics satisfy:
 
-This yields the minimal stability condition:
+dC/dt ≈ S(t) − D(t)
+
+while:
+
+P(t)
+
+remains the destabilizing structural dissipation pressure acting on the system.
+
+This yields the minimal operational stability condition:
 
 C(t) > P(t)
 
-(Marnov Stability Criterion)
+(Marnov Criterion of Endogenous Dynamic Stability)
 
-This condition is equivalent to the integral form:
+Operational interpretation:
+
+- regenerative structural continuity exceeds destabilizing structural dissipation pressure over operational time.
+
+This condition is operationally connected to the integral stability condition:
 
 C(t) > P(t)
 ⇔
-∫(S − P − D) dt > 0
+∫(S(t) − P(t) − D(t))dt > 0
 
-Thus, the differential and integral formulations
-define the same stability boundary.
+Thus:
 
+- the regenerative formulation;
+- the differential formulation;
+- and the integral formulation;
+
+describe the same operational stability boundary.
 
 ---
 
 ## Dynamic Regime (EDC)
 
-Near the stability boundary, the system enters a critical regime.
+Near the operational stability boundary, the system enters a critical dynamical regime.
 
-The dynamics are governed by:
+The operational dynamics are approximated by:
 
-dC/dt = rC − C³  
+dC/dt = rC − C³
 
 dr/dt = μ(P − C)
 
 Where:
 
-- C(t) — coherence  
-- P(t) — load  
-- r(t) — endogenous control parameter  
-- μ — coupling coefficient  
+- C(t) — structural regeneration and retained structural continuity;
 
+- P(t) — structural dissipation pressure;
+
+- r(t) — endogenous operational control parameter;
+
+- μ — operational coupling coefficient.
+
+Operational interpretation:
+
+- regenerative continuity competes against destabilizing structural dissipation pressure;
+- near criticality, internally generated drift drives the system toward transition, destabilization, or restructuring.
 
 ---
 
 ## Endogenous Drift
 
-The control parameter is internally generated:
+The operational control parameter is internally generated:
 
-r is not imposed externally.
+r(t)
+
+is not imposed externally.
 
 Near criticality:
 
-r(t) ≈ v t  
+r(t) ≈ vt
 
-v = μP  
+Where:
 
-The system approaches the critical point through its own dynamics.
+v = μP
 
+Operational interpretation:
+
+- the system approaches the critical regime through its own endogenous operational dynamics.
 
 ---
 
 ## Scaling Law (Core Result)
 
-In the critical regime, the system reduces to:
+Near the critical operational regime:
 
-dC/dt = v t C − C³  
+dC/dt = vtC − C³
 
-This represents a slow passage through a bifurcation with an endogenous control parameter.
-
+This represents a slow passage through a bifurcation driven by an endogenous operational control parameter.
 
 ---
 
 ### Rescaling
 
-Introduce dimensionless variables:
+Introduce dimensionless operational variables:
 
-C = v^(1/3) y  
+C = v^(1/3)y
 
-t = v^(−1/3) τ  
-
-Compute derivative:
-
-C = v^(1/3) y  
-
-t = v^(−1/3) τ  
+t = v^(−1/3)τ
 
 Then:
 
-dC/dt = (dC/dτ) / (dt/dτ)
+dC/dt = v^(2/3) dy/dτ
 
-dC/dτ = v^(1/3) dy/dτ  
-
-dt/dτ = v^(−1/3)
-
-Thus:
-
-dC/dt = v^(1/3) dy/dτ / v^(−1/3)  
-= v^(2/3) dy/dτ
-
-Substitution:
+Substitution yields:
 
 v^(2/3) dy/dτ = v^(2/3)(τy − y³)
 
-Divide by v^(2/3):
+Dividing by:
 
-dy/dτ = τy − y³  
+v^(2/3)
 
+gives the parameter-free canonical form:
+
+dy/dτ = τy − y³
 
 ---
 
 ### Universal Form
 
-This universality holds under the following conditions:
+The universality regime remains operationally accessible under the following conditions:
 
-- cubic saturation dominates nonlinear dynamics
-- control parameter evolves smoothly (r ≈ vt)
-- the system is open and dissipative
+- cubic saturation dominates nonlinear operational dynamics;
 
-Outside these conditions, alternative scaling behavior may arise.
+- the endogenous control parameter evolves smoothly:
+
+r(t) ≈ vt
+
+- the system remains open, dissipative, and dynamically coupled.
+
+Outside these operational conditions, alternative scaling regimes may emerge.
 
 The equation:
 
-dy/dτ = τy − y³  
+dy/dτ = τy − y³
 
 is parameter-free.
 
@@ -255,108 +279,148 @@ All system-specific parameters are absorbed into scaling.
 
 This establishes:
 
-- universality  
-- scale invariance  
-- independence from microscopic details within the defined universality domain
-  
----
+- universality;
 
+- operational scale invariance;
+
+- relative independence from microscopic implementation details within the operational universality domain.
+
+---
 
 ## Delay Scaling
 
-The transition delay follows:
+The operational transition delay follows:
 
-t_delay ~ v^(−1/3)  
+t_delay ~ v^(−1/3)
 
-t_delay ~ (μP)^(−1/3)
+where:
 
+v = μP
+
+Operational interpretation:
+
+- slower endogenous drift produces longer delayed transitions;
+- stronger destabilizing structural pressure accelerates critical transition accessibility.
+
+The exponent:
+
+−1/3
+
+is the operational scaling signature of endogenous dynamic criticality.
 
 ---
 
 ## Minimal Working Model
 
-The EDS/EDC framework can be represented through an ensemble of nonlinear coupled oscillators.
+The EDS/EDC framework may be represented through an ensemble of nonlinear dynamically coupled oscillators.
 
 For phase dynamics:
 
-dφᵢ/dt = ωᵢ + (K/N) Σⱼ sin(φⱼ − φᵢ) + F_ext sin(ω_ext t − φᵢ) + η
+dφᵢ/dt = ωᵢ + (K/N)Σⱼ sin(φⱼ − φᵢ) + F_ext sin(ω_ext t − φᵢ) + η
 
 Where:
 
-- φᵢ — phase of the i-th oscillator  
-- ωᵢ — natural frequency  
-- K — coupling strength  
-- F_ext — external coherent forcing  
-- ω_ext — external forcing frequency  
-- η — stochastic noise  
+- φᵢ — phase of the i-th oscillator;
 
-The global coherence order parameter is:
+- ωᵢ — natural frequency;
 
-R = |(1/N) Σⱼ exp(iφⱼ)|
+- K — coupling strength;
+
+- F_ext — external coherent forcing;
+
+- ω_ext — external forcing frequency;
+
+- η — stochastic operational noise.
+
+The global operational synchronization parameter is:
+
+R = |(1/N)Σⱼ exp(iφⱼ)|
 
 Where:
 
-- R → 1 indicates phase synchronization  
-- R → 0 indicates incoherent dynamics  
+- R → 1 indicates synchronized operational dynamics;
 
-In EDS terms:
+- R → 0 indicates incoherent operational dynamics.
 
-R serves as a measurable proxy for coherence C.
+Within the EDS framework:
 
-External coherent forcing can increase R, reduce effective phase noise, and shift the system toward the stable regime:
+R acts as an operational synchronization proxy supporting retained structural continuity.
+
+Operational interpretation:
+
+- synchronization mechanisms may increase retained operational continuity;
+- reduce destabilizing phase noise;
+- and shift the system toward the operationally stable regime:
 
 C(t) > P(t)
 
-Thus, synchronization provides an operational bridge between the abstract stability criterion and measurable physical systems.
+Thus:
+
+- synchronization dynamics provide an operational bridge between abstract stability criteria and measurable physical systems.
 
 ---
 
 ## Physical Interpretation
 
-- slower drift (v ↓) → longer delay  
-- higher load (P ↑) → faster transition  
-- response is nonlinear and delayed  
+Operationally:
 
-The exponent:
+- slower endogenous drift:
+v ↓
+→ longer delayed transition;
 
-−1/3  
+- stronger structural dissipation pressure:
+P ↑
+→ faster critical transition accessibility;
 
-is the universal signature of endogenous dynamic criticality.
+- system response remains nonlinear and delayed.
 
 ---
 
 ## Meaning (M)
 
-Meaning is defined as:
+Meaning is operationally defined as:
 
-M = stable informational attractor  
+M = stable informational attractor
 
 A configuration that:
 
-- is reproducible  
-- maintains coherence  
-- persists over time  
+- remains reproducible;
 
-Meaning exists if and only if:
+- retains operational continuity;
 
-C > P  
+- preserves structural regeneration over time.
 
-Thus, meaning is a physical property of stable structure.
+Operationally:
+
+meaning remains accessible only while:
+
+C(t) > P(t)
+
+Thus:
+
+meaning is treated as a physically retained operational property of structurally stable organization.
 
 ---
 
 ## Interpretation
 
-EDS defines whether a system remains viable.
+EDS defines whether a system remains operationally viable.
 
-EDC defines how the system approaches and undergoes transition.
+EDC defines how the system approaches, enters, and undergoes critical transition.
 
-Together they describe:
+Together, the EDS/EDC framework describes:
 
-- formation of structure  
-- maintenance of stability  
-- loss of coherence  
-- critical transformation  
+- formation of structure;
+
+- retained structural continuity;
+
+- destabilization propagation;
+
+- regenerative accessibility;
+
+- critical transformation;
+
+- operational restructuring.
 
 ---
 
@@ -364,11 +428,19 @@ Together they describe:
 
 Applicable to:
 
-- physical systems  
-- biological systems  
-- cognition  
-- socio-economic systems  
-- technological systems (including AI)  
+- physical systems;
+
+- biological systems;
+
+- cognition and adaptive intelligence;
+
+- socio-economic systems;
+
+- technological systems;
+
+- artificial intelligence systems;
+
+- adaptive operational systems.
 
 ---
 
