@@ -1,94 +1,172 @@
-# Appendix: Dynamic Coherence, Synchronization and Regime Formation
+# Appendix: Dynamic Synchronization, Structural Regeneration, and Regime Formation
 
 ---
 
-## A1. Order Parameter and Coherence
+## Operational Parameter Definitions
 
-The degree of synchronization in a nonlinear oscillator system is quantified by the Kuramoto order parameter:
+C(t) — structural regeneration, retained structural continuity, and restorative structural capacity at time t.
+
+P(t) — structural dissipation pressure, destabilizing operational load, fragmentation pressure, or operational destabilization at time t.
+
+R(t) — operational synchronization order parameter representing measurable phase synchronization within the oscillator ensemble.
+
+φᵢ(t) — phase of the i-th oscillator at time t.
+
+ωᵢ — natural frequency of the i-th oscillator.
+
+ω_ext — external forcing frequency.
+
+ω_mean — mean operational frequency of the oscillator ensemble.
+
+K — coupling strength between oscillators.
+
+F_ext — external coherent forcing amplitude.
+
+η — stochastic operational noise / phase dispersion.
+
+η_eff — effective operational phase dispersion under coherent forcing.
+
+Δω — frequency detuning between forcing and ensemble dynamics.
+
+Δω_lock — synchronization locking window.
+
+t_conv — operational convergence time toward synchronized dynamics.
+
+t_ret — retained synchronization duration after forcing removal.
+
+Synchronization, coherence, resonance, and phase alignment are treated as operational mechanisms supporting retained structural continuity and structural regeneration.
+
+They are not identical to structural integrity itself.
+
+---
+
+## A1. Order Parameter and Operational Synchronization
+
+The degree of synchronization in a nonlinear oscillator ensemble is quantified by the Kuramoto order parameter:
 
 R(t) = |(1/N) Σⱼ exp(iφⱼ(t))|
 
 Where:
 
-- R(t) ∈ [0, 1]  
-- R → 1 indicates global phase synchronization  
-- R → 0 indicates incoherent dynamics  
+- R(t) ∈ [0,1];
 
-In the EDS framework:
+- R → 1 indicates strong global phase synchronization;
 
-C(t) ≈ R(t)
+- R → 0 indicates incoherent operational dynamics.
 
-R(t) serves as an operational proxy for coherence C,
-providing a measurable representation of system-wide phase alignment.
+Within the EDS framework:
+
+- R(t) acts as a measurable synchronization proxy supporting retained structural continuity;
+
+- synchronization contributes operational support for structural regeneration C(t);
+
+- synchronization itself is not identical to structural integrity.
+
+Operational interpretation:
+
+- increasing synchronization may enhance retained operational continuity and reduce destabilizing phase dispersion.
 
 ---
 
 ## A2. Phase Dynamics Model
 
-The system is modeled as an ensemble of coupled nonlinear oscillators:
+The operational system is modeled as an ensemble of dynamically coupled nonlinear oscillators:
 
 dφᵢ/dt = ωᵢ + (K/N) Σⱼ sin(φⱼ − φᵢ) + F_ext sin(ω_ext t − φᵢ) + η
 
 Where:
 
-- φᵢ — phase of the i-th oscillator  
-- ωᵢ — natural frequency distribution  
-- K — coupling strength  
-- F_ext — external coherent forcing  
-- ω_ext — forcing frequency  
-- η — stochastic noise  
+- φᵢ — phase of the i-th oscillator;
+
+- ωᵢ — natural frequency distribution;
+
+- K — coupling strength;
+
+- F_ext — external coherent forcing amplitude;
+
+- ω_ext — forcing frequency;
+
+- η — stochastic operational noise.
+
+Operational interpretation:
+
+- oscillator coupling promotes synchronization;
+
+- stochastic noise promotes phase dispersion;
+
+- coherent forcing may accelerate operational synchronization and stabilize retained continuity.
 
 ---
 
 ## A3. Convergence Dynamics
 
-Define convergence time:
+Define operational convergence time:
 
 t_conv = min { t : R(t) ≥ R_threshold }
 
 Where:
 
-R_threshold ≈ 0.7 (phase-locked regime)
+R_threshold ≈ 0.7
 
-Observation:
+represents an operationally synchronized regime.
 
-- Without forcing → slower convergence  
-- With forcing → accelerated synchronization  
+Operational observations:
+
+- without coherent forcing → slower synchronization convergence;
+
+- with coherent forcing → accelerated synchronization dynamics.
+
+Operational interpretation:
+
+- external coherent forcing may reduce convergence time toward synchronized operational regimes.
 
 ---
 
 ## A4. Retention After Forcing
 
-After removing external forcing:
+After removing coherent forcing:
 
 F_ext → 0
 
-Define retention time:
+define retained synchronization time:
 
 t_ret = duration where R(t) ≥ R_threshold
 
-Interpretation:
+Operational interpretation:
 
-- large t_ret → stable attractor  
-- small t_ret → transient regime  
+- large t_ret → retained operational attractor and sustained synchronization accessibility;
+
+- small t_ret → transient synchronization regime.
+
+Within EDS:
+
+- retained synchronization may provide operational support for retained structural continuity C(t).
 
 ---
 
-## A5. Effective Dissipation
+## A5. Effective Dissipation and Noise
 
 Noise η introduces phase dispersion:
 
 η ↑ → R ↓
 
-External forcing reduces effective dispersion:
+Operational interpretation:
+
+- increased stochastic dispersion reduces synchronization accessibility.
+
+External coherent forcing may reduce effective operational dispersion:
 
 η_eff = η − f(F_ext, ω_ext)
 
-Thus:
+Operationally:
 
-C(t) increases while effective dissipation decreases
+- synchronization mechanisms may increase operational support for C(t);
 
-EDS condition:
+- coherent forcing may reduce effective destabilizing phase dispersion;
+
+- retained structural continuity becomes more accessible under bounded operational noise.
+
+The operational EDS condition remains:
 
 C(t) > P(t)
 
@@ -96,33 +174,53 @@ C(t) > P(t)
 
 ## A6. Resonance Synchronization Window
 
-Define detuning:
+Define frequency detuning:
 
 Δω = |ω_ext − ω_mean|
 
-Synchronization occurs within:
+Synchronization becomes operationally accessible within:
 
 |Δω| ≤ Δω_lock
 
-Where Δω_lock depends on:
+Where:
 
-- coupling strength K  
-- noise level η  
-- frequency spread  
+Δω_lock depends on:
 
-Within window:
+- coupling strength K;
 
-R → 1 (phase locking)
+- noise level η;
+
+- frequency spread of the oscillator ensemble.
+
+Within the synchronization window:
+
+R → 1
+
+Operational interpretation:
+
+- resonance accessibility emerges when forcing frequency sufficiently matches ensemble operational dynamics.
 
 ---
 
 ## A7. Regime Transition Criterion
 
-Stable regime condition:
+Operational synchronization regime condition:
 
-dR/dt > 0 and R → 1
+dR/dt > 0
 
-Consistent with the EDS stability condition:
+and:
+
+R → 1
+
+Operational interpretation:
+
+- synchronization progressively dominates incoherent operational dispersion.
+
+Within EDS:
+
+- synchronization dynamics may support retained structural continuity and regenerative accessibility;
+
+- operational viability remains governed by:
 
 C(t) > P(t)
 
@@ -132,54 +230,80 @@ C(t) > P(t)
 
 ### Plasma Parameters
 
-- Electron density: n_e = 1×10¹⁷ m⁻³  
-- Electron temperature: T_e ≈ 10⁴ K  
-- Ion temperature: T_i ≈ 10³ K  
-- Gas: Argon (m = 40 amu)  
-- Plasma frequency: ~2.85 GHz  
-- Ion-acoustic frequency: ~5.76 MHz  
+- Electron density:
+
+n_e = 1×10¹⁷ m⁻³
+
+- Electron temperature:
+
+T_e ≈ 10⁴ K
+
+- Ion temperature:
+
+T_i ≈ 10³ K
+
+- Gas:
+
+Argon (m = 40 amu)
+
+- Plasma frequency:
+
+~2.85 GHz
+
+- Ion-acoustic frequency:
+
+~5.76 MHz
 
 ---
 
 ### Results
 
-| Scenario        | R_final | R_max | Convergence Time |
-|----------------|--------|-------|------------------|
-| Baseline       | 0.980  | 0.980 | 3.35             |
-| Resonance      | 0.997  | 0.997 | 1.42             |
-| Off-resonance  | 0.996  | 0.996 | 1.38             |
-| Pulsed         | 0.986  | 0.992 | —                |
+| Scenario | R_final | R_max | Convergence Time |
+|---|---|---|---|
+| Baseline | 0.980 | 0.980 | 3.35 |
+| Resonance | 0.997 | 0.997 | 1.42 |
+| Off-resonance | 0.996 | 0.996 | 1.38 |
+| Pulsed | 0.986 | 0.992 | — |
 
 ---
 
-### Observations
+### Operational Observations
 
 1. Convergence acceleration:
-   3.35 → 1.42 (~2.4× faster)
 
-2. Coherence increase:
-   0.980 → 0.997
+3.35 → 1.42
 
-3. High intrinsic coupling already present in baseline
+(~2.4× faster)
 
-4. Broad synchronization window (off-resonance remains effective)
+2. Increased synchronization accessibility:
+
+0.980 → 0.997
+
+3. Strong intrinsic coupling already present within the baseline regime.
+
+4. Broad synchronization accessibility window:
+
+off-resonance forcing remains operationally effective.
 
 ---
 
-## A9. Interpretation
+## A9. Operational Interpretation
 
 External coherent forcing:
 
-- accelerates phase alignment  
-- reduces phase noise  
-- drives system into stable attractor  
+- accelerates synchronization dynamics;
 
-Thus:
+- reduces effective phase dispersion;
 
-C(t) increases  
-P(t) effectively decreases  
+- promotes accessibility of retained operational attractors.
 
-EDS condition is satisfied:
+Operationally:
+
+- synchronization mechanisms increase operational support for retained structural continuity C(t);
+
+- effective destabilizing phase dispersion may decrease;
+
+- operational viability becomes more accessible when:
 
 C(t) > P(t)
 
@@ -187,31 +311,50 @@ C(t) > P(t)
 
 ## A10. Key Result
 
-A nonlinear plasma system can be driven into a highly coherent state through external oscillatory forcing, with measurable:
+A nonlinear plasma oscillator system may be driven toward highly synchronized operational regimes through external coherent forcing.
 
-- faster convergence  
-- increased coherence  
-- stable regime formation  
+This produces measurable:
+
+- faster synchronization convergence;
+
+- increased synchronization accessibility;
+
+- retained operational attractor formation;
+
+- enhanced operational support for retained structural continuity.
 
 ---
 
 ## A11. Open Validation Steps
 
-To fully confirm the model:
+Further operational validation includes:
 
-- frequency sweep around ω_ext  
-- noise robustness testing  
-- retention time measurement after forcing removal  
+- frequency sweep around ω_ext;
+
+- robustness testing under stochastic noise;
+
+- retained synchronization measurement after forcing removal;
+
+- synchronization accessibility mapping across coupling regimes;
+
+- operational transition analysis under varying dissipation pressure.
 
 ---
 
 ## A12. Conclusion
 
-The oscillator model provides a measurable realization of:
+The oscillator formulation provides a measurable operational realization of:
 
-EDS → stability condition  
-EDC → transition dynamics  
+- EDS → operational stability condition;
 
-Abstract theory is directly mapped to:
+- EDC → operational transition dynamics near criticality.
 
-observable synchronization behavior in physical systems
+Abstract operational theory becomes directly connected to:
+
+- measurable synchronization behavior;
+
+- retained operational attractors;
+
+- synchronization accessibility;
+
+- and structural regeneration support in physical systems.
