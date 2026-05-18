@@ -99,6 +99,34 @@ Operational time variable.
 
 ---
 
+## Core Principle (EDS)
+
+The system is defined by the operational structural balance:
+
+Δ(t) = S(t) − P(t) − D(t)
+
+Where:
+
+- S(t) — structural synthesis and formation of organized structure at time t;
+
+- P(t) — structural dissipation pressure, destabilizing extraction, overload, fragmentation pressure, or operational destabilization at time t;
+
+- D(t) — irreversible structural losses and entropy-producing degradation at time t;
+
+- Δ(t) — operational structural balance of the system at time t;
+
+- t — operational time variable.
+
+Interpretation:
+
+- Δ(t) > 0 → structural growth and retained operational continuity;
+
+- Δ(t) = 0 → quasi-stationary operational balance;
+
+- Δ(t) < 0 → structural degradation and fragmentation.
+  
+---
+
 ## Stability Condition
 
 A system remains operationally viable only if:
