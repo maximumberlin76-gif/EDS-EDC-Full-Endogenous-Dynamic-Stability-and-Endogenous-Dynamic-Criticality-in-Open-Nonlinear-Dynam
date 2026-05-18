@@ -22,50 +22,68 @@ A complete structured version of the theory is available in:
 
 ----
 
+
 ## Overview
 
-Endogenous Dynamic Stability (EDS) defines a universal condition for the viability of nonlinear open dissipative systems.
+Endogenous Dynamic Stability (EDS) defines an operational criterion for retained structural continuity, structural regeneration, and dynamic stability in open dynamical systems.
 
-It formalizes stability as a dynamically maintained balance between synthesis, load, and dissipation.
+The framework formalizes stability not as static equilibrium, but as a dynamically retained operational regime sustained through:
 
-Endogenous Dynamic Criticality (EDC) is the dynamical regime of the same system near the stability boundary, where internally generated dynamics drive the system toward a critical transition.
+- structural synthesis;
+- structural regeneration;
+- bounded dissipation propagation;
+- and retained operational continuity.
 
-This is a single theoretical framework with two levels:
+Endogenous Dynamic Criticality (EDC) describes the critical dynamical regime emerging near the operational stability boundary, where internally generated dynamics drive the system toward structural transition, destabilization, or reorganization.
 
-- **EDS** — structural stability condition  
-- **EDC** — dynamic evolution near criticality  
+Together, EDS and EDC form a unified operational framework describing:
 
----
-
-## Core Chain
-
-S − P − D = 0          → quasi-stationary balance  
-       ↓  
-C = ∫(S − D)dt > P    → Marnov Stability Criterion  
-       ↓  
-dC/dt = rC − C³       → EDC dynamics  
-       ↓  
-r(t) ≈ v t            → endogenous drift  
-       ↓  
-dy/dτ = τy − y³       → canonical form  
-       ↓  
-t_delay ~ v^(−1/3)    → scaling law
+- formation of structure;
+- retained structural continuity;
+- destabilization propagation;
+- regenerative accessibility;
+- critical transformation;
+- and operational stability in open dynamical systems.
 
 ---
 
-## Core Principle (EDS)
+## Operational Parameter Definitions
 
-The system is defined by:
+### S(t)
+
+Structural synthesis and formation of organized structure at time t.
+
+---
+
+### P(t)
+
+Structural dissipation pressure, destabilizing extraction, overload, fragmentation pressure, or operational destabilization at time t.
+
+---
+
+D(t)
+
+Irreversible structural losses and entropy-producing degradation at time t.
+
+---
+
+C(t)
+
+Structural regeneration, retained structural continuity, and restorative structural capacity at time t.
+
+---
+
+Δ(t)
+
+Operational structural balance:
 
 Δ(t) = S(t) − P(t) − D(t)
 
-Where:
+---
 
-- S(t) — synthesis (structure formation)  
-- P(t) — load (external demand, extraction)  
-- D(t) — dissipation (losses, entropy production)  
+t
 
-
+Operational time variable.
 ---
 
 ## Stability Condition
