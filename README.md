@@ -86,6 +86,19 @@ t
 Operational time variable.
 ---
 
+## Core Chain
+
+| Step | Operational Form | Meaning |
+|---|---|---|
+| 1 | S(t) − P(t) − D(t) = 0 | quasi-stationary operational balance |
+| 2 | C(t) > P(t) | Marnov Criterion of Endogenous Dynamic Stability |
+| 3 | dC/dt = rC − C³ | EDC dynamic regime |
+| 4 | r(t) ≈ vt | endogenous drift |
+| 5 | dy/dτ = τy − y³ | canonical critical form |
+| 6 | t_delay ~ v^(−1/3) | scaling law |
+
+---
+
 ## Stability Condition
 
 A system remains viable only if:
