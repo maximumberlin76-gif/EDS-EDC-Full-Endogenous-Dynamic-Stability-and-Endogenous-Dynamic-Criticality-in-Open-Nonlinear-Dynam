@@ -1,80 +1,154 @@
-# README Appendix  
+# README Appendix
+
 Full Mathematical Derivation  
 EDS → EDC → Scaling
 
 ---
 
+## Operational Parameter Definitions
+
+Δ(t) — operational structural balance of the system at time t.
+
+S(t) — structural synthesis and formation of organized structure at time t.
+
+P(t) — structural dissipation pressure, destabilizing operational load, fragmentation pressure, or operational destabilization at time t.
+
+D(t) — irreversible structural losses and entropy-producing degradation at time t.
+
+C(t) — structural regeneration, retained structural continuity, and restorative structural capacity at time t.
+
+r(t) — endogenous operational control parameter.
+
+μ — operational coupling coefficient.
+
+v — endogenous drift rate.
+
+t — operational time variable.
+
+τ — dimensionless rescaled operational time variable.
+
+y — dimensionless rescaled regenerative operational variable.
+
+Coherence, synchronization, and resonance are treated as operational mechanisms supporting C(t), not as identical to structural integrity itself.
+
+---
+
 ## 1. Core Chain
 
-S − P − D = 0          → quasi-stationary balance  
-       ↓  
-C = ∫(S − D)dt > P    → Marnov Stability Criterion  
-       ↓  
-dC/dt = rC − C³       → EDC dynamics  
-       ↓  
-r(t) ≈ v t            → endogenous drift  
-       ↓  
-dy/dτ = τy − y³       → canonical form  
-       ↓  
-t_delay ~ v^(−1/3)    → scaling law  
+| Step | Operational Form | Meaning |
+|---|---|---|
+| 1 | S(t) − P(t) − D(t) = 0 | quasi-stationary operational balance |
+| 2 | C(t) > P(t) | Marnov Criterion of Endogenous Dynamic Stability |
+| 3 | dC/dt = rC − C³ | EDC dynamic regime |
+| 4 | r(t) ≈ vt | endogenous operational drift |
+| 5 | dy/dτ = τy − y³ | canonical critical form |
+| 6 | t_delay ~ v^(−1/3) | scaling law |
 
 ---
 
 ## 2. Starting Point: EDS
 
-The EDS balance is:
+The EDS operational balance is:
 
 Δ(t) = S(t) − P(t) − D(t)
 
 where:
 
-S(t) — synthesis  
-P(t) — load  
-D(t) — dissipation  
+- S(t) — structural synthesis;
 
-The stability condition is:
+- P(t) — structural dissipation pressure;
 
-∫(S − P − D) dt > 0
+- D(t) — irreversible structural losses.
 
-This means that a system remains viable only if it maintains positive structural balance over time.
+The operational stability condition is:
+
+∫(S(t) − P(t) − D(t))dt > 0
+
+Operational interpretation:
+
+- a system remains operationally viable only while constructive structural synthesis exceeds destabilizing structural dissipation pressure and irreversible structural losses over operational time.
 
 ---
 
-## 3. Coherence Mapping
+## 3. Structural Regeneration Dynamics
 
-Define accumulated coherence as:
+Define structural regeneration and retained operational continuity:
 
-C(t) = ∫(S − D) dt
+C(t)
 
-Then:
+Operationally:
 
-dC/dt = S − D
+- C(t) represents structural regeneration;
 
-Load P does not create structure.
+- retained structural continuity;
 
-It acts as an external constraint.
+- restorative structural capacity.
 
-Therefore:
+The regenerative operational dynamics satisfy:
+
+dC/dt ≈ S(t) − D(t)
+
+Operational interpretation:
+
+- structural regeneration is operationally supported by constructive structural dynamics and reduced by irreversible structural losses.
+
+Structural dissipation pressure:
+
+P(t)
+
+does not generate retained structural continuity.
+
+Instead:
+
+- P(t) acts as destabilizing structural dissipation pressure;
+
+- operational fragmentation pressure;
+
+- and destabilizing operational load.
+
+The minimal operational stability condition becomes:
 
 C(t) > P(t)
 
-This is the Marnov Stability Criterion.
+This defines the:
 
-It is equivalent to:
+Marnov Criterion of Endogenous Dynamic Stability.
 
-C(t) > P(t) ⇔ ∫(S − P − D) dt > 0
+Operational interpretation:
+
+- regenerative structural continuity exceeds destabilizing structural dissipation pressure over operational time.
+
+This criterion is operationally connected to the integral stability condition:
+
+C(t) > P(t)
+⇔
+∫(S(t) − P(t) − D(t))dt > 0
+
+Thus:
+
+- the regenerative formulation;
+
+- the differential formulation;
+
+- and the integral formulation;
+
+describe the same operational stability boundary.
 
 ---
 
 ## 4. Transition to EDC
 
-Near the stability boundary:
+Near the operational stability boundary:
 
-C ≈ P
+C(t) ≈ P(t)
 
-The system enters a critical regime.
+the system enters a critical operational regime.
 
-We introduce an endogenous control parameter r(t):
+Introduce an endogenous operational control parameter:
+
+r(t)
+
+The dynamics become:
 
 dC/dt = rC − C³
 
@@ -82,26 +156,37 @@ dr/dt = μ(P − C)
 
 where:
 
-C(t) — coherence  
-P(t) — load  
-r(t) — endogenous control parameter  
-μ — coupling coefficient  
+- C(t) — structural regeneration and retained structural continuity;
+
+- P(t) — structural dissipation pressure;
+
+- r(t) — endogenous operational control parameter;
+
+- μ — operational coupling coefficient.
+
+Operational interpretation:
+
+- regenerative continuity competes against destabilizing structural dissipation pressure;
+
+- endogenous drift drives the system toward operational transition, restructuring, or destabilization.
 
 ---
 
 ## 5. Endogenous Drift
 
-Near criticality, the control parameter evolves internally.
+Near criticality, the operational control parameter evolves internally.
 
 Locally:
 
-r(t) ≈ v t
+r(t) ≈ vt
 
-with:
+where:
 
 v = μP
 
-The system approaches the critical point through its own dynamics.
+Operational interpretation:
+
+- the system approaches the critical operational regime through its own endogenous dynamics.
 
 ---
 
@@ -109,25 +194,39 @@ The system approaches the critical point through its own dynamics.
 
 Substitute:
 
-r(t) ≈ v t
+r(t) ≈ vt
 
 into:
 
 dC/dt = rC − C³
 
-This gives:
+This yields:
 
-dC/dt = v t C − C³
+dC/dt = vtC − C³
+
+Operational interpretation:
+
+- regenerative structural continuity evolves under slowly varying endogenous drift and nonlinear saturation.
 
 ---
 
 ## 7. Scaling Ansatz
 
-Introduce the general scaling form:
+Introduce the general operational scaling form:
 
 t = τ · v^(−α)
 
 C = y · v^β
+
+where:
+
+- α — temporal scaling exponent;
+
+- β — regenerative amplitude scaling exponent;
+
+- τ — rescaled operational time;
+
+- y — rescaled regenerative operational variable.
 
 ---
 
@@ -141,7 +240,7 @@ and:
 
 t = τ · v^(−α)
 
-we get:
+we obtain:
 
 dC/dt = v^(β + α) dy/dτ
 
@@ -149,19 +248,23 @@ dC/dt = v^(β + α) dy/dτ
 
 ## 9. Right-Hand Side Scaling
 
-The first term:
+First term:
 
-v t C = v · (τ · v^(−α)) · (y · v^β)
+vtC
 
-therefore:
+Substitute:
 
-v t C = v^(1 − α + β) τy
+v · (τ · v^(−α)) · (y · v^β)
 
-The nonlinear term:
+Therefore:
+
+vtC = v^(1 − α + β) τy
+
+Nonlinear term:
 
 C³ = (y · v^β)³
 
-therefore:
+Therefore:
 
 C³ = v^(3β)y³
 
@@ -169,11 +272,15 @@ C³ = v^(3β)y³
 
 ## 10. Exact Rescaling
 
-For the canonical reduction, choose:
+For canonical reduction, choose:
 
 C = v^(1/3)y
 
 t = v^(−1/3)τ
+
+Operational interpretation:
+
+- the scaling absorbs system-dependent operational parameters into dimensionless variables.
 
 ---
 
@@ -189,13 +296,13 @@ Then:
 
 dC/dt = (dC/dτ) / (dt/dτ)
 
+Compute:
+
 dC/dτ = v^(1/3) dy/dτ
 
 dt/dτ = v^(−1/3)
 
 Therefore:
-
-dC/dt = v^(1/3) dy/dτ / v^(−1/3)
 
 dC/dt = v^(2/3) dy/dτ
 
@@ -205,21 +312,21 @@ dC/dt = v^(2/3) dy/dτ
 
 Start from:
 
-dC/dt = v t C − C³
+dC/dt = vtC − C³
 
-Left side:
+Left-hand side:
 
 v^(2/3) dy/dτ
 
-Right side:
+Right-hand side:
 
 v · (v^(−1/3)τ) · (v^(1/3)y) − (v^(1/3)y)³
 
 This becomes:
 
-v τy − v y³
+v^(2/3)(τy − y³)
 
-and therefore:
+Therefore:
 
 v^(2/3) dy/dτ = v^(2/3)(τy − y³)
 
@@ -235,23 +342,31 @@ dy/dτ = τy − y³
 
 ## 13. Canonical Form
 
-The canonical equation is:
+The canonical operational equation is:
 
 dy/dτ = τy − y³
 
 This equation is parameter-free.
 
-All system-specific parameters are absorbed into scaling.
+All system-specific operational parameters are absorbed into scaling.
+
+Operational interpretation:
+
+- the critical operational dynamics become universal within the defined scaling domain.
 
 ---
 
 ## 14. Scaling Law
 
-The characteristic delay follows from:
+The characteristic operational delay follows from:
 
 t = v^(−1/3)τ
 
-For τ = O(1):
+For:
+
+τ = O(1)
+
+the delay becomes:
 
 t_delay ~ v^(−1/3)
 
@@ -263,34 +378,52 @@ we obtain:
 
 t_delay ~ (μP)^(−1/3)
 
+Operational interpretation:
+
+- slower endogenous drift produces longer delayed transitions;
+
+- stronger destabilizing structural dissipation pressure accelerates operational transition accessibility.
+
 ---
 
 ## 15. Universality Conditions
 
-The exponent −1/3 holds for systems with:
+The exponent:
 
-- cubic saturation  
-- smooth endogenous drift  
-- open dissipative dynamics  
-- nonlinear coupling  
-- at least three coupled degrees of freedom  
+−1/3
 
-Outside this class, different scaling may arise.
+holds under the following operational conditions:
+
+- cubic saturation dominates nonlinear dynamics;
+
+- endogenous drift evolves smoothly;
+
+- the system remains open and dissipative;
+
+- nonlinear coupling is present;
+
+- multiple coupled operational degrees of freedom exist.
+
+Outside this operational universality domain, alternative scaling behavior may emerge.
 
 ---
 
 ## 16. Conclusion
 
-The full chain is:
+The full operational chain becomes:
 
-EDS balance  
-→ coherence mapping  
-→ Marnov Stability Criterion  
-→ EDC dynamics  
-→ endogenous drift  
-→ canonical form  
-→ delay scaling law  
+EDS operational balance
+→ structural regeneration dynamics
+→ Marnov Criterion of Endogenous Dynamic Stability
+→ EDC operational dynamics
+→ endogenous operational drift
+→ canonical critical form
+→ delay scaling law
 
-The exponent −1/3 is not assumed.
+The exponent:
 
-It follows from the invariant structure of the system.
+−1/3
+
+is not postulated.
+
+It emerges from the invariant operational structure of the system.
