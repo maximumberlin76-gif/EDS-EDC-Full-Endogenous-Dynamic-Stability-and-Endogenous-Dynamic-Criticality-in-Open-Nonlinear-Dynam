@@ -1,65 +1,180 @@
-# Case: Civilization  
+# Case: Civilization
+
 Macro-Scale Structural Stability
 
 ---
 
 ## 1. System
 
-A civilization is a large-scale open nonlinear dissipative system
-composed of:
+A civilization is a large-scale open nonlinear dissipative system composed of:
 
-- population  
-- institutions  
-- knowledge systems  
-- infrastructure  
+- population;
 
-It exists only while it maintains structural coherence over time.
+- institutions;
+
+- knowledge systems;
+
+- infrastructure;
+
+- culture;
+
+- communication structures;
+
+- and interacting social subsystems.
+
+A civilization exists only while it preserves retained structural continuity and internally agreed coherent civilizational dynamics over operational time.
 
 ---
 
 ## 2. EDS Mapping
 
-S(t) — synthesis (science, technology, education, culture, cooperation)  
-P(t) — load (resource pressure, inequality, exploitation, external stress)  
-D(t) — dissipation (conflict, inefficiency, entropy, decay)  
+S(t) — synthesis:
 
-C(t) — civilizational coherence (trust, structure, continuity, integration)
+- science;
+
+- technology;
+
+- education;
+
+- culture;
+
+- infrastructure formation;
+
+- cooperation;
+
+- regenerative institutional development;
+
+- long-term structural creation.
+
+P(t) — load:
+
+- extraction pressure;
+
+- inequality;
+
+- resource stress;
+
+- destabilizing competition;
+
+- systemic fragmentation pressure;
+
+- external destabilizing stress;
+
+- unsustainable operational burden.
+
+D(t) — dissipation:
+
+- conflict;
+
+- institutional degradation;
+
+- entropy accumulation;
+
+- structural decay;
+
+- inefficiency;
+
+- trust collapse;
+
+- irreversible fragmentation processes.
+
+C(t) — retained civilizational structural continuity and internally agreed coherent subsystem dynamics maintained over operational time.
+
+Within EDS/EDC:
+
+civilizational coherence does not mean superficial agreement or temporary synchronization.
+
+It means:
+
+- retained internally agreed coherent dynamics between interacting subsystems;
+
+- structural compatibility of institutions and population dynamics;
+
+- regenerative continuity of knowledge, infrastructure, and trust;
+
+- operational compatibility between subsystem trajectories;
+
+- preservation of long-term structural integrity under changing conditions.
 
 ---
 
 ## 3. Dynamics
 
-dC/dt = S − D  
+dC/dt = S − D
 
-Civilization accumulates structure through creation
-and loses it through dissipation.
+Civilization accumulates structural continuity through regenerative synthesis and loses it through destabilizing dissipation.
+
+Operational meaning:
+
+- internally agreed coherent subsystem dynamics must regenerate faster than fragmentation accumulates;
+
+- structural continuity must remain stronger than destabilizing dissipation over operational time.
 
 ---
 
-## 4. Stability Condition
+## 4. Structural Existence Condition
 
-A civilization remains viable if:
+A civilization continues to exist as an organized macro-structure if:
+
+Δ(t) = S(t) − P(t) − D(t) > 0
+
+Operational meaning:
+
+- regenerative structural synthesis exceeds destabilizing load and dissipation;
+
+- the civilization preserves positive structural formation balance;
+
+- macro-scale organizational continuity remains possible.
+
+This condition defines civilizational structural persistence.
+
+---
+
+## 5. Dynamic Stability Condition
+
+A civilization remains dynamically stable if:
 
 C(t) > P(t)
 
+Operational meaning:
+
+- retained civilizational structural continuity exceeds destabilizing load;
+
+- internally agreed coherent subsystem dynamics remain stronger than fragmentation pressure;
+
+- regenerative continuity remains operationally stable over time.
+
+This condition defines dynamically retained civilizational stability.
+
 ---
 
-## 5. Critical Boundary
+## 6. Critical Boundary
 
 When:
 
 C(t) → P(t)
 
-the system enters instability:
+the civilization enters a dynamically critical regime.
 
-- institutional breakdown  
-- fragmentation  
-- loss of trust  
-- systemic кризис  
+Near this boundary:
+
+- institutional stability weakens;
+
+- fragmentation accelerates;
+
+- trust degrades;
+
+- subsystem incompatibility increases;
+
+- crisis propagation intensifies;
+
+- internally agreed coherent dynamics begin collapsing.
+
+This corresponds to the EDC-sensitive regime.
 
 ---
 
-## 6. Failure Mode
+## 7. Failure Mode
 
 If:
 
@@ -67,64 +182,128 @@ P(t) + D(t) > S(t)
 
 then:
 
-dC/dt < 0  
+dC/dt < 0
 
-⇒ degradation accumulates  
+Operational consequences:
 
-⇒ collapse becomes inevitable  
+- degradation accumulates;
+
+- regenerative continuity weakens;
+
+- subsystem fragmentation increases;
+
+- internally agreed coherent dynamics decay;
+
+- structural drift propagates across subsystems;
+
+- long-term collapse dynamics emerge.
+
+At sufficient accumulation of destabilizing dissipation:
+
+- retained structural continuity can no longer be maintained.
 
 ---
 
-## 7. Why It Cannot Be Otherwise
+## 8. Why It Cannot Be Otherwise
 
-A civilization consumes resources to maintain itself.
+A civilization continuously consumes resources to maintain structural continuity.
 
-If extraction exceeds creation:
+If extraction exceeds regenerative creation:
 
-the system destroys its own structure.
+- institutions degrade;
 
-No stable configuration exists under:
+- subsystem compatibility weakens;
 
-P ≥ S  
+- fragmentation accumulates;
+
+- internally agreed coherent dynamics decay over time.
+
+No stable civilizational configuration exists under:
+
+P ≥ S
 
 Thus:
 
-S > P + D  
+S > P + D
 
-⇒ equivalently:
+which operationally corresponds to:
 
-C > P  
+C > P
+
+meaning:
+
+- regenerative structural continuity remains stronger than destabilizing dissipation.
 
 ---
 
-## 8. Nonlinear Amplification
+## 9. Nonlinear Amplification
 
-In synthesis regimes:
+In synthesis-dominated regimes:
 
-1 + 1 > 2  
+1 + 1 > 2
 
 due to:
 
-- cooperation  
-- knowledge accumulation  
-- network effects  
+- cooperation;
+
+- knowledge accumulation;
+
+- subsystem reinforcement;
+
+- network effects;
+
+- regenerative institutional continuity;
+
+- and internally agreed coherent subsystem dynamics.
+
+Small increases in regenerative synthesis may produce disproportionately large increases in retained structural stability.
+
+Likewise:
+
+small fragmentation pressures near the critical boundary may propagate large-scale systemic drift.
 
 ---
 
-## 9. Structural Insight
+## 10. Structural Insight
 
-Civilization stability depends not on size,
-but on balance:
+Civilizational stability depends not on size alone,
 
-creation vs extraction vs loss
+but on:
+
+- regenerative continuity;
+
+- retained structural integrity;
+
+- internally agreed coherent subsystem dynamics;
+
+- and the balance between synthesis, extraction, and dissipation.
+
+A civilization may appear externally powerful while internally losing coherent subsystem integrity.
+
+Within EDS/EDC:
+
+real civilizational stability is determined not by external appearance alone,
+
+but by whether internally agreed coherent subsystem dynamics remain stronger than destabilizing fragmentation over operational time.
 
 ---
 
-## 10. Conclusion
+## 11. Conclusion
 
 Civilization follows the same structural law:
 
-it exists only while coherence exceeds load.
+it exists as a dynamically retained macro-scale structure only while:
 
-EDS is not metaphorical —
-it is a constraint on large-scale systems.
+- regenerative synthesis;
+
+- retained structural continuity;
+
+- internally agreed coherent subsystem dynamics;
+
+- and long-term subsystem compatibility
+
+remain stronger than destabilizing load and dissipation.
+
+EDS/EDC is not metaphorical.
+
+It defines operational structural constraints acting on large-scale nonlinear systems over time.
