@@ -69,7 +69,10 @@ Irreversible structural losses and entropy-producing degradation at time t.
 
 C(t)
 
-Structural regeneration, retained structural continuity, and restorative structural capacity at time t.
+Coherent internal dynamics determining
+the structural integrity of the system over time
+and its ability to retain itself
+against dissipative degradation at time t.
 
 ---
 
