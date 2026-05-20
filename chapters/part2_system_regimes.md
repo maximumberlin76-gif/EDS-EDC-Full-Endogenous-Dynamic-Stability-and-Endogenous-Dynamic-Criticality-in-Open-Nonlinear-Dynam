@@ -1,8 +1,12 @@
 # PART II — SYSTEM REGIMES
 
+---
+
 ## Chapter 2F — Separation vs Synthesis
 
-### Definition 2F.1 (Separation Regime)
+---
+
+### Definition 2F.1 — Separation Regime
 
 A system operates in a separation regime if:
 
@@ -10,46 +14,125 @@ P(t) ≥ S(t)
 
 Where:
 
-- P(t) — extraction (load, pressure)
-- S(t) — synthesis (structure formation)
+- P(t) — destabilizing extraction pressure, operational load, fragmentation pressure, or dissipative burden;
 
-### Consequences
+- S(t) — regenerative synthesis, structure formation, subsystem integration, and continuity-preserving organization.
 
-- local efficiency may increase
-- structural connections weaken
-- dissipation D(t) increases
-- coherence C(t) decreases
+Operational interpretation:
+
+- destabilizing extraction becomes stronger than regenerative structural creation;
+
+- subsystem trajectories begin diverging;
+
+- retained internally agreed coherent dynamics weaken over time.
 
 ---
 
-### Definition 2F.2 (Synthesis Regime)
+### Consequences of Separation Regime
+
+Within a separation regime:
+
+- local efficiency may temporarily increase;
+
+- subsystem isolation may intensify;
+
+- short-term extraction may dominate operational logic;
+
+- structural connections weaken;
+
+- dissipation D(t) increases;
+
+- fragmentation pressure propagates;
+
+- retained coherent continuity decreases;
+
+- internally agreed coherent subsystem dynamics decay over operational time.
+
+Operationally:
+
+the system may preserve temporary external functionality while internally losing structural integrity.
+
+Thus:
+
+external persistence does not guarantee dynamically retained stability.
+
+---
+
+### Definition 2F.2 — Synthesis Regime
 
 A system operates in a synthesis regime if:
 
 S(t) > P(t) + D(t)
 
-### Consequences
+Operational interpretation:
 
-- connectivity increases
-- coherence accumulates
-- new structures emerge
-- system stability improves
+- regenerative structural continuity exceeds destabilizing extraction and dissipation;
+
+- subsystem compatibility strengthens;
+
+- coherent structural retention accumulates;
+
+- internally agreed coherent dynamics become operationally self-reinforcing.
+
+---
+
+### Consequences of Synthesis Regime
+
+Within a synthesis regime:
+
+- structural connectivity increases;
+
+- subsystem compatibility improves;
+
+- retained coherent continuity accumulates;
+
+- regenerative capacity strengthens;
+
+- new organizational structures emerge;
+
+- internally agreed coherent subsystem dynamics stabilize;
+
+- system stability improves operationally over time.
+
+Operationally:
+
+the structure becomes increasingly capable of retaining itself dynamically under changing conditions.
 
 ---
 
 ## Chapter 2G — Coherent (Resonant) Regime
 
-### Definition 2G.1 (Resonance)
+---
 
-Resonance is a regime of phase alignment where:
+### Definition 2G.1 — Resonance
 
-Δφ → minimum  
-Q(t) → maximum  
+Resonance is a regime of dynamically retained phase compatibility and coherent subsystem interaction where:
+
+Δφ → minimum
+
+Q(t) → maximum
 
 Where:
 
-- Δφ — phase mismatch
-- Q(t) — quality factor (energy retention capacity)
+- Δφ — subsystem phase mismatch;
+
+- Q(t) — quality factor representing retention capacity of coherent structural dynamics.
+
+Operational interpretation:
+
+- subsystem trajectories become increasingly compatible;
+
+- destabilizing phase conflict decreases;
+
+- coherent energy retention improves;
+
+- internally agreed coherent dynamics become easier to maintain.
+
+Within EDS/EDC:
+
+resonance is not simple oscillatory coincidence alone.
+
+It is a regime where coherent subsystem interaction minimizes destabilizing dissipation.
 
 ---
 
@@ -57,62 +140,6 @@ Where:
 
 C(t) ↑ ⇔ Δφ ↓
 
----
+Operational meaning:
 
-### Definition 2G.2 (Quality Factor)
-
-Q(t) measures the system’s ability to retain energy and phase coherence.
-
-Higher Q implies:
-
-- lower losses  
-- better synchronization  
-- higher coherence C(t)  
-
----
-
-## Chapter 2H — Interaction as Phase Alignment
-
-### Statement 2H.1
-
-A system interacts effectively with its environment when:
-
-- its internal coherence matches external modes  
-- dissipation is minimized  
-- phase conflicts are reduced  
-
----
-
-### Clarification
-
-“Resonance is the language of matter” means:
-
-not control over matter,  
-but alignment with its dynamics.
-
----
-
-## Core Insight of PART II
-
-There are no separate “types” of systems.
-
-There are regimes of the same system:
-
-- separation (P ≥ S)  
-- transition (S ≈ P + D)  
-- synthesis (S > P + D)  
-
----
-
-## Conclusion
-
-Resonance is not a mystical effect.
-
-It is a regime of:
-
-- minimal losses  
-- maximal phase alignment  
-- stable structure formation  
-
-System stability emerges not from force,  
-but from coherence.
+- increasing
