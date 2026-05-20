@@ -1,72 +1,206 @@
-# Case: Continuum  
+# Case: Continuum
+
 Universal Structural Constraint
 
 ---
 
 ## 1. System
 
-The continuum represents reality as a hierarchy of
-interconnected dynamical systems across all scales:
+The continuum represents reality as a hierarchy of interconnected nonlinear dynamical systems across multiple scales:
 
-- physical  
-- biological  
-- cognitive  
-- civilizational  
+- physical;
 
-Each level is an open nonlinear dissipative system.
+- biological;
+
+- cognitive;
+
+- social;
+
+- civilizational;
+
+- and complex adaptive organizational systems.
+
+Each level operates as an open nonlinear dissipative structure interacting with other scales through coupled subsystem dynamics.
+
+No level exists in complete isolation.
+
+Subsystem dynamics propagate structurally across scales over operational time.
 
 ---
 
 ## 2. EDS Mapping
 
-S(t) — synthesis (structure formation at any scale)  
-P(t) — load (external or internal pressure)  
-D(t) — dissipation (entropy, loss, decay)  
+S(t) — synthesis:
 
-C(t) — coherence (structural persistence)
+- structure formation;
+
+- regeneration;
+
+- adaptive organization;
+
+- coherent subsystem integration;
+
+- continuity-preserving creation processes.
+
+P(t) — load:
+
+- destabilizing pressure;
+
+- extraction burden;
+
+- perturbation load;
+
+- fragmentation pressure;
+
+- operational stress acting against structural continuity.
+
+D(t) — dissipation:
+
+- entropy accumulation;
+
+- degradation;
+
+- coherence decay;
+
+- irreversible structural loss;
+
+- destabilizing dispersion processes.
+
+C(t) — retained structural continuity and internally agreed coherent subsystem dynamics maintained over operational time.
+
+Within EDS/EDC:
+
+coherence does not mean superficial synchronization alone.
+
+Coherence means:
+
+- retained internally agreed coherent dynamics between interacting subsystems;
+
+- regenerative structural continuity;
+
+- compatibility of subsystem trajectories;
+
+- preservation of operational integrity under changing conditions;
+
+- and the capacity of the structure to maintain itself dynamically over time.
 
 ---
 
 ## 3. Universality
 
-At every level:
+At every scale:
 
-dC/dt = S − D  
+dC/dt = S − D
 
-and stability requires:
+and dynamically retained stability requires:
 
 C(t) > P(t)
 
----
+Operational meaning:
 
-## 4. Cross-Scale Invariance
+- regenerative structural continuity must remain stronger than destabilizing pressure;
 
-The same condition applies to:
+- internally agreed coherent subsystem dynamics must outpace fragmentation and dissipation.
 
-- atoms (bound states)  
-- organisms (life)  
-- humans (cognition)  
-- civilizations (society)  
-
-This defines a scale-invariant structural law.
+This condition is scale-independent.
 
 ---
 
-## 5. Critical Boundary
+## 4. Structural Existence Condition
+
+A structured system continues to exist if:
+
+Δ(t) = S(t) − P(t) − D(t) > 0
+
+Operational meaning:
+
+- synthesis exceeds destabilizing load and dissipation;
+
+- the structure preserves positive formation balance;
+
+- organizational continuity remains possible.
+
+This condition defines structural persistence.
+
+A structure may continue to exist externally while internally losing coherent subsystem integrity.
+
+---
+
+## 5. Dynamic Stability Condition
+
+A structured system remains dynamically stable if:
+
+C(t) > P(t)
+
+Operational meaning:
+
+- retained structural continuity exceeds destabilizing pressure;
+
+- internally agreed coherent subsystem dynamics remain stronger than fragmentation;
+
+- regenerative continuity persists over operational time.
+
+This condition defines dynamically retained structural stability.
+
+---
+
+## 6. Cross-Scale Invariance
+
+The same structural condition applies across scales:
+
+- atoms → bound-state continuity;
+
+- biological systems → regenerative integrity;
+
+- cognition → coherent functional continuity;
+
+- civilizations → retained subsystem compatibility;
+
+- complex adaptive systems → coordinated operational persistence.
+
+The specific mechanisms differ across scales.
+
+The structural constraint remains invariant.
+
+Thus EDS/EDC defines a scale-invariant structural law.
+
+---
+
+## 7. Critical Boundary
 
 At any scale:
 
 C(t) → P(t)
 
-defines the transition point:
+defines a dynamically critical regime.
 
-- phase change  
-- collapse  
-- transformation  
+Near this boundary:
+
+- instability sensitivity increases;
+
+- fragmentation propagates faster;
+
+- retention weakens;
+
+- subsystem incompatibility accumulates;
+
+- phase transition dynamics emerge.
+
+Operational outcomes may include:
+
+- transformation;
+
+- collapse;
+
+- reorganization;
+
+- or transition into a new operational regime.
+
+This corresponds to the EDC-sensitive region.
 
 ---
 
-## 6. Failure Mode
+## 8. Failure Mode
 
 If:
 
@@ -74,53 +208,98 @@ P(t) + D(t) > S(t)
 
 then:
 
-dC/dt < 0  
+dC/dt < 0
 
-⇒ structure decays  
+Operational consequences:
 
-This holds independently of scale.
+- structural degradation accumulates;
+
+- regenerative continuity weakens;
+
+- internally agreed coherent dynamics decay;
+
+- fragmentation propagates;
+
+- structural drift increases over time.
+
+This condition is scale-independent.
+
+The mechanisms differ.
+
+The structural law remains invariant.
 
 ---
 
-## 7. Why It Cannot Be Otherwise
+## 9. Why It Cannot Be Otherwise
 
-Any structure must maintain itself
-against load and dissipation.
+Any structured system must dynamically maintain itself against destabilizing pressure and dissipation.
 
-If coherence does not exceed load:
+Static existence alone is insufficient.
 
-the system cannot persist.
+If regenerative continuity does not exceed destabilizing load:
 
-Thus:
+- structural integrity weakens;
+
+- coherent subsystem dynamics fragment;
+
+- operational continuity decays;
+
+- retained organization becomes impossible.
+
+Therefore:
 
 C(t) > P(t)
 
-is a necessary condition for existence
-of structured systems.
+is a necessary condition for dynamically retained structured existence.
 
 ---
 
-## 8. Structural Insight
+## 10. Structural Insight
 
-EDS is not domain-specific.
+EDS/EDC is not domain-specific.
 
-It is a constraint on:
+It is a structural constraint acting on organization as such.
 
-structure as such  
+The framework defines the operational boundary between:
 
-It defines the boundary between:
+- retained existence;
 
-- existence  
-- transformation  
-- collapse  
+- transformation;
+
+- fragmentation;
+
+- collapse;
+
+- and dynamically stable continuity.
+
+A structure may appear externally stable while internally losing:
+
+- regenerative continuity;
+
+- subsystem compatibility;
+
+- and internally agreed coherent dynamics.
+
+Real endogenous stability is determined not by external appearance alone,
+
+but by whether internally agreed coherent subsystem dynamics remain stronger than destabilizing dissipation over operational time.
 
 ---
 
-## 9. Conclusion
+## 11. Conclusion
 
-The continuum of systems follows a single law:
+The continuum of systems follows a common structural law.
 
-structure exists only while coherence exceeds load.
+A structured system exists as a dynamically retained organization only while:
 
-EDS defines a universal structural condition
-across all levels of reality.
+- regenerative synthesis;
+
+- retained structural continuity;
+
+- internally agreed coherent subsystem dynamics;
+
+- and operational integrity
+
+remain stronger than destabilizing load and dissipation.
+
+EDS/EDC defines a universal structural constraint acting across scales of organized reality.
