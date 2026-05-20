@@ -1,4 +1,5 @@
-# Experimental Protocol  
+# Experimental Protocol
+
 Physical Validation of EDS/EDC via Synchronization
 
 ---
@@ -7,17 +8,23 @@ Physical Validation of EDS/EDC via Synchronization
 
 This protocol defines how to test the EDS/EDC framework in a physical or laboratory-like setting.
 
-The goal is to verify whether coherent forcing can increase measurable coherence and shift a nonlinear dissipative system into a stable regime.
+The goal is to verify whether coherent forcing can increase measurable structural coherence and shift a nonlinear dissipative system into a dynamically stable synchronized regime.
 
 ---
 
 ## 2. Core Hypothesis
 
-A nonlinear dissipative system becomes more stable when coherence increases faster than load and dissipation.
+A nonlinear dissipative system becomes more stable when internally coordinated dynamics increase faster than destabilizing load and dissipation.
 
 In EDS terms:
 
 C(t) > P(t)
+
+Where:
+
+- C(t) represents internally retained structural coherence, coordinated subsystem dynamics, regenerative continuity, and the effective capacity of the system to preserve synchronized operational organization over time.
+
+- P(t) represents destabilizing load, extraction pressure, dissipation pressure, or external destabilizing demand acting against structural retention.
 
 Operationally:
 
@@ -33,10 +40,13 @@ plasma or plasma-like oscillator medium
 
 Examples:
 
-- low-temperature plasma  
-- ionized gas discharge  
-- coupled oscillator simulation with plasma parameters  
-- electronic oscillator array as laboratory proxy  
+- low-temperature plasma
+
+- ionized gas discharge
+
+- coupled oscillator simulation with plasma parameters
+
+- electronic oscillator array as laboratory proxy
 
 ---
 
@@ -48,12 +58,17 @@ R(t) = |(1/N) Σ exp(iφⱼ)|
 
 Where:
 
-- R → 1 indicates synchronized coherent regime  
-- R → 0 indicates incoherent regime  
+- R → 1 indicates synchronized coherent regime
+
+- R → 0 indicates incoherent regime
 
 In this protocol:
 
-R(t) serves as a measurable proxy for C(t).
+R(t) serves as a measurable operational proxy for C(t).
+
+R(t) does not represent the full structural state directly.
+
+Instead, it measures the degree of coordinated phase synchronization between interacting subsystems and therefore provides an experimentally observable indicator of internal structural coherence and synchronization quality.
 
 ---
 
@@ -65,11 +80,15 @@ F_ext sin(ω_ext t − φᵢ)
 
 Control parameters:
 
-- forcing frequency ω_ext  
-- forcing amplitude F_ext  
-- pulse duration  
-- noise level η  
-- coupling strength K  
+- forcing frequency ω_ext
+
+- forcing amplitude F_ext
+
+- pulse duration
+
+- noise level η
+
+- coupling strength K
 
 ---
 
@@ -93,10 +112,13 @@ F_ext = 0
 
 Measure:
 
-- R_final  
-- R_max  
-- t_conv  
-- noise response  
+- R_final
+
+- R_max
+
+- t_conv
+
+- noise response
 
 ---
 
@@ -108,9 +130,11 @@ Apply forcing near resonance:
 
 Measure:
 
-- R(t)  
-- t_conv  
-- phase distribution  
+- R(t)
+
+- t_conv
+
+- phase distribution
 
 ---
 
@@ -130,9 +154,11 @@ Apply pulsed forcing.
 
 Measure:
 
-- onset of synchronization  
-- stability after pulse  
-- decay rate  
+- onset of synchronization
+
+- stability after pulse
+
+- decay rate
 
 ---
 
@@ -156,8 +182,9 @@ R_threshold ≈ 0.7
 
 Interpretation:
 
-- R ≥ threshold → coherent regime  
-- R < threshold → incoherent regime  
+- R ≥ threshold → coherent synchronized regime
+
+- R < threshold → incoherent regime
 
 ---
 
@@ -165,11 +192,15 @@ Interpretation:
 
 If theory holds:
 
-- R(t) increases under forcing  
-- t_conv decreases  
-- t_ret increases  
-- system tolerates moderate noise  
-- resonance window exists  
+- R(t) increases under forcing
+
+- t_conv decreases
+
+- t_ret increases
+
+- system tolerates moderate noise
+
+- resonance window exists
 
 ---
 
@@ -177,11 +208,15 @@ If theory holds:
 
 Theory not supported if:
 
-- R(t) does not increase  
-- no change in convergence  
-- no retention after forcing  
-- behavior indistinguishable from noise  
-- no resonance response  
+- R(t) does not increase
+
+- no change in convergence
+
+- no retention after forcing
+
+- behavior indistinguishable from noise
+
+- no resonance response
 
 ---
 
@@ -189,13 +224,17 @@ Theory not supported if:
 
 Coherent forcing:
 
-- increases C(t) (via R)  
-- reduces effective dissipation  
-- may reduce effective load via alignment  
+- increases coordinated structural coherence C(t) through synchronized subsystem interaction
+
+- reduces effective dissipation
+
+- may reduce effective load via dynamic alignment
 
 Thus:
 
 C(t) > P(t)
+
+The system retains synchronized operational continuity faster than destabilizing processes disrupt it.
 
 ---
 
@@ -205,9 +244,11 @@ Near boundary:
 
 C ≈ P
 
-System becomes sensitive.
+System becomes dynamically sensitive.
 
-Forcing drives transition into synchronized regime.
+Small perturbations may produce large structural effects.
+
+Coherent forcing drives transition into synchronized regime.
 
 ---
 
@@ -215,23 +256,33 @@ Forcing drives transition into synchronized regime.
 
 Record:
 
-- R(t)  
-- φᵢ(t)  
-- ω_ext  
-- F_ext  
-- η  
-- t_conv  
-- t_ret  
+- R(t)
+
+- φᵢ(t)
+
+- ω_ext
+
+- F_ext
+
+- η
+
+- t_conv
+
+- t_ret
 
 ---
 
 ## 14. Minimal Plots
 
-1. R(t) baseline vs forced  
-2. phase distribution  
-3. t_conv vs frequency  
-4. t_ret vs noise  
-5. resonance window  
+1. R(t) baseline vs forced
+
+2. phase distribution
+
+3. t_conv vs frequency
+
+4. t_ret vs noise
+
+5. resonance window
 
 ---
 
@@ -239,11 +290,15 @@ Record:
 
 Must specify:
 
-- parameters  
-- initial conditions  
-- forcing  
-- resolution  
-- repetitions  
+- parameters
+
+- initial conditions
+
+- forcing
+
+- resolution
+
+- repetitions
 
 Otherwise result is not reproducible.
 
@@ -255,6 +310,8 @@ This protocol tests whether coherent forcing can move a nonlinear system into a 
 
 If confirmed:
 
-EDS → stability via coherence  
-EDC → transition dynamics  
+EDS → stability via coordinated structural coherence
+
+EDC → transition dynamics
+
 Scaling → delayed nonlinear response
