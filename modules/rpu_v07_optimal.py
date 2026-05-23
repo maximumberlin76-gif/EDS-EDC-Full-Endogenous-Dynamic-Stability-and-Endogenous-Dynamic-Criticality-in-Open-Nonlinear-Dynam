@@ -6,11 +6,59 @@ RPU · Resonant Processing Unit (v0.7 OPTIMAL)
 Reference implementation for an EDS/EDC-inspired resonant allocation engine.
 
 Includes:
-- spectral coherence metrics
+- spectral-phase structural compatibility metrics
 - ethics / stress / non-parasitism gates
 - civilization and life-support energy floors
 - optional resonant oscillator core
 - deterministic demo scenario
+
+Core RPU principle:
+RPU is called a Resonant Processing Unit because its logic is not based
+on static binary computation alone.
+
+Its operational principle is phase-resonant structural alignment:
+the system evaluates whether a pattern can enter a compatible, retained,
+coherence-supporting regime rather than remain a fragmented static signal.
+
+In this sense, RPU belongs to a post-binary computational direction:
+not only 0/1 switching, but phase locking, resonance order, spectral
+compatibility, and controlled synchronization as mechanisms of structural
+processing.
+
+EDS/EDC distinction:
+Synchronization, phase locking, resonance order, spectral compatibility,
+and structural phase metrics may support endogenous structural coherence,
+but they do not directly define C(t).
+
+C(t) is the parameter of general endogenous structural coherence.
+
+Physical / biological distinction:
+In physical media such as plasma, stabilization may be achieved through
+external resonant forcing:
+
+external resonant forcing → phase locking → synchronization support → possible stabilization.
+
+Plasma cannot choose its own stabilizing vector. It is externally coupled
+to imposed physical conditions.
+
+In biological, human, and social systems, stabilization cannot be reduced
+to imposed synchronization. A human or social system is only partially
+synchronized with external conditions and retains the capacity for
+endogenous vector selection.
+
+Therefore, biological / human / social stabilization follows a different
+operational chain:
+
+endogenous vector selection → internal agreement → coherent synchronization
+→ endogenous structural coherence → dynamic stability.
+
+External forced synchronization of human or social systems may increase
+visible order, but it can degrade C(t) if it suppresses autonomy, meaning,
+recovery, ethics, or functional subsystem compatibility.
+
+For biological and social systems, stable coherence must emerge through
+internal agreement, meaning, ethics, recovery, and self-selected coherent
+direction.
 
 License: Apache-2.0
 """
