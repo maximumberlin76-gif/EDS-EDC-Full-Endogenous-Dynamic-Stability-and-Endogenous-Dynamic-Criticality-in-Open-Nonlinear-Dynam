@@ -63,7 +63,7 @@ class ArtificialDissipationMonitor:
 
         drop = coherence[-2] - coherence[-1]
 
-        detected = (slope > 0.005) and (drop > 0.15)
+        detected = (slope < -0.005) and (drop > 0.15)
 
         return {
             "detected": bool(detected),
