@@ -2,11 +2,9 @@
 
 Universal Structural Constraint
 
----
-
 ## 1. System
 
-The continuum represents reality as a hierarchy of interconnected nonlinear dynamical systems across multiple scales:
+The continuum represents reality as a hierarchy of interconnected open nonlinear dynamical systems across multiple scales:
 
 - physical;
 
@@ -18,55 +16,43 @@ The continuum represents reality as a hierarchy of interconnected nonlinear dyna
 
 - civilizational;
 
-- and complex adaptive organizational systems.
+- technological;
 
-Each level operates as an open nonlinear dissipative structure interacting with other scales through coupled subsystem dynamics.
+- ecological;
+
+- organizational;
+
+- and complex adaptive systems.
+
+Each level operates as an open nonlinear dissipative structure interacting with other levels through coupled subsystem dynamics.
 
 No level exists in complete isolation.
 
 Subsystem dynamics propagate structurally across scales over operational time.
 
----
+Within EDS/EDC, the continuum is interpreted not as a collection of separate static objects, but as a multi-scale field of dynamically retained structures and processes.
+
+Each structured level may preserve formal structural existence while already losing real dynamic stability internally.
 
 ## 2. EDS Mapping
 
-S(t) — synthesis:
+S(t) — instantaneous intensity of synthesis of positive structural work through structure formation, adaptive organization, continuity-preserving processes, coherent subsystem integration, repair, renewal, and formation of organized dynamics at time t.
 
-- structure formation;
+W_S(T) — accumulated positive structural work over an operational time interval T, associated with retained organization, structural formation, continuity-preserving dynamics, adaptive capacity, and cross-scale structural integration.
 
-- regeneration;
+P(t) — destabilizing pressure: extraction burden, perturbation load, fragmentation pressure, operational stress, environmental pressure, external destabilizing influence, or internal destabilizing load acting against structural continuity at time t.
 
-- adaptive organization;
+D(t) — irreversible structural losses: entropy accumulation, degradation, irreversible structural loss, decoherence effects, destabilizing dispersion processes, and unrecoverable loss of organization at time t.
 
-- coherent subsystem integration;
+Δ(t) — instantaneous structural balance:
 
-- continuity-preserving creation processes.
+Δ(t) = S(t) − P(t) − D(t)
 
-P(t) — load:
+C(t) — parameter of general endogenous structural coherence determining the level of structural integrity and dynamic stability over time.
 
-- destabilizing pressure;
+Structural regeneration is a continuous endogenous process of restoring and maintaining structural integrity and coherence.
 
-- extraction burden;
-
-- perturbation load;
-
-- fragmentation pressure;
-
-- operational stress acting against structural continuity.
-
-D(t) — dissipation:
-
-- entropy accumulation;
-
-- degradation;
-
-- coherence decay;
-
-- irreversible structural loss;
-
-- destabilizing dispersion processes.
-
-C(t) — retained structural continuity and internally agreed coherent subsystem dynamics maintained over operational time.
+Regeneration supports C(t), but is not identical to C(t).
 
 Within EDS/EDC:
 
@@ -74,232 +60,112 @@ coherence does not mean superficial synchronization alone.
 
 Coherence means:
 
-- retained internally agreed coherent dynamics between interacting subsystems;
-
-- regenerative structural continuity;
+- coherence of internal self-organization processes;
 
 - compatibility of subsystem trajectories;
 
-- preservation of operational integrity under changing conditions;
+- preservation of structural integrity under changing conditions;
 
-- and the capacity of the structure to maintain itself dynamically over time.
+- capacity to maintain dynamically retained organization over time;
 
----
+- ability to resist fragmentation, destabilizing pressure, and irreversible losses;
 
-## 3. Universality
+- continuity of structural interaction across scales.
 
-At every scale:
+Synchronization may support coherence, but synchronization is not identical to C(t).
 
-dC/dt = S − D
+## 3. Structural Existence Condition
 
-and dynamically retained stability requires:
-
-C(t) > P(t)
-
-Operational meaning:
-
-- regenerative structural continuity must remain stronger than destabilizing pressure;
-
-- internally agreed coherent subsystem dynamics must outpace fragmentation and dissipation.
-
-This condition is scale-independent.
-
----
-
-## 4. Structural Existence Condition
-
-A structured system continues to exist if:
+A structured system continues to exist formally if:
 
 Δ(t) = S(t) − P(t) − D(t) > 0
 
 Operational meaning:
 
-- synthesis exceeds destabilizing load and dissipation;
+- instantaneous synthesis of positive structural work exceeds destabilizing pressure and irreversible structural losses;
 
 - the structure preserves positive formation balance;
 
-- organizational continuity remains possible.
+- organizational continuity remains formally possible;
 
-This condition defines structural persistence.
+- the structure continues to exist as an organized form.
 
-A structure may continue to exist externally while internally losing coherent subsystem integrity.
+This condition defines formal structural persistence.
 
----
+However, positive Δ(t) does not by itself prove real dynamic stability over time.
+
+A structure may continue to exist externally while internally losing general endogenous structural coherence, regenerative capacity, subsystem compatibility, and real dynamic stability.
+
+## 4. Accumulated Positive Structural Work
+
+Accumulated positive structural work over an operational time interval is described by:
+
+W_S(T) = ∫[t₀ → t₁] S(t) dt
+
+Operational meaning:
+
+- W_S(T) describes accumulated positive structural work over time;
+
+- W_S(T) may support structural integrity, self-organization, adaptive continuity, and endogenous structural coherence;
+
+- W_S(T) does not replace C(t);
+
+- W_S(T) does not replace the dynamic stability criterion C(t) > P(t).
+
+A system may accumulate structural output while losing endogenous coherence.
+
+Therefore, accumulation alone does not guarantee real dynamic stability.
 
 ## 5. Dynamic Stability Condition
 
-A structured system remains dynamically stable if:
+A structured system remains dynamically stable over time if:
 
 C(t) > P(t)
 
 Operational meaning:
 
-- retained structural continuity exceeds destabilizing pressure;
+- general endogenous structural coherence exceeds destabilizing pressure;
 
-- internally agreed coherent subsystem dynamics remain stronger than fragmentation;
+- internal self-organization processes remain coherent enough to preserve structural integrity;
 
-- regenerative continuity persists over operational time.
+- subsystem trajectories remain compatible;
 
-This condition defines dynamically retained structural stability.
+- regenerative capacity remains supported;
 
----
+- destabilizing pressure does not exceed the structure’s coherence-retention capacity;
 
-## 6. Cross-Scale Invariance
+- the structure remains dynamically stable over operational time.
 
-The same structural condition applies across scales:
+This condition defines real dynamically retained structural stability.
 
-- atoms → bound-state continuity;
+## 6. Difference Between Δ(t) and C(t)
 
-- biological systems → regenerative integrity;
+Δ(t) > 0 means:
 
-- cognition → coherent functional continuity;
+- the structure may continue to exist as a formal organized system;
 
-- civilizations → retained subsystem compatibility;
+- positive structural formation balance is still present;
 
-- complex adaptive systems → coordinated operational persistence.
+- external organization may still be observable;
 
-The specific mechanisms differ across scales.
+- formal structural existence continues.
 
-The structural constraint remains invariant.
+C(t) > P(t) means:
 
-Thus EDS/EDC defines a scale-invariant structural law.
+- the structure preserves general endogenous structural coherence;
 
----
+- internal subsystem dynamics remain coherent enough to preserve integrity;
 
-## 7. Critical Boundary
+- regeneration remains sufficiently supported by coherent self-organization;
 
-At any scale:
+- destabilizing pressure does not exceed dynamic stability capacity;
 
-C(t) → P(t)
+- the system remains dynamically stable over time.
 
-defines a dynamically critical regime.
+A possible regime is:
 
-Near this boundary:
+Δ(t) > 0, but C(t) ≤ P(t)
 
-- instability sensitivity increases;
+This means:
 
-- fragmentation propagates faster;
-
-- retention weakens;
-
-- subsystem incompatibility accumulates;
-
-- phase transition dynamics emerge.
-
-Operational outcomes may include:
-
-- transformation;
-
-- collapse;
-
-- reorganization;
-
-- or transition into a new operational regime.
-
-This corresponds to the EDC-sensitive region.
-
----
-
-## 8. Failure Mode
-
-If:
-
-P(t) + D(t) > S(t)
-
-then:
-
-dC/dt < 0
-
-Operational consequences:
-
-- structural degradation accumulates;
-
-- regenerative continuity weakens;
-
-- internally agreed coherent dynamics decay;
-
-- fragmentation propagates;
-
-- structural drift increases over time.
-
-This condition is scale-independent.
-
-The mechanisms differ.
-
-The structural law remains invariant.
-
----
-
-## 9. Why It Cannot Be Otherwise
-
-Any structured system must dynamically maintain itself against destabilizing pressure and dissipation.
-
-Static existence alone is insufficient.
-
-If regenerative continuity does not exceed destabilizing load:
-
-- structural integrity weakens;
-
-- coherent subsystem dynamics fragment;
-
-- operational continuity decays;
-
-- retained organization becomes impossible.
-
-Therefore:
-
-C(t) > P(t)
-
-is a necessary condition for dynamically retained structured existence.
-
----
-
-## 10. Structural Insight
-
-EDS/EDC is not domain-specific.
-
-It is a structural constraint acting on organization as such.
-
-The framework defines the operational boundary between:
-
-- retained existence;
-
-- transformation;
-
-- fragmentation;
-
-- collapse;
-
-- and dynamically stable continuity.
-
-A structure may appear externally stable while internally losing:
-
-- regenerative continuity;
-
-- subsystem compatibility;
-
-- and internally agreed coherent dynamics.
-
-Real endogenous stability is determined not by external appearance alone,
-
-but by whether internally agreed coherent subsystem dynamics remain stronger than destabilizing dissipation over operational time.
-
----
-
-## 11. Conclusion
-
-The continuum of systems follows a common structural law.
-
-A structured system exists as a dynamically retained organization only while:
-
-- regenerative synthesis;
-
-- retained structural continuity;
-
-- internally agreed coherent subsystem dynamics;
-
-- and operational integrity
-
-remain stronger than destabilizing load and dissipation.
-
-EDS/EDC defines a universal structural constraint acting across scales of organized reality.
+the structure still exists externally, but its real internal dynamic stability over time is already disrupted.
