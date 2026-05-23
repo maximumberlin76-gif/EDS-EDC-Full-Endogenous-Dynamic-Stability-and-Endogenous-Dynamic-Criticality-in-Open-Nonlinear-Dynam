@@ -2,15 +2,21 @@
 
 Minimal Reproducible Oscillator Model
 
----
-
 ## 1. Purpose
 
-This document defines a minimal simulation setup to reproduce synchronization dynamics corresponding to EDS/EDC.
+This document defines a minimal simulation setup to reproduce synchronization dynamics relevant to the EDS/EDC framework.
 
-The model tests whether coordinated subsystem dynamics can accumulate and retain structural integrity faster than destabilizing dissipation propagates over time.
+The model tests whether measurable synchronization can emerge, be retained, and operationally support endogenous structural coherence in a nonlinear dissipative system.
 
----
+This simulation does not treat synchronization as identical to coherence.
+
+R(t) measures synchronization.
+
+C(t) measures general endogenous structural coherence.
+
+Real dynamic stability remains governed by:
+
+C(t) > P(t)
 
 ## 2. Model
 
@@ -18,29 +24,27 @@ Use a Kuramoto-type system:
 
 dφᵢ/dt = ωᵢ + (K/N) Σⱼ sin(φⱼ − φᵢ) + F_ext sin(ω_ext t − φᵢ) + η
 
----
+where:
+
+- φᵢ(t) — phase of the i-th oscillator;
+- ωᵢ — natural frequency of the i-th oscillator;
+- K — coupling strength;
+- F_ext — external coherent forcing amplitude;
+- ω_ext — external forcing frequency;
+- η — stochastic operational noise / phase dispersion.
 
 ## 3. Initialization
 
-- N = 100–1000 oscillators
-
-- ωᵢ sampled from normal distribution
-
-- φᵢ(0) uniformly random in [0, 2π]
-
----
+- N = 100–1000 oscillators;
+- ωᵢ sampled from a normal distribution;
+- φᵢ(0) uniformly random in [0, 2π].
 
 ## 4. Parameters
 
-- K: 0.1 → 5.0
-
-- F_ext: 0 → small (0.1–1.0)
-
-- ω_ext ≈ mean(ωᵢ)
-
-- η: small noise (0.01–0.1)
-
----
+- K: 0.1 → 5.0;
+- F_ext: 0 → small forcing range, for example 0.1–1.0;
+- ω_ext ≈ mean(ωᵢ);
+- η: small noise, for example 0.01–0.1.
 
 ## 5. Measurement
 
@@ -50,21 +54,21 @@ R(t) = |(1/N) Σ exp(iφᵢ)|
 
 Track:
 
-- R(t)
-
-- convergence time t_conv
-
-- retention time t_ret
+- R(t);
+- convergence time t_conv;
+- retention time t_ret;
+- phase dispersion;
+- response after forcing removal.
 
 Operational meaning:
 
 - R(t) measures synchronization of subsystem phases;
+- R(t) is a measurable synchronization proxy;
+- R(t) may indicate operational support for C(t);
+- R(t) is not identical to C(t);
+- synchronization is not identical to coherence.
 
-- R(t) is a measurable proxy for coordinated structural integrity;
-
-- R(t) supports interpretation of C(t), but does not replace the full meaning of C(t).
-
----
+C(t) remains the parameter of general endogenous structural coherence determining the level of structural integrity and dynamic stability over time.
 
 ## 6. Procedure
 
@@ -78,37 +82,43 @@ F_ext > 0
 
 3. Compare:
 
-- R(t)
-
-- t_conv
+- R(t);
+- t_conv;
+- R_max;
+- phase dispersion.
 
 4. Turn off forcing and measure:
 
 t_ret
 
----
+where:
+
+t_ret — duration during which R(t) remains above the selected synchronization threshold after forcing removal.
 
 ## 7. Expected Behavior
 
-- With forcing → faster synchronization
+Expected synchronization-layer behavior:
 
-- Higher R_max
-
-- Longer retention after forcing removal
+- with forcing → faster synchronization;
+- higher R_max;
+- lower effective phase dispersion;
+- longer retention after forcing removal;
+- broader synchronization accessibility under suitable coupling and noise conditions.
 
 Operational interpretation:
 
-- synchronization should accumulate faster than destabilizing dispersion;
+- synchronization may become accessible faster than destabilizing phase dispersion disrupts it;
+- retained synchronization may persist after forcing removal;
+- retained synchronization may support endogenous structural coherence;
+- retained synchronization does not itself prove real dynamic stability.
 
-- retained synchronization should persist after forcing removal;
+The EDS criterion remains:
 
-- structural regeneration must remain ahead of dissipation over time.
-
----
+C(t) > P(t)
 
 ## 8. Interpretation
 
-R(t) serves as a measurable synchronization proxy supporting C(t).
+R(t) serves as a measurable synchronization proxy and support indicator.
 
 Within this framework:
 
@@ -116,49 +126,70 @@ C(t)
 
 represents:
 
-- structural regeneration;
+- general endogenous structural coherence;
+- coherence of internal processes of structural self-organization;
+- the parameter determining structural integrity and dynamic stability over time.
 
-- retained structural continuity;
+Structural regeneration is a continuous endogenous process of restoring and maintaining structural integrity and coherence over time.
 
-- restorative structural capacity.
+Regeneration supports C(t), but is not identical to C(t).
 
-The observed behavior maps to:
+Synchronization may support C(t), but is not identical to C(t).
+
+The observed synchronization behavior maps to the support layer of:
 
 C(t) > P(t)
 
 Operational interpretation:
 
-- accumulated structural integrity must exceed destabilizing dissipation;
-
-or equivalently:
-
-- regeneration of structural integrity must outpace structural dissipation over time.
-
----
+- synchronization may support endogenous structural coherence;
+- retained synchronization may reduce effective phase dispersion;
+- real dynamic stability requires general endogenous structural coherence to exceed destabilizing pressure;
+- R(t) alone does not prove C(t) > P(t).
 
 ## 9. Minimal Visualization
 
 Plot:
 
-- R(t) vs time
+- R(t) vs time;
+- φᵢ(t) phase distribution;
+- baseline R(t) vs forced R(t);
+- t_conv vs forcing frequency;
+- t_ret after forcing removal.
 
-- φᵢ(t) phase distribution
+## 10. EDS/EDC Interpretation
 
----
+EDS:
 
-## 10. Conclusion
+C(t) > P(t)
+
+defines real dynamic stability over time.
+
+EDC:
+
+C(t) ≈ P(t)
+
+defines the critical boundary where the system becomes sensitive to parameter drift, forcing, noise, and regime transition.
+
+In this simulation:
+
+R(t)
+
+is used only as a measurable synchronization indicator.
+
+It can support the interpretation of synchronization accessibility, but it does not replace C(t).
+
+## 11. Conclusion
 
 This simulation demonstrates:
 
 - emergence of synchronization;
+- increased synchronization accessibility under coherent forcing;
+- reduced convergence time;
+- possible retention of synchronized dynamics after forcing removal;
+- dependence on forcing, coupling, and noise.
 
-- accumulation of coordinated structural integrity;
-
-- transition toward a stable operational regime;
-
-- dependence on forcing, coupling, and dissipation.
-
-EDS/EDC is validated through observable synchronization behavior only if retained structural continuity persists beyond transient forcing.
+EDS/EDC is supported through observable synchronization behavior only at the synchronization-support layer.
 
 The central condition remains:
 
@@ -166,4 +197,18 @@ C(t) > P(t)
 
 meaning:
 
-- structural regeneration and retained continuity exceed destabilizing structural dissipation over operational time.
+general endogenous structural coherence exceeds destabilizing structural pressure over operational time.
+
+Final distinction:
+
+R(t) measures synchronization.
+
+C(t) measures general endogenous structural coherence.
+
+Regeneration supports C(t), but is not identical to C(t).
+
+Synchronization may support C(t), but is not identical to C(t).
+
+Real dynamic stability over time remains governed by:
+
+C(t) > P(t)
