@@ -2,65 +2,85 @@
 
 Reproducibility and Stability Testing
 
----
-
 ## 1. Purpose
 
 This document defines how to test the EDS/EDC framework in a reproducible way.
 
-The goal is not to predict exact events.
+The goal is not to predict exact isolated events.
 
-The goal is to verify whether a system maintains retained structural stability under changing conditions and whether structural regeneration remains ahead of destabilizing dissipation over operational time.
+The goal is to verify whether a system preserves formal structural existence, whether measurable synchronization can support endogenous structural coherence, and whether real dynamic stability remains accessible under changing operational conditions.
 
----
-
-## 2. Core Condition
-
-The system is stable if:
+The central EDS condition remains:
 
 C(t) > P(t)
 
-or equivalently:
+## 2. Core Conditions
 
-∫(S − P − D) dt > 0
+Formal structural existence is supported by positive structural balance:
 
-over a defined time interval.
+Δ(t) = S(t) − P(t) − D(t)
 
-Where:
+where:
 
-- C(t) represents retained structural continuity, coordinated subsystem integrity, and regenerative structural capacity;
+- S(t) — instantaneous intensity of synthesis of positive structural work;
+- P(t) — destabilizing pressure, extraction pressure, dissipation pressure, or structural destabilization;
+- D(t) — irreversible structural losses and entropy-producing degradation.
 
-- P(t) represents destabilizing load, extraction pressure, dissipation pressure, or structural destabilization acting against retained integrity;
+Accumulated positive structural work over an operational time interval is:
 
-- S(t) represents structural synthesis and organization formation;
+W_S(T) = ∫[t₀ → t₁] S(t) dt
 
-- D(t) represents irreversible structural dissipation and loss propagation.
+Formal structural existence over a defined interval is supported if:
 
-Operational meaning:
+∫[t₀ → t₁] (S(t) − P(t) − D(t)) dt > 0
 
-- structural regeneration and coordinated integrity accumulation must exceed destabilizing dissipation over time.
+Real dynamic stability over time requires:
 
----
+C(t) > P(t)
+
+where:
+
+- C(t) — parameter of general endogenous structural coherence determining the level of structural integrity and dynamic stability over time;
+- P(t) — destabilizing structural pressure.
+
+Important distinction:
+
+∫(S(t) − P(t) − D(t))dt > 0
+
+is not equivalent to:
+
+C(t) > P(t)
+
+The first condition supports formal structural existence.
+
+The second condition defines real dynamic stability over time.
 
 ## 3. One-Step Test
 
-For a discrete step Δt:
+For a discrete step Δt, formal structural balance is tested by:
 
-C(t + Δt) ≥ C(t)
-
-Equivalent form:
-
-∫[t → t + Δt] (S − P − D) dt ≥ 0
+∫[t → t + Δt] (S(t) − P(t) − D(t)) dt ≥ 0
 
 Operational interpretation:
 
-- retained structural integrity must not decrease during the tested interval;
+- positive step balance supports formal structural existence during the tested interval;
+- this does not by itself prove real dynamic stability.
 
-- regeneration and synchronization must compensate dissipation during each operational step.
+Real dynamic stability for the same interval requires:
 
-If this condition fails, stability is not guaranteed even for one step.
+C(t) > P(t)
 
----
+and preferably:
+
+C(t + Δt) ≥ C(t)
+
+under bounded destabilizing pressure.
+
+Operational interpretation:
+
+- general endogenous structural coherence must not degrade below destabilizing pressure;
+- regeneration may support C(t), but is not identical to C(t);
+- if endogenous processes become decoherent, regenerative capacity decreases and C(t) may fall.
 
 ## 4. Oscillator-Based Test
 
@@ -68,69 +88,78 @@ Use the order parameter:
 
 R(t) = |(1/N) Σ exp(iφⱼ)|
 
-R(t) serves as an operational synchronization proxy supporting C(t).
+R(t) serves as a measurable synchronization proxy and support indicator.
 
-R(t) measures coordinated phase synchronization between interacting subsystems and provides an experimentally measurable indicator of synchronized structural dynamics.
+R(t) measures coordinated phase synchronization between interacting subsystems.
 
-R(t) does not fully replace the meaning of C(t), but supports experimental observation of coordinated subsystem integrity.
+Important distinction:
 
----
+- R(t) measures synchronization;
+- C(t) measures general endogenous structural coherence;
+- R(t) may support interpretation of synchronization accessibility;
+- R(t) is not identical to C(t);
+- synchronization is not identical to coherence.
+
+Real dynamic stability remains governed by:
+
+C(t) > P(t)
 
 ## 5. Stability Indicators
 
-A system is considered stable if:
+A synchronization-support layer is considered operationally stronger if:
 
 - R(t) increases or remains high;
-
 - convergence time decreases;
-
 - retention time remains significant after forcing removal;
-
 - noise does not destroy synchronization immediately;
-
-- coordinated subsystem dynamics persist despite perturbation.
+- coordinated subsystem phase dynamics persist despite perturbation.
 
 Operational interpretation:
 
-- synchronized structural continuity remains stronger than destabilizing dispersion.
+- synchronized phase dynamics may support endogenous structural coherence;
+- reduced phase dispersion may support retained operational coherence;
+- retained synchronization does not itself prove full real dynamic stability.
 
----
+The decisive EDS criterion remains:
+
+C(t) > P(t)
 
 ## 6. Test Parameters
 
 Vary:
 
 - coupling strength K;
-
 - external forcing F_ext;
-
 - forcing frequency ω_ext;
-
 - noise η;
-
-- number of oscillators N.
-
----
+- number of oscillators N;
+- initial phase distribution;
+- forcing duration;
+- post-forcing observation interval.
 
 ## 7. Expected Result
 
-If coherent forcing supports synchronized structural retention:
+If coherent forcing supports the synchronization layer:
 
 - R(t) increases;
-
 - t_conv decreases;
+- t_ret increases;
+- effective phase dispersion decreases;
+- retained synchronization persists after forcing removal.
 
-- t_ret increases.
+This supports the operational possibility that synchronization may contribute to C(t).
 
-This corresponds to:
+It does not prove that R(t) = C(t).
+
+EDS interpretation:
+
+real dynamic stability over time requires:
 
 C(t) > P(t)
 
 Operational meaning:
 
-- regeneration and retained structural continuity outpace destabilizing dissipation.
-
----
+general endogenous structural coherence must exceed destabilizing structural pressure over operational time.
 
 ## 8. Failure Condition
 
@@ -138,36 +167,93 @@ If:
 
 - R(t) decreases;
 
-or
+or:
 
 - R(t) fails to remain above threshold;
 
-then the system does not maintain synchronized structural integrity.
+or:
 
-This corresponds to:
+- retained synchronization collapses immediately after forcing removal;
 
-C(t) ≤ P(t)
+or:
 
-Operational meaning:
+- behavior remains indistinguishable from noise;
 
-- destabilizing dissipation equals or exceeds regenerative structural retention.
+then the synchronization-support layer is not validated.
 
----
+This does not automatically prove that the full system has C(t) ≤ P(t), because R(t) is only a synchronization proxy.
 
-## 9. Conclusion
+However, it shows that synchronization does not provide measurable support for retained endogenous structural coherence in the tested regime.
+
+Operational interpretation:
+
+- destabilizing dispersion dominates measured phase synchronization;
+- synchronization support for C(t) is weak or absent;
+- retained coherent dynamics are not experimentally accessible under the tested parameters.
+
+## 9. EDS/EDC Interpretation
+
+EDS:
+
+C(t) > P(t)
+
+defines real dynamic stability over time.
+
+Formal structural existence is described separately by:
+
+Δ(t) = S(t) − P(t) − D(t)
+
+Accumulated positive structural work is described by:
+
+W_S(T) = ∫[t₀ → t₁] S(t) dt
+
+EDC:
+
+C(t) ≈ P(t)
+
+defines the critical boundary where the system becomes sensitive to parameter drift, forcing, noise, and regime transition.
+
+Oscillator synchronization:
+
+R(t)
+
+provides a measurable synchronization proxy.
+
+R(t) may support the interpretation of synchronization accessibility, but it does not replace C(t).
+
+## 10. Conclusion
 
 The validation protocol connects:
 
 - EDS stability condition;
-
 - EDC transition dynamics;
-
 - oscillator synchronization;
+- measurable synchronization proxies;
+- retained synchronization behavior;
+- structural coherence support;
+- reproducible perturbation testing.
 
-- measurable structural synchronization proxies;
+The theory is tested through:
 
-- retained structural continuity.
+- regime formation;
+- synchronization persistence;
+- retention behavior;
+- response to noise;
+- stability under perturbation;
+- transition behavior near criticality.
 
-The theory is testable through regime formation, synchronization persistence, retention behavior, and structural stability under perturbation.
+Final distinction:
 
-The framework evaluates whether coordinated subsystem integrity and regenerative continuity remain stronger than destabilizing dissipation over operational time.
+R(t) measures synchronization.
+
+C(t) measures general endogenous structural coherence.
+
+Regeneration supports C(t), but is not identical to C(t).
+
+Synchronization may support C(t), but is not identical to C(t).
+
+Formal structural existence is supported by positive structural balance.
+
+Real dynamic stability over time remains governed by:
+
+C(t) > P(t)
