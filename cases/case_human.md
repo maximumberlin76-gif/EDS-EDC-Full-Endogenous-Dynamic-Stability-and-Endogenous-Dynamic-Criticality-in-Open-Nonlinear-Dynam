@@ -2,8 +2,6 @@
 
 Cognition, Meaning, and Structural Stability
 
----
-
 ## 1. System
 
 A human is a multi-layer open nonlinear dissipative system composed of interacting levels:
@@ -18,107 +16,67 @@ A human is a multi-layer open nonlinear dissipative system composed of interacti
 
 - social;
 
-- and meaning-forming dynamics.
+- meaning-forming dynamics;
 
-The human system maintains structural continuity only while internally agreed coherent dynamics remain operationally retained across these interacting layers.
+- memory structures;
+
+- attention dynamics;
+
+- identity continuity;
+
+- and adaptive operational processes.
+
+The human system continuously exchanges energy, information, signals, obligations, meanings, and social pressures with its environment.
+
+A human system exists as a formally retained operational structure while its instantaneous structural balance remains positive.
+
+A human system remains dynamically stable over time only while its general endogenous structural coherence exceeds destabilizing pressure.
+
+Within EDS/EDC, a human is interpreted not as a static psychological object, but as a dynamically retained multi-layer process of structural self-organization.
 
 Human stability is therefore not static.
 
-It is dynamically retained through continuous regeneration of coherent structural continuity.
-
----
+It is dynamically retained through continuous restoration, integration, and coherence of biological, cognitive, emotional, behavioral, and meaning-forming processes.
 
 ## 2. EDS Mapping
 
-S(t) — synthesis:
+S(t) — instantaneous intensity of synthesis of positive structural work through learning, adaptation, recovery, meaning formation, coherent action, cognitive integration, behavioral organization, emotional regulation, and regenerative structural creation at time t.
 
-- learning;
+W_S(T) — accumulated positive structural work over an operational time interval T, associated with accumulated learning, recovery, adaptation, meaning formation, behavioral continuity, cognitive integration, emotional regulation, and identity continuity.
 
-- adaptation;
+P(t) — destabilizing pressure: stress, cognitive overload, emotional pressure, environmental destabilization, conflicting demands, fragmentation pressure, social pressure, informational overload, or operational burden acting against internal continuity at time t.
 
-- recovery;
+D(t) — irreversible structural losses: fatigue, entropy accumulation, attention fragmentation, cognitive degradation, motivational decay, unrecoverable adaptive loss, informational overload, and structural incoherence propagation at time t.
 
-- meaning formation;
+Δ(t) — instantaneous structural balance:
 
-- coherent action;
+Δ(t) = S(t) − P(t) − D(t)
 
-- cognitive integration;
+C(t) — parameter of general endogenous human structural coherence determining the level of structural integrity and dynamic stability of the human system over time.
 
-- behavioral organization;
+Structural regeneration is a continuous endogenous process of restoring and maintaining human structural integrity and coherence.
 
-- regenerative structural creation.
+Regeneration supports C(t), but is not identical to C(t).
 
-P(t) — load:
-
-- stress;
-
-- cognitive overload;
-
-- emotional pressure;
-
-- environmental destabilization;
-
-- conflicting demands;
-
-- fragmentation pressure;
-
-- operational burden acting against internal continuity.
-
-D(t) — dissipation:
-
-- fatigue;
-
-- entropy accumulation;
-
-- attention fragmentation;
-
-- cognitive degradation;
-
-- motivational decay;
-
-- informational overload;
-
-- structural incoherence propagation.
-
-C(t) — retained human structural continuity and internally agreed coherent cognitive-behavioral dynamics maintained over operational time.
-
-Within EDS/EDC:
-
-human coherence does not mean superficial emotional harmony alone.
+Within EDS/EDC, human coherence does not mean superficial emotional harmony, temporary mood stability, or simple behavioral consistency.
 
 It means:
 
-- internally agreed coherent dynamics between cognition, behavior, attention, identity, and meaning;
+- coherence of internal human self-organization processes;
+
+- compatibility between biological, cognitive, emotional, behavioral, social, and meaning-forming dynamics;
+
+- retained continuity of attention, identity, cognition, and action;
+
+- regenerative continuity of adaptive organization over time;
 
 - operational compatibility between subsystem trajectories;
 
-- retained structural continuity of identity and cognition under changing conditions;
+- capacity to preserve structural integrity under changing conditions;
 
-- regenerative continuity of adaptive organization over time.
+- ability to retain meaning and direction despite destabilizing pressure.
 
----
-
-## 3. Dynamics
-
-dC/dt = S − D
-
-The human system must continuously regenerate structural continuity:
-
-- physically → through energetic restoration;
-
-- cognitively → through attention and adaptive integration;
-
-- behaviorally → through coherent action continuity;
-
-- structurally → through meaning retention and identity continuity.
-
-Operational meaning:
-
-- internally agreed coherent human dynamics must regenerate faster than destabilizing fragmentation accumulates.
-
----
-
-## 4. Structural Existence Condition
+## 3. Structural Existence Condition
 
 A human system continues to exist as an organized operational structure if:
 
@@ -126,43 +84,199 @@ A human system continues to exist as an organized operational structure if:
 
 Operational meaning:
 
-- regenerative synthesis exceeds destabilizing load and dissipation;
+- instantaneous synthesis of positive structural work exceeds destabilizing pressure and irreversible structural losses;
 
-- structural organization remains operationally viable;
+- the human system preserves positive structural formation balance;
 
-- subsystem continuity persists.
+- biological, cognitive, and behavioral organization remain formally viable;
 
-This condition defines retained structural existence.
+- subsystem continuity remains externally observable.
 
-A human may remain externally functional while internally losing coherent subsystem integrity.
+This condition defines formal human structural existence.
 
----
+However, positive Δ(t) does not by itself prove real human dynamic stability over time.
+
+A human may remain externally functional while internally losing general endogenous structural coherence, adaptive capacity, attention integrity, meaning continuity, and systemic self-organization.
+
+## 4. Accumulated Positive Structural Work
+
+Accumulated positive structural work over an operational time interval is described by:
+
+W_S(T) = ∫[t₀ → t₁] S(t) dt
+
+Operational meaning:
+
+- W_S(T) describes accumulated human structural work over time;
+
+- W_S(T) includes accumulated learning, recovery, adaptation, emotional regulation, cognitive integration, behavioral continuity, and meaning formation;
+
+- W_S(T) may support identity continuity, adaptive stability, self-organization, and endogenous human coherence;
+
+- W_S(T) does not replace C(t);
+
+- W_S(T) does not replace the dynamic stability criterion C(t) > P(t).
+
+A human may accumulate activity, information, or experience while losing endogenous coherence.
+
+Therefore, accumulation alone does not guarantee real dynamic stability.
 
 ## 5. Dynamic Stability Condition
 
-A human system remains dynamically stable if:
+A human system remains dynamically stable over time if:
 
 C(t) > P(t)
 
 Operational meaning:
 
-- retained structural continuity exceeds destabilizing pressure;
+- general endogenous human structural coherence exceeds destabilizing pressure;
 
-- internally agreed coherent cognitive-behavioral dynamics remain stronger than fragmentation pressure;
+- biological, cognitive, emotional, behavioral, social, and meaning-forming processes remain structurally compatible;
 
-- meaning continuity and adaptive integrity remain operationally retained over time.
+- adaptive regeneration remains operationally supported;
 
-This condition defines dynamically retained human stability.
+- attention, identity, cognition, and behavior remain sufficiently coherent;
 
----
+- destabilizing fragmentation pressure does not exceed internal structural coherence;
 
-## 6. Critical Boundary
+- the human system retains dynamic stability over operational time.
+
+This condition defines real dynamically retained human stability.
+
+## 6. Difference Between Δ(t) and C(t)
+
+Δ(t) > 0 means:
+
+- the human system may continue to exist as a formal operational structure;
+
+- positive structural formation balance is still present;
+
+- external function may still be observable;
+
+- behavior may still appear organized;
+
+- formal structural existence continues.
+
+C(t) > P(t) means:
+
+- the human system preserves general endogenous structural coherence;
+
+- internal subsystems remain compatible enough to maintain long-term integrity;
+
+- cognition, attention, behavior, identity, and meaning remain regeneratively connected;
+
+- destabilizing pressure does not exceed human dynamic stability capacity;
+
+- the human system remains dynamically stable over time.
+
+A possible regime is:
+
+Δ(t) > 0, but C(t) ≤ P(t)
+
+This means:
+
+the human system still functions externally, but its real internal dynamic stability over time is already disrupted.
+
+This regime is important because human destabilization often begins internally before external breakdown becomes visible.
+
+## 7. Regeneration and C(t)
+
+Structural regeneration is a continuous endogenous process of restoring and maintaining structural integrity and coherence over time.
+
+In human systems, regeneration includes:
+
+- biological recovery;
+
+- sleep and energetic restoration;
+
+- emotional regulation;
+
+- cognitive integration;
+
+- attention restoration;
+
+- meaning reconstruction;
+
+- behavioral reorganization;
+
+- adaptive learning;
+
+- restoration of identity continuity;
+
+- restoration of compatibility between subsystem trajectories.
+
+Regeneration supports C(t), but is not identical to C(t).
+
+C(t) is the parameter of general endogenous human structural coherence.
+
+If endogenous human processes are decoherent in phase, amplitude, accumulation rate, connection quality, regulatory timing, functional contribution, or meaning direction, the human system loses the capacity to regenerate structural integrity faster than dissipation destroys it.
+
+Therefore:
+
+decoherence of endogenous human processes → reduction of regenerative capacity → dissipation exceeds regeneration → decrease of C(t) → disruption of human dynamic stability over time.
+
+## 8. Dynamics
+
+Human dynamics may be operationally interpreted through the balance between:
+
+- instantaneous synthesis of positive structural work S(t);
+
+- destabilizing pressure P(t);
+
+- irreversible structural losses D(t);
+
+- accumulated positive structural work W_S(T);
+
+- general endogenous structural coherence C(t);
+
+- regeneration as a continuous endogenous supporting process.
+
+A simplified local expression may describe regenerative support as:
+
+dC/dt ∝ regenerative support − destabilizing fragmentation − decoherence losses
+
+This expression must not be interpreted as:
+
+C(t) = regeneration
+
+C(t) remains the parameter of general endogenous structural coherence.
+
+Operational interpretation:
+
+- human structural integrity must be continuously restored;
+
+- regenerative dynamics must compensate fatigue, fragmentation, overload, and irreversible losses;
+
+- coherence of endogenous human processes determines whether regeneration can remain effective;
+
+- real human dynamic stability still requires C(t) > P(t).
+
+## 9. Structural Existence and Dynamic Stability
+
+Formal human existence is described by:
+
+Δ(t) = S(t) − P(t) − D(t)
+
+Real human dynamic stability is described by:
+
+C(t) > P(t)
+
+These two conditions must be distinguished.
+
+A human may continue to work, communicate, respond, produce, and maintain outward function while already losing the internal coherence required for long-term stability.
+
+Therefore, productivity, external activity, social performance, or temporary functionality alone do not prove real human dynamic stability.
+
+The decisive question is:
+
+whether general endogenous human structural coherence remains stronger than destabilizing pressure over operational time.
+
+## 10. Critical Boundary
 
 When:
 
 C(t) → P(t)
 
-the system enters a dynamically critical regime.
+the human system enters a dynamically critical regime.
 
 Near this boundary:
 
@@ -174,69 +288,99 @@ Near this boundary:
 
 - adaptive continuity weakens;
 
+- emotional regulation becomes unstable;
+
 - subsystem incompatibility increases;
 
-- behavioral instability propagates.
+- behavioral instability propagates;
+
+- meaning continuity becomes fragile;
+
+- identity continuity becomes harder to retain;
+
+- small perturbations may produce disproportionate consequences.
 
 This corresponds to the EDC-sensitive regime.
 
----
+In EDC terms, the human system approaches a critical boundary where general endogenous structural coherence becomes too close to destabilizing pressure.
 
-## 7. Failure Mode
+## 11. Failure Mode
 
 If:
 
-P(t) + D(t) > S(t)
+C(t) ≤ P(t)
 
-then:
+then retained human structural integrity can no longer be dynamically maintained.
 
-dC/dt < 0
+Operational consequences may include:
 
-Operational consequences:
+- fragmentation accumulation;
 
-- fragmentation accumulates;
+- weakening of adaptive capacity;
 
-- internally agreed coherent dynamics weaken;
+- loss of internal process coherence;
 
-- structural continuity decays;
+- attention collapse;
 
-- behavioral organization destabilizes;
+- behavioral destabilization;
 
-- adaptive capacity collapses.
+- motivational decay;
 
-Possible manifestations include:
+- meaning loss;
+
+- identity fragmentation;
 
 - burnout;
 
 - breakdown;
 
-- loss of direction;
+- cognitive destabilization.
 
-- cognitive destabilization;
+If:
 
-- identity fragmentation.
+S(t) < P(t) + D(t)
 
-At sufficient accumulation of destabilizing dissipation:
+then:
 
-- retained structural continuity can no longer be operationally maintained.
+Δ(t) < 0
 
----
+and formal human structural balance becomes negative.
 
-## 8. Meaning as Structural Stability
+Operational consequences:
 
-Meaning is not treated as an abstract symbolic decoration.
+- structural degradation propagates;
+
+- irreversible losses accumulate;
+
+- operational organization loses formal support;
+
+- collapse of functional continuity becomes accessible.
+
+The two failure layers must be distinguished:
+
+- C(t) ≤ P(t) → loss of real dynamic stability over time;
+
+- Δ(t) < 0 → loss of formal structural balance.
+
+## 12. Meaning as Structural Stability
+
+Meaning is not treated as abstract symbolic decoration.
 
 Within EDS/EDC:
 
 Meaning = retained stable informational attractor maintaining coherent subsystem continuity over operational time.
 
-Meaning exists only while:
+Meaning remains accessible only while general endogenous structural coherence is sufficient to retain informational structure against destabilizing pressure.
 
-C > P
+In EDS terms:
+
+C(t) > P(t)
 
 Operational meaning:
 
-- internally agreed coherent dynamics remain stronger than destabilizing fragmentation;
+- internal cognitive, behavioral, attentional, identity, and meaning-forming processes remain sufficiently coherent;
+
+- destabilizing fragmentation does not exceed retained endogenous coherence;
 
 - cognitive continuity remains operationally retained;
 
@@ -250,15 +394,23 @@ Without sufficient retained coherence:
 
 - behavioral continuity weakens;
 
-- operational structure loses stability.
+- attention becomes unstable;
 
----
+- identity continuity degrades;
 
-## 9. Why It Cannot Be Otherwise
+- operational structure loses dynamic stability.
 
-A human system requires internally agreed coherent continuity.
+## 13. Why It Cannot Be Otherwise
 
-If destabilizing load exceeds retained coherence:
+A human system requires internally coherent continuity.
+
+Human stability cannot persist through static form alone.
+
+If endogenous human processes become decoherent:
+
+- recovery weakens;
+
+- attention becomes fragmented;
 
 - decisions become inconsistent;
 
@@ -268,19 +420,75 @@ If destabilizing load exceeds retained coherence:
 
 - adaptive continuity collapses;
 
+- meaning continuity becomes unstable;
+
 - structural fragmentation propagates.
 
-Thus:
+If destabilizing pressure exceeds general endogenous structural coherence:
 
-C > P
+C(t) ≤ P(t)
 
-is a necessary condition for dynamically retained cognitive and behavioral stability.
+then real human dynamic stability is disrupted.
 
----
+If instantaneous synthesis of positive structural work fails to exceed destabilizing pressure and irreversible losses:
 
-## 10. Structural Insight
+S(t) < P(t) + D(t)
+
+then formal human structural balance becomes negative.
+
+Therefore, human persistence requires distinction between:
+
+Δ(t) > 0
+
+and:
+
+C(t) > P(t)
+
+The first condition supports formal human structural existence.
+
+The second condition defines real human dynamic stability over time.
+
+## 14. Nonlinear Effect
+
+In human systems, small changes in recovery, meaning, attention, coherence, stress load, or cognitive burden may produce disproportionately large effects because human systems are nonlinear.
+
+Stability may increase nonlinearly through:
+
+- adaptive learning;
+
+- coherent action;
+
+- attentional restoration;
+
+- emotional regulation;
+
+- meaning formation;
+
+- recovery cycles;
+
+- identity continuity;
+
+- improved subsystem compatibility;
+
+- reduced internal decoherence;
+
+- restoration of regenerative capacity.
+
+Likewise, small destabilizing perturbations near the critical boundary may propagate system-wide drift.
+
+Near:
+
+C(t) ≈ P(t)
+
+the human system becomes highly sensitive to perturbation.
+
+This is the EDC-sensitive regime.
+
+## 15. Structural Insight
 
 A human may appear externally functional while internally losing:
+
+- general endogenous structural coherence;
 
 - meaning continuity;
 
@@ -288,34 +496,86 @@ A human may appear externally functional while internally losing:
 
 - attention integrity;
 
-- internally agreed coherent dynamics;
+- emotional regulation;
 
-- retained adaptive structural continuity.
+- behavioral organization;
+
+- identity continuity;
+
+- adaptive capacity;
+
+- retained human dynamic stability.
 
 Within EDS/EDC:
 
 real human stability is determined not by external appearance alone,
 
-but by whether internally agreed coherent cognitive-behavioral dynamics remain stronger than destabilizing fragmentation over operational time.
+but by whether general endogenous human structural coherence remains stronger than destabilizing fragmentation pressure over operational time.
 
----
+Formal structural existence is described by:
 
-## 11. Conclusion
+Δ(t) = S(t) − P(t) − D(t)
 
-Human cognition and behavior follow the same structural law.
+Real dynamic stability is described by:
 
-A human system remains dynamically stable only while:
+C(t) > P(t)
 
-- regenerative synthesis;
+These two conditions must not be equated.
 
-- retained structural continuity;
+## 16. EDC Interpretation
 
-- meaning-preserving informational attractors;
+In the EDC layer, human criticality begins near:
 
-- internally agreed coherent cognitive-behavioral dynamics;
+C(t) ≈ P(t)
 
-- and adaptive continuity
+At this boundary:
 
-remain stronger than destabilizing load and dissipation.
+- internal coherence becomes marginal;
+
+- adaptive capacity becomes insufficiently separated from destabilizing pressure;
+
+- small perturbations may trigger large behavioral or cognitive consequences;
+
+- parameter drift may accelerate;
+
+- attentional collapse may become nonlinear;
+
+- meaning loss may become self-reinforcing;
+
+- the human system may shift toward degradation, crisis, collapse, or reorganization.
+
+This does not necessarily mean that formal human function has already collapsed.
+
+It means that the real dynamic stability margin is collapsing.
+
+## 17. Conclusion
+
+Human cognition, behavior, identity, and meaning follow the same structural law as other open nonlinear dynamic systems.
+
+A human system exists as a formally retained operational structure while:
+
+Δ(t) = S(t) − P(t) − D(t) > 0
+
+But it remains dynamically stable over time only while:
+
+C(t) > P(t)
+
+where C(t) is the parameter of general endogenous human structural coherence determining structural integrity and dynamic stability over time.
+
+Final distinction:
+
+- S(t) describes instantaneous synthesis of positive structural work through learning, adaptation, recovery, meaning formation, cognitive integration, coherent action, and behavioral organization;
+
+- W_S(T) describes accumulated positive structural work over operational time;
+
+- Δ(t) describes formal human structural existence;
+
+- C(t) describes general endogenous human structural coherence;
+
+- regeneration supports C(t), but is not identical to C(t);
+
+- C(t) > P(t) defines real human dynamic stability over time.
 
 Meaning, identity, cognition, and behavior are therefore functions of dynamically retained structural stability.
+
+A human system persists only while its endogenous structural coherence, regenerative support, and synthesis of positive structural work remain sufficient to resist destabilizing pressure, irreversible losses, fragmentation, and systemic decoherence over operational time.
