@@ -1,3 +1,5 @@
+# plot_results.py
+
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -5,21 +7,25 @@ import matplotlib.pyplot as plt
 # Plot Kuramoto Simulation Results for EDS/EDC
 # ------------------------------------------------------------
 # This script reproduces baseline and forced synchronization
-# and visualizes R(t), the operational proxy for coordinated
-# structural coherence C(t).
+# and visualizes R(t), the Kuramoto order parameter.
 #
-# In the EDS framework:
+# In the EDS/EDC framework:
+#
+# C(t) is the parameter of general endogenous structural
+# coherence determining structural integrity and dynamic
+# stability over time.
 #
 # C(t) does not represent simple synchronization alone.
 #
-# C(t) represents:
-# - coordinated subsystem dynamics
-# - retained structural coherence
-# - synchronized operational continuity
-# - regenerative alignment of interacting components
+# R(t) is used here as an experimentally measurable
+# synchronization proxy and support indicator for the
+# synchronization layer that may support C(t).
 #
-# R(t) is used here as an experimentally measurable proxy
-# for the synchronization component of C(t).
+# R(t) is not identical to C(t).
+# Synchronization is not identical to coherence.
+# Real dynamic stability remains governed by:
+#
+# C(t) > P(t)
 # ------------------------------------------------------------
 
 N = 300
@@ -49,15 +55,23 @@ def order_parameter(phi):
 
     R(t) ∈ [0, 1]
 
-    R → 1 :
+    R → 1:
         strong phase synchronization
 
-    R → 0 :
-        incoherent regime
+    R → 0:
+        incoherent phase regime
 
     In EDS/EDC:
-        R(t) serves as an operationally measurable
-        synchronization proxy for C(t).
+        R(t) is an experimentally measurable synchronization
+        proxy and support indicator.
+
+        R(t) may indicate synchronization mechanisms that support
+        endogenous structural coherence C(t), but R(t) is not
+        identical to C(t).
+
+        Real dynamic stability still requires:
+
+        C(t) > P(t)
     """
     return np.abs(np.mean(np.exp(1j * phi)))
 
@@ -82,7 +96,6 @@ def run_simulation(F_ext):
     R_values = []
 
     for step in range(steps):
-
         t = step * dt
 
         # ----------------------------------------------------
