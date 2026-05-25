@@ -4,35 +4,51 @@
 
 ## Quick Navigation
 
-- Executive Summary → [README_EXECUTIVE.md](README_EXECUTIVE.md)
-- Full Derivation → [README_APPENDIX.md](README_APPENDIX.md)
-- Stability & Bifurcation → [APPENDIX_DYNAMICS.md](APPENDIX_DYNAMICS.md)
-- Oscillator Model → [APPENDIX_OSCILLATORS.md](APPENDIX_OSCILLATORS.md)
-- Case Studies → [cases/](cases/)
-- Postscriptum → [postscriptum.md](postscriptum.md)
+
+- Executive Summary → [README_EXECUTIVE.md](https://github.com/maximumberlin76-gif/endogenous-dynamic-stability-full/blob/main/README_EXECUTIVE.md)
+
+- Full Derivation → [README_APPENDIX.md](https://github.com/maximumberlin76-gif/endogenous-dynamic-stability-full/blob/main/README_APPENDIX.md)
+
+- Stability & Bifurcation → [APPENDIX_DYNAMICS.md](https://github.com/maximumberlin76-gif/endogenous-dynamic-stability-full/blob/main/APPENDIX_DYNAMICS.md)
+
+- Oscillator Model → [APPENDIX_OSCILLATORS.md](https://github.com/maximumberlin76-gif/endogenous-dynamic-stability-full/blob/main/APPENDIX_OSCILLATORS.md)
+
+- Case Studies → [cases/](https://github.com/maximumberlin76-gif/endogenous-dynamic-stability-full/blob/main/cases)
+
+- Postscriptum → [postscriptum.md](https://github.com/maximumberlin76-gif/endogenous-dynamic-stability-full/blob/main/postscriptum.md)
+
+
 
 ## Full Monograph
 
 A complete structured version of the theory is available in:
 
-[book.md](book.md)
+[book.md](https://github.com/maximumberlin76-gif/endogenous-dynamic-stability-full/blob/main/book.md)
 
 ## Abstract
 
-EDS/EDC is a unified framework for analyzing dynamic stability, endogenous criticality, structural coherence, scaling behavior, and regime transitions in open nonlinear dynamical systems.
+EDS/EDC is a unified framework for analyzing dynamic  stability, endogenous criticality, structural coherence, scaling  behavior, and regime transitions in open nonlinear dynamical systems.
 
 EDS — Endogenous Dynamic Stability — defines the criterion of real dynamic stability over time.
 
-EDC — Endogenous Dynamic Criticality — describes how a system approaches, enters, delays, and undergoes critical transition when its endogenous structural coherence approaches the boundary of destabilizing pressure.
+EDC — Endogenous Dynamic Criticality — describes how a  system approaches, enters, delays, and undergoes critical transition  when its endogenous structural coherence approaches the boundary of  destabilizing pressure.
 
 The framework distinguishes:
 
+
 - formal structural existence;
+
 - real dynamic stability over time;
+
 - endogenous criticality;
+
 - delayed transition;
+
 - scaling behavior;
+
 - positive and negative regime drift.
+
+
 
 The core EDS criterion is:
 
@@ -40,7 +56,7 @@ C(t) > P(t)
 
 where:
 
-C(t) — parameter of general endogenous structural coherence determining the level of structural integrity and dynamic stability over time.
+C(t) — parameter of general endogenous structural  coherence determining the level of structural integrity and dynamic  stability over time.
 
 P(t) — destabilizing pressure.
 
@@ -74,7 +90,7 @@ At this boundary, endogenous drift, nonlinear saturation, delay, scaling, and re
 
 t — operational time variable.
 
-t defines the temporal evolution of structural dynamics, endogenous structural coherence, self-organization, dissipation, parameter drift, criticality, and dynamic stability over time.
+t defines the temporal evolution of structural dynamics,  endogenous structural coherence, self-organization, dissipation,  parameter drift, criticality, and dynamic stability over time.
 
 ### Operational Time Interval — T
 
@@ -84,8 +100,12 @@ T = t₁ − t₀
 
 where:
 
+
 - t₀ — initial moment of operational time;
+
 - t₁ — final moment of operational time.
+
+
 
 ### System State — X(t)
 
@@ -99,7 +119,7 @@ X(t) ∈ ℝⁿ
 
 S(t) — instantaneous intensity of synthesis of positive structural work at time t.
 
-S(t) influences the formation, maintenance, and reinforcement of structural integrity, self-organization, and general endogenous structural coherence of the system over time.
+S(t) influences the formation, maintenance, and  reinforcement of structural integrity, self-organization, and general  endogenous structural coherence of the system over time.
 
 Constraint:
 
@@ -113,10 +133,16 @@ W_S(T) = ∫[t₀ → t₁] S(t) dt
 
 where:
 
+
 - W_S(T) — accumulated positive structural work over interval T;
+
 - S(t) — instantaneous intensity of synthesis of positive structural work;
+
 - t₀ — initial moment of operational time;
+
 - t₁ — final moment of operational time.
+
+
 
 ### Destabilizing Pressure — P(t)
 
@@ -146,9 +172,14 @@ D(t) ≥ 0
 
 Interpretation:
 
+
 - Δ(t) > 0 → positive structural formation balance;
+
 - Δ(t) = 0 → quasi-stationary operational balance;
+
 - Δ(t) < 0 → structural degradation and fragmentation.
+
+
 
 Positive Δ(t) supports formal structural existence.
 
@@ -156,17 +187,17 @@ But Δ(t) by itself does not prove real dynamic stability over time.
 
 ### Endogenous Structural Coherence — C(t)
 
-C(t) — parameter of general endogenous structural coherence determining the level of structural integrity and dynamic stability over time.
+C(t) — parameter of general endogenous structural  coherence determining the level of structural integrity and dynamic  stability over time.
 
-C(t) describes the measure of coherence of internal processes of structural self-organization, on which structural integrity and dynamic stability of the system over time depend.
+C(t) describes the measure of coherence of internal  processes of structural self-organization, on which structural integrity  and dynamic stability of the system over time depend.
 
-Structural regeneration is a continuous endogenous process of restoring and maintaining structural integrity and coherence over time.
+Structural regeneration is a continuous endogenous process  of restoring and maintaining structural integrity and coherence over  time.
 
 Regeneration supports C(t), but is not identical to C(t).
 
-If endogenous processes are decoherent in phase, amplitude, accumulation rate, connection quality, or functional contribution, the structure loses the capacity to regenerate structural integrity faster than dissipation destroys it.
+If endogenous processes are decoherent in phase,  amplitude, accumulation rate, connection quality, or functional  contribution, the structure loses the capacity to regenerate structural  integrity faster than dissipation destroys it.
 
-A decrease of C(t) means a decrease of general endogenous structural coherence, where destabilizing pressure begins to exceed the structure’s capacity for self-regeneration over time.
+A decrease of C(t) means a decrease of general endogenous  structural coherence, where destabilizing pressure begins to exceed the  structure’s capacity for self-regeneration over time.
 
 Constraint:
 
@@ -196,7 +227,7 @@ The framework applies to open nonlinear dynamical systems.
 
 A system is open if it exchanges energy, matter, information, or influences with its environment.
 
-A system is nonlinear if its dynamics include thresholds, feedback loops, delays, amplifications, parameter drift, regime transitions, or phase transitions.
+A system is nonlinear if its dynamics include thresholds,  feedback loops, delays, amplifications, parameter drift, regime  transitions, or phase transitions.
 
 A system is dynamical if its state is determined not by static form, but by change over time.
 
@@ -214,13 +245,13 @@ C(t) > P(t)
 
 where:
 
-C(t) — parameter of general endogenous structural coherence determining the level of structural integrity and dynamic stability over time.
+C(t) — parameter of general endogenous structural  coherence determining the level of structural integrity and dynamic  stability over time.
 
 P(t) — destabilizing pressure.
 
 Operational interpretation:
 
-the system preserves real dynamic stability over time while general endogenous structural coherence exceeds destabilizing pressure.
+the system preserves real dynamic stability over time  while general endogenous structural coherence exceeds destabilizing  pressure.
 
 If C(t) > P(t), the system is capable of retaining structural integrity and dynamic stability over time.
 
@@ -254,18 +285,31 @@ It does not prove real dynamic stability of the structure over time.
 
 Δ(t) > 0 means:
 
+
 - the structure still exists;
+
 - positive formation balance is retained;
+
 - external form may still be held;
+
 - formal structural existence continues.
+
+
 
 C(t) > P(t) means:
 
+
 - the structure preserves general endogenous structural coherence;
+
 - the structure preserves structural integrity;
+
 - endogenous processes of self-organization remain coherent;
+
 - the structure’s capacity for self-regeneration over time exceeds destabilizing pressure;
+
 - the system remains dynamically stable over time.
+
+
 
 A possible regime is:
 
@@ -301,7 +345,7 @@ If C(t) falls to the level C(t) ≤ P(t), the system loses real dynamic stabilit
 
 Root chain:
 
-decoherence of endogenous processes → reduction of regenerative capacity → dissipation exceeds regeneration → decrease of C(t) → disruption of dynamic stability over time.
+decoherence of endogenous processes → reduction of  regenerative capacity → dissipation exceeds regeneration → decrease of  C(t) → disruption of dynamic stability over time.
 
 ## EDC Core
 
@@ -311,16 +355,24 @@ The EDS stability boundary is:
 
 C(t) ≈ P(t)
 
-Near this boundary, the system may enter a critical regime where small parameter changes produce disproportionate structural consequences.
+Near this boundary, the system may enter a critical regime  where small parameter changes produce disproportionate structural  consequences.
 
 EDC analyzes:
 
+
 - endogenous drift;
+
 - loss of structural coherence;
+
 - delay before transition;
+
 - nonlinear saturation;
+
 - critical regime accessibility;
+
 - transition toward reorganization, degradation, or collapse.
+
+
 
 The reduced critical dynamics may be represented as:
 
@@ -358,7 +410,7 @@ v_eff — effective endogenous drift rate.
 
 Operational interpretation:
 
-the system approaches the critical regime through its own internal dynamics, including coherence degradation, destabilizing pressure, loss accumulation, and delayed structural response.
+the system approaches the critical regime through its own  internal dynamics, including coherence degradation, destabilizing  pressure, loss accumulation, and delayed structural response.
 
 ## Scaling Law
 
@@ -396,10 +448,16 @@ dy/dτ = τy − y³
 
 The universality regime remains operationally accessible under the following conditions:
 
+
 - cubic saturation dominates nonlinear operational dynamics;
+
 - the endogenous control parameter evolves smoothly;
+
 - r(t) ≈ v_eff t;
+
 - the system remains open, dissipative, nonlinear, and dynamically coupled.
+
+
 
 Outside these operational conditions, alternative scaling regimes may emerge.
 
@@ -413,9 +471,14 @@ All system-specific parameters are absorbed into scaling.
 
 This establishes:
 
+
 - operational universality;
+
 - scale-invariant transition behavior;
+
 - relative independence from microscopic implementation details within the operational universality domain.
+
+
 
 ## Critical Delay Scaling
 
@@ -425,9 +488,14 @@ t_delay ~ v_eff^(−1/3)
 
 Operational interpretation:
 
+
 - slower endogenous drift produces longer delayed transitions;
+
 - faster endogenous drift produces shorter transition delays;
+
 - stronger destabilizing pressure may increase v_eff and accelerate critical transition accessibility.
+
+
 
 The exponent:
 
@@ -435,48 +503,134 @@ The exponent:
 
 is the operational scaling signature of endogenous dynamic criticality in this reduced cubic critical regime.
 
+## Why the Scaling Is Cubic
+
+The exponent:
+
+−1/3
+
+is not introduced as an arbitrary scaling coefficient.
+
+It follows from the cubic nonlinear saturation term in the reduced critical regime:
+
+dC/dt = v_eff t C − C³
+
+where:
+
+C(t) — endogenous structural coherence variable in the reduced critical regime;
+
+v_eff t C — drift-driven growth of endogenous structural coherence near the critical boundary;
+
+−C³ — cubic nonlinear saturation of endogenous structural coherence growth.
+
+The cubic term is used because retained structural stability is not treated as a one-dimensional or purely quadratic correction.
+
+A retained structure must preserve organization as a volumetric dynamic condition.
+
+A quadratic correction would describe pairwise or surface-like limitation.
+
+The cubic term represents third-order saturation of the retained regime, where coherence growth is constrained by volumetric stabilization, internal compatibility, nonlinear self-interaction, and the three-dimensional structural character of retained organization.
+
+Therefore, the reduced critical form uses:
+
+−C³
+
+rather than:
+
+−C²
+
+As a result, the delay scaling:
+
+t_delay ~ v_eff^(−1/3)
+
+follows from the cubic saturation structure of the reduced EDC regime.
+
+Operationally:
+
+
+- linear endogenous drift moves the system toward the critical boundary;
+
+- cubic saturation limits the growth of endogenous structural coherence;
+
+- retained three-dimensional structural organization requires third-order nonlinear stabilization;
+
+- faster endogenous drift compresses the available stabilization time.
+
+
+
+Thus, the exponent −1/3 follows from the cubic nonlinear saturation term and is not an external assumption.
+
 ## Positive and Negative Regime Drift
 
 A resonance window or critical transition is not automatically positive.
 
-The sign and quality of the transition depend on the direction and quality of endogenous drift.
+The qualitative sign and qualitative characteristics of the transition depend on the direction and qualitative characteristics of endogenous drift.
 
 Positive drift may support:
 
+
 - synthesis;
+
 - reorganization;
+
 - structural renewal;
+
 - increased endogenous coherence;
+
 - transition to a more stable regime.
+
+
 
 Negative drift may produce:
 
+
 - fragmentation;
+
 - loss of coherence;
+
 - accelerated dissipation;
+
 - degradation;
+
 - collapse into a lower-order regime.
+
+
 
 Therefore, EDC distinguishes between:
 
+
 - positive critical windows;
+
 - negative critical windows;
+
 - quasi-stationary windows;
+
 - unstable transition windows.
+
+
 
 ## Resonance Windows
 
-A resonance window is a temporary regime in which system dynamics become unusually sensitive to coherent structural reorganization or destabilization.
+A resonance window is a temporary regime in which system  dynamics become unusually sensitive to coherent structural  reorganization or destabilization.
 
 In EDS/EDC, a resonance window is determined not by frequency coincidence alone, but by the interaction of:
 
+
 - endogenous structural coherence C(t);
+
 - destabilizing pressure P(t);
+
 - accumulated positive structural work W_S(T);
+
 - parameter drift r(t);
+
 - loss accumulation D(t);
+
 - internal process coherence;
+
 - system-specific constraints.
+
+
 
 A resonance window may support synthesis only if internal endogenous coherence remains sufficient.
 
@@ -486,7 +640,7 @@ Thus:
 
 resonance window ≠ automatically positive transition.
 
-The quality of the window is determined by the quality of endogenous drift.
+The qualitative characteristics of the window are determined by the qualitative characteristics of endogenous drift.
 
 ## Coherence and Synchronization
 
@@ -496,9 +650,9 @@ Synchronization means coincidence of processes in time, phase, or rhythm.
 
 Synchronous work does not mean coherent work.
 
-Synchronization of internal processes is not identical to their coherence: processes may coincide in time or phase, but differ in amplitude, direction of effort, function, and contribution to the structural integrity of the whole system.
+Synchronization of internal processes is not identical to  their coherence: processes may coincide in time or phase, but differ in  amplitude, direction of effort, function, and contribution to the  structural integrity of the whole system.
 
-C(t) describes not simple synchrony, but general endogenous structural coherence, on which structural integrity and dynamic stability over time depend.
+C(t) describes not simple synchrony, but general  endogenous structural coherence, on which structural integrity and  dynamic stability over time depend.
 
 Synchronization may be a partial mechanism or indicator.
 
@@ -514,12 +668,20 @@ dφᵢ/dt = ωᵢ + (K/N)Σⱼ sin(φⱼ − φᵢ) + F_ext sin(ω_ext t − φ�
 
 where:
 
+
 - φᵢ — phase of the i-th oscillator;
+
 - ωᵢ — natural frequency;
+
 - K — coupling strength;
+
 - F_ext — external coherent forcing amplitude;
+
 - ω_ext — external forcing frequency;
+
 - ηᵢ(t) — stochastic operational noise.
+
+
 
 The global operational synchronization parameter is:
 
@@ -527,8 +689,12 @@ R = |(1/N)Σⱼ exp(iφⱼ)|
 
 where:
 
+
 - R → 1 indicates synchronized phase dynamics;
+
 - R → 0 indicates incoherent phase dynamics.
+
+
 
 Within EDS/EDC:
 
@@ -538,10 +704,16 @@ R is not identical to C(t).
 
 Operational interpretation:
 
+
 - synchronization may support endogenous structural coherence;
+
 - synchronization may reduce destabilizing phase noise;
+
 - synchronization may contribute to retained operational continuity;
+
 - but synchronization alone does not define real dynamic stability.
+
+
 
 Real dynamic stability still requires:
 
@@ -591,7 +763,7 @@ Fragmentation, drift, and collapse become dominant.
 
 C(t) recovers above P(t) after critical transition.
 
-The system may enter a new retained regime if endogenous structural coherence is restored and accumulated positive structural work supports regeneration.
+The system may enter a new retained regime if endogenous  structural coherence is restored and accumulated positive structural  work supports regeneration.
 
 ## Meaning as Stable Informational Attractor
 
@@ -601,14 +773,20 @@ M = stable informational attractor
 
 A configuration that:
 
+
 - remains reproducible;
+
 - retains operational continuity;
+
 - preserves structural coherence over time;
+
 - remains accessible through retained endogenous organization.
+
+
 
 Operationally:
 
-meaning remains accessible only while the system preserves enough endogenous structural coherence to retain informational structure against destabilizing pressure.
+meaning remains accessible only while the system preserves  enough endogenous structural coherence to retain informational  structure against destabilizing pressure.
 
 In EDS terms:
 
@@ -624,30 +802,53 @@ EDC defines how the system approaches, enters, delays, and undergoes critical tr
 
 Together, EDS/EDC describes:
 
+
 - formation of structure;
+
 - synthesis of positive structural work;
+
 - accumulated positive structural work;
+
 - formal structural existence;
+
 - endogenous structural coherence;
+
 - destabilization propagation;
+
 - regeneration as an endogenous supporting process;
+
 - critical transformation;
+
 - delayed transition;
+
 - scaling behavior;
+
 - operational restructuring.
+
+
 
 ## Scope
 
 The framework applies to:
 
+
 - physical systems;
+
 - biological systems;
+
 - cognitive and adaptive systems;
+
 - socio-economic systems;
+
 - technological systems;
+
 - artificial intelligence systems;
+
 - distributed operational systems;
+
 - adaptive nonlinear systems.
+
+
 
 ## Appendices
 
@@ -655,19 +856,19 @@ The framework applies to:
 
 A complete and explicit derivation of scaling and rescaling, including all intermediate steps, is provided in:
 
-[README_APPENDIX.md](README_APPENDIX.md)
+[README_APPENDIX.md](https://github.com/maximumberlin76-gif/endogenous-dynamic-stability-full/blob/main/README_APPENDIX.md)
 
 ### Stability and Bifurcation
 
 Local stability, Jacobian analysis, Lyapunov structure, and bifurcation analysis are provided in:
 
-[APPENDIX_DYNAMICS.md](APPENDIX_DYNAMICS.md)
+[APPENDIX_DYNAMICS.md](https://github.com/maximumberlin76-gif/endogenous-dynamic-stability-full/blob/main/APPENDIX_DYNAMICS.md)
 
 ### Oscillator Model
 
 The oscillator-based operational model is provided in:
 
-[APPENDIX_OSCILLATORS.md](APPENDIX_OSCILLATORS.md)
+[APPENDIX_OSCILLATORS.md](https://github.com/maximumberlin76-gif/endogenous-dynamic-stability-full/blob/main/APPENDIX_OSCILLATORS.md)
 
 ## Status
 
@@ -675,12 +876,29 @@ Canonical EDS/EDC formulation.
 
 Includes:
 
+
 - EDS stability criterion;
+
 - structural balance;
+
 - accumulated positive structural work;
+
 - endogenous criticality;
+
 - scaling law;
+
 - critical delay law;
+
+- cubic scaling explanation;
+
 - resonance-window interpretation;
+
 - oscillator bridge;
+
 - full transition from EDS to EDC.
+
+## Author
+
+Maksym Marnov (Alchimist)  
+Independent Researcher · Philosophy & Systems Architecture  
+Berlin · 24.05.2026
