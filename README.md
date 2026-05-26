@@ -2,6 +2,69 @@
 
 ## Dynamic Stability, Endogenous Criticality, Scaling Law, and Regime Transitions in Open Nonlinear Dynamical Systems
 
+## Overview
+
+This repository presents the full EDS/EDC formulation: Endogenous Dynamic Stability and Endogenous Dynamic Criticality.
+
+The framework defines real dynamic stability over time through the core EDS condition:
+
+C(t) > P(t)
+
+where general endogenous structural coherence must remain stronger than destabilizing pressure.
+
+The framework separates:
+
+- formal structural existence;
+- real dynamic stability over time;
+- endogenous structural coherence;
+- destabilizing pressure;
+- accumulated positive structural work;
+- endogenous criticality;
+- cubic scaling behavior;
+- resonance-window interpretation;
+- positive and negative regime drift;
+- and transition from stable EDS regimes toward critical EDC regimes.
+
+The structural balance:
+
+Δ(t) = S(t) − P(t) − D(t)
+
+describes formal structural existence.
+
+But formal structural existence is not identical to real dynamic stability.
+
+Real dynamic stability requires preservation of:
+
+C(t) > P(t)
+
+When the system approaches the stability boundary:
+
+C(t) ≈ P(t)
+
+the EDC layer describes endogenous drift, nonlinear saturation, delayed transition, cubic scaling, and regime transformation.
+
+The reduced critical form:
+
+dC/dt = v_eff t C − C³
+
+leads to the delay scaling law:
+
+t_delay ~ v_eff^(−1/3)
+
+The cubic term is not arbitrary.
+
+It represents third-order nonlinear saturation of retained structural coherence in a volumetric dynamic regime.
+
+Therefore, this repository presents the full transition chain:
+
+EDS stability criterion  
+→ compression of the stability margin  
+→ EDC critical regime  
+→ cubic scaling law  
+→ delayed transition  
+→ resonance-window interpretation  
+→ positive or negative regime drift.
+
 ## Quick Navigation
 
 
