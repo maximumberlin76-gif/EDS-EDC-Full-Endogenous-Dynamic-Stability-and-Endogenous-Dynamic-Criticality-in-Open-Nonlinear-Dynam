@@ -1,0 +1,515 @@
+name: Correct Cubic Critical Scaling
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: correct-cubic-critical-scaling
+  cancel-in-progress: false
+
+jobs:
+  correct-scaling:
+    name: Correct EDS EDC scaling
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Apply verified scaling correction
+        shell: bash
+        run: |
+          python <<'PY'
+          from pathlib import Path
+
+
+          files = [
+              Path("README.md"),
+              Path("README_APPENDIX.md"),
+              Path("README_EXECUTIVE.md"),
+              Path("book.md"),
+              Path("chapters/part_4_edc.md"),
+              Path("modules/scm_v2x.py"),
+          ]
+
+
+          for path in files:
+              if not path.is_file():
+                  raise SystemExit(
+                      f"Missing expected file: {path}"
+                  )
+
+
+          initial = {
+              path: path.read_text(encoding="utf-8")
+              for path in files
+          }
+
+
+          expected = {
+              "v_eff^(1/3)": 9,
+              "v_eff^(−1/3)": 19,
+              "v_eff^(2/3)": 14,
+              "(μP)^(−1/3)": 1,
+              "−1/3": 28,
+              "-1/3": 4,
+              "(-1 / 3)": 1,
+          }
+
+
+          for token, expected_count in expected.items():
+              actual_count = sum(
+                  text.count(token)
+                  for text in initial.values()
+              )
+
+              if actual_count != expected_count:
+                  raise SystemExit(
+                      "Repository state mismatch for "
+                      f"{token!r}: expected "
+                      f"{expected_count}, found "
+                      f"{actual_count}"
+                  )
+
+
+          for path, text in initial.items():
+              text = text.replace(
+                  "v_eff^(1/3)",
+                  "v_eff^(1/4)"
+              )
+
+              text = text.replace(
+                  "v_eff^(−1/3)",
+                  "v_eff^(−1/2)"
+              )
+
+              text = text.replace(
+                  "v_eff^(2/3)",
+                  "v_eff^(3/4)"
+              )
+
+              text = text.replace(
+                  "(μP)^(−1/3)",
+                  "(μP)^(−1/2)"
+              )
+
+              text = text.replace(
+                  "−1/3",
+                  "−1/2"
+              )
+
+              text = text.replace(
+                  "(-1 / 3)",
+                  "(-1 / 2)"
+              )
+
+              text = text.replace(
+                  "-1/3",
+                  "-1/2"
+              )
+
+              path.write_text(
+                  text,
+                  encoding="utf-8"
+              )
+
+
+          def replace_once(
+              path: Path,
+              old: str,
+              new: str
+          ) -> None:
+
+              text = path.read_text(
+                  encoding="utf-8"
+              )
+
+              count = text.count(old)
+
+              if count != 1:
+                  raise SystemExit(
+                      "Expected exactly one replacement "
+                      f"block in {path}, found {count}: "
+                      f"{old[:100]!r}"
+                  )
+
+              path.write_text(
+                  text.replace(old, new),
+                  encoding="utf-8"
+              )
+
+
+          appendix = Path(
+              "README_APPENDIX.md"
+          )
+
+          appendix_text = appendix.read_text(
+              encoding="utf-8"
+          )
+
+          appendix_start = (
+              "## 11. Scaling Exponent Matching\n"
+          )
+
+          appendix_end = (
+              "## 12. Exact Rescaling\n"
+          )
+
+
+          if appendix_text.count(
+              appendix_start
+          ) != 1:
+
+              raise SystemExit(
+                  "README_APPENDIX.md: "
+                  "scaling start marker is missing "
+                  "or duplicated"
+              )
+
+
+          if appendix_text.count(
+              appendix_end
+          ) != 1:
+
+              raise SystemExit(
+                  "README_APPENDIX.md: "
+                  "scaling end marker is missing "
+                  "or duplicated"
+              )
+
+
+          corrected_matching = """## 11. Scaling Exponent Matching
+
+          For canonical reduction, the derivative term, drift term, and cubic saturation term must scale equally:
+
+          β + α = 1 − α + β = 3β
+
+          From:
+
+          β + α = 1 − α + β
+
+          we obtain:
+
+          α = 1/2
+
+          From:
+
+          β + α = 3β
+
+          we obtain:
+
+          α = 2β
+
+          Therefore:
+
+          β = 1/4
+
+          The consistent operational rescaling is:
+
+          C = v_eff^(1/4)y
+
+          t = v_eff^(−1/2)τ
+
+          This rescaling absorbs v_eff from the reduced cubic critical equation.
+
+          """
+
+
+          start_index = appendix_text.index(
+              appendix_start
+          )
+
+          end_index = appendix_text.index(
+              appendix_end
+          )
+
+
+          appendix.write_text(
+              appendix_text[:start_index]
+              + corrected_matching
+              + appendix_text[end_index:],
+              encoding="utf-8"
+          )
+
+
+          readme = Path("README.md")
+
+
+          replace_once(
+              readme,
+              "## Why the Scaling Is Cubic",
+              "## Why the Reduced Form Uses "
+              "Cubic Saturation"
+          )
+
+
+          replace_once(
+              readme,
+              """The exponent:
+
+          −1/2
+
+          is not introduced as an arbitrary scaling coefficient.
+
+          It follows from the cubic nonlinear saturation term in the reduced critical regime:""",
+              """The exponent:
+
+          −1/2
+
+          is obtained by matching the derivative, linear drift, and cubic saturation terms in the reduced critical regime:"""
+          )
+
+
+          replace_once(
+              readme,
+              """As a result, the delay scaling:
+
+          t_delay ~ v_eff^(−1/2)
+
+          follows from the cubic saturation structure of the reduced EDC regime.""",
+              """Under the consistent exponent balance, the delay scaling:
+
+          t_delay ~ v_eff^(−1/2)
+
+          follows from the complete reduced cubic critical equation."""
+          )
+
+
+          replace_once(
+              readme,
+              "Thus, the exponent −1/2 follows "
+              "from the cubic nonlinear saturation "
+              "term and is not an external assumption.",
+              "Thus, the exponent −1/2 follows "
+              "from the complete scaling balance "
+              "of the reduced cubic critical equation "
+              "and is not an external assumption."
+          )
+
+
+          part_4 = Path(
+              "chapters/part_4_edc.md"
+          )
+
+
+          replace_once(
+              part_4,
+              """The exponent:
+
+          −1/2
+
+          defines a robust scaling regime under the following operational""",
+              """The exponent:
+
+          −1/2
+
+          defines the scaling regime of the reduced cubic critical equation under the following operational conditions:
+
+          - cubic saturation dominates nonlinear critical dynamics;
+
+          - endogenous drift evolves smoothly;
+
+          - r(t) ≈ v_eff t near the critical regime;
+
+          - the system remains open, dissipative, nonlinear, and dynamically coupled;
+
+          - the reduced EDC dynamics remain valid within the analyzed critical window.
+
+          Outside this operational domain, alternative scaling behavior may emerge."""
+          )
+
+
+          stale_tokens = (
+              "−1/3",
+              "-1/3",
+              "v_eff^(1/3)",
+              "v_eff^(−1/3)",
+              "v_eff^(2/3)",
+          )
+
+
+          for path in Path(".").rglob("*"):
+              if not path.is_file():
+                  continue
+
+              if ".git" in path.parts:
+                  continue
+
+              if ".github" in path.parts:
+                  continue
+
+              try:
+                  text = path.read_text(
+                      encoding="utf-8"
+                  )
+              except UnicodeDecodeError:
+                  continue
+
+              for stale in stale_tokens:
+                  if stale in text:
+                      raise SystemExit(
+                          "Stale scaling remains in "
+                          f"{path}: {stale}"
+                      )
+
+
+          required = {
+              Path("README.md"): [
+                  "C = v_eff^(1/4)y",
+                  "t_delay ~ v_eff^(−1/2)",
+                  "v_eff^(3/4) dy/dτ",
+              ],
+
+              Path("README_APPENDIX.md"): [
+                  "α = 1/2",
+                  "β = 1/4",
+                  "v_eff^(3/4) dy/dτ",
+              ],
+
+              Path("README_EXECUTIVE.md"): [
+                  "C = v_eff^(1/4)y",
+                  "t = v_eff^(−1/2)τ",
+              ],
+
+              Path(
+                  "chapters/part_4_edc.md"
+              ): [
+                  "t_delay ~ (μP)^(−1/2)",
+                  "v_eff^(3/4) dX/dτ",
+              ],
+
+              Path(
+                  "modules/scm_v2x.py"
+              ): [
+                  "v_drift ** (-1 / 2)",
+                  "(mu * P)^(-1/2)",
+              ],
+
+              Path("book.md"): [
+                  "Scaling law (−1/2)",
+              ],
+          }
+
+
+          for path, markers in required.items():
+              text = path.read_text(
+                  encoding="utf-8"
+              )
+
+              for marker in markers:
+                  if marker not in text:
+                      raise SystemExit(
+                          "Missing corrected marker "
+                          f"in {path}: {marker}"
+                      )
+
+
+          print(
+              "Cubic critical scaling correction "
+              "completed and verified."
+          )
+          PY
+
+      - name: Verify changed file boundary
+        shell: bash
+        run: |
+          python <<'PY'
+          import subprocess
+
+
+          expected = {
+              "README.md",
+              "README_APPENDIX.md",
+              "README_EXECUTIVE.md",
+              "book.md",
+              "chapters/part_4_edc.md",
+              "modules/scm_v2x.py",
+          }
+
+
+          result = subprocess.run(
+              [
+                  "git",
+                  "diff",
+                  "--name-only",
+                  "--",
+              ],
+              check=True,
+              capture_output=True,
+              text=True,
+          )
+
+
+          changed = {
+              line.strip()
+              for line in result.stdout.splitlines()
+              if line.strip()
+          }
+
+
+          if changed != expected:
+              raise SystemExit(
+                  "Unexpected changed-file set.\n"
+                  f"Expected: {sorted(expected)}\n"
+                  f"Actual:   {sorted(changed)}"
+              )
+
+
+          print("Changed-file boundary verified:")
+          for path in sorted(changed):
+              print(f"- {path}")
+          PY
+
+      - name: Verify Python syntax
+        shell: bash
+        run: |
+          python -m py_compile modules/scm_v2x.py
+          rm -rf modules/__pycache__
+
+      - name: Show correction diff
+        shell: bash
+        run: |
+          git diff --stat
+          git diff -- \
+            README.md \
+            README_APPENDIX.md \
+            README_EXECUTIVE.md \
+            book.md \
+            chapters/part_4_edc.md \
+            modules/scm_v2x.py
+
+      - name: Commit correction
+        shell: bash
+        run: |
+          if git diff --quiet; then
+            echo "No changes to commit."
+            exit 1
+          fi
+
+          git config \
+            user.name \
+            "github-actions[bot]"
+
+          git config \
+            user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add \
+            README.md \
+            README_APPENDIX.md \
+            README_EXECUTIVE.md \
+            book.md \
+            chapters/part_4_edc.md \
+            modules/scm_v2x.py
+
+          git commit \
+            -m "Correct cubic critical scaling across EDS EDC artifacts"
+
+          git push \
+            origin \
+            "HEAD:${GITHUB_REF_NAME}"
