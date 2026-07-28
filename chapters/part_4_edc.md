@@ -262,21 +262,21 @@ dC/dt = v_eff t C − C³
 
 Introduce the rescaling:
 
-t = v_eff^(−1/3) τ
+t = v_eff^(−1/2) τ
 
-C = v_eff^(1/3) X
+C = v_eff^(1/4) X
 
 Then:
 
-dC/dt = v_eff^(2/3) dX/dτ
+dC/dt = v_eff^(3/4) dX/dτ
 
 Substitution gives:
 
-v_eff^(2/3) dX/dτ = v_eff^(2/3)(τX − X³)
+v_eff^(3/4) dX/dτ = v_eff^(3/4)(τX − X³)
 
 Dividing by:
 
-v_eff^(2/3)
+v_eff^(3/4)
 
 we obtain the canonical critical form:
 
@@ -294,7 +294,7 @@ Operational interpretation:
 
 The characteristic delay follows from:
 
-t = v_eff^(−1/3) τ
+t = v_eff^(−1/2) τ
 
 For:
 
@@ -302,7 +302,7 @@ For:
 
 the delay scales as:
 
-t_delay ~ v_eff^(−1/3)
+t_delay ~ v_eff^(−1/2)
 
 If the simplified approximation:
 
@@ -310,7 +310,7 @@ v_eff ≈ μP
 
 is used, then:
 
-t_delay ~ (μP)^(−1/3)
+t_delay ~ (μP)^(−1/2)
 
 Operational interpretation:
 
@@ -324,6 +324,18 @@ Operational interpretation:
 
 The exponent:
 
-−1/3
+−1/2
 
-defines a robust scaling regime under the following operational
+defines the scaling regime of the reduced cubic critical equation under the following operational conditions:
+
+- cubic saturation dominates nonlinear critical dynamics;
+
+- endogenous drift evolves smoothly;
+
+- r(t) ≈ v_eff t near the critical regime;
+
+- the system remains open, dissipative, nonlinear, and dynamically coupled;
+
+- the reduced EDC dynamics remain valid within the analyzed critical window.
+
+Outside this operational domain, alternative scaling behavior may emerge.

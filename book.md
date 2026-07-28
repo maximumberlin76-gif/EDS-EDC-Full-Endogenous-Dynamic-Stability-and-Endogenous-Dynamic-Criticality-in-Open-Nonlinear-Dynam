@@ -64,7 +64,7 @@ Year: 2026
 ## PART VII — Endogenous Dynamic Criticality (EDC)
 
 - Minimal dynamical model  
-- Scaling law (−1/3)  
+- Scaling law (−1/2)  
 - Delay dynamics  
 - Universality conditions  
 - Limitations  

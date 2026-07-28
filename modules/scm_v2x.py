@@ -17,7 +17,7 @@ class ArtificialDissipationMonitor:
     EDS/EDC-based monitor.
 
     Tracks coherence degradation, load pressure,
-    and critical-delay tendency using the -1/3 scaling law.
+    and critical-delay tendency using the -1/2 scaling law.
 
     This is an experimental monitoring module,
     not a proof engine.
@@ -59,7 +59,7 @@ class ArtificialDissipationMonitor:
         mu = 0.01
         v_drift = max(1e-6, mu * load)
 
-        t_critical_estimate = v_drift ** (-1 / 3)
+        t_critical_estimate = v_drift ** (-1 / 2)
 
         drop = coherence[-2] - coherence[-1]
 
@@ -71,7 +71,7 @@ class ArtificialDissipationMonitor:
             "coherence_drop": float(drop),
             "v_drift": float(v_drift),
             "t_critical_estimate": float(t_critical_estimate),
-            "scaling_law": "t_delay ~ (mu * P)^(-1/3)"
+            "scaling_law": "t_delay ~ (mu * P)^(-1/2)"
         }
 
 
@@ -85,7 +85,7 @@ class SingularConscienceModuleV2X:
         C(t) > P(t)
 
     EDC:
-        t_delay ~ (mu * P)^(-1/3)
+        t_delay ~ (mu * P)^(-1/2)
 
     Purpose:
         Detect coherence degradation and estimate
@@ -139,7 +139,7 @@ class SingularConscienceModuleV2X:
             "state": self.state,
             "coherence_proxy": c_proxy,
             "eds_condition": "C(t) > P(t)",
-            "edc_scaling": "t_delay ~ (mu * P)^(-1/3)",
+            "edc_scaling": "t_delay ~ (mu * P)^(-1/2)",
             "analysis": analysis
         }
 

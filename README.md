@@ -49,7 +49,7 @@ dC/dt = v_eff t C − C³
 
 leads to the delay scaling law:
 
-t_delay ~ v_eff^(−1/3)
+t_delay ~ v_eff^(−1/2)
 
 The cubic term is not arbitrary.
 
@@ -487,21 +487,21 @@ This represents a slow passage through a critical transition driven by an endoge
 
 Introduce dimensionless operational variables:
 
-C = v_eff^(1/3)y
+C = v_eff^(1/4)y
 
-t = v_eff^(−1/3)τ
+t = v_eff^(−1/2)τ
 
 Then:
 
-dC/dt = v_eff^(2/3) dy/dτ
+dC/dt = v_eff^(3/4) dy/dτ
 
 Substitution yields:
 
-v_eff^(2/3) dy/dτ = v_eff^(2/3)(τy − y³)
+v_eff^(3/4) dy/dτ = v_eff^(3/4)(τy − y³)
 
 Dividing by:
 
-v_eff^(2/3)
+v_eff^(3/4)
 
 gives the parameter-free canonical form:
 
@@ -547,7 +547,7 @@ This establishes:
 
 The operational transition delay follows:
 
-t_delay ~ v_eff^(−1/3)
+t_delay ~ v_eff^(−1/2)
 
 Operational interpretation:
 
@@ -562,19 +562,17 @@ Operational interpretation:
 
 The exponent:
 
-−1/3
+−1/2
 
 is the operational scaling signature of endogenous dynamic criticality in this reduced cubic critical regime.
 
-## Why the Scaling Is Cubic
+## Why the Reduced Form Uses Cubic Saturation
 
 The exponent:
 
-−1/3
+−1/2
 
-is not introduced as an arbitrary scaling coefficient.
-
-It follows from the cubic nonlinear saturation term in the reduced critical regime:
+is obtained by matching the derivative, linear drift, and cubic saturation terms in the reduced critical regime:
 
 dC/dt = v_eff t C − C³
 
@@ -602,11 +600,11 @@ rather than:
 
 −C²
 
-As a result, the delay scaling:
+Under the consistent exponent balance, the delay scaling:
 
-t_delay ~ v_eff^(−1/3)
+t_delay ~ v_eff^(−1/2)
 
-follows from the cubic saturation structure of the reduced EDC regime.
+follows from the complete reduced cubic critical equation.
 
 Operationally:
 
@@ -621,7 +619,7 @@ Operationally:
 
 
 
-Thus, the exponent −1/3 follows from the cubic nonlinear saturation term and is not an external assumption.
+Thus, the exponent −1/2 follows from the complete scaling balance of the reduced cubic critical equation and is not an external assumption.
 
 ## Positive and Negative Regime Drift
 
@@ -812,7 +810,7 @@ The system approaches transition through endogenous drift.
 
 The delay scales as:
 
-t_delay ~ v_eff^(−1/3)
+t_delay ~ v_eff^(−1/2)
 
 ### Degradation Regime
 

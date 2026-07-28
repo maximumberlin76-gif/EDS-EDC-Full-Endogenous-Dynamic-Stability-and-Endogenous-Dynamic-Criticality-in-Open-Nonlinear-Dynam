@@ -170,9 +170,9 @@ dC/dt = v_eff t C − C³
 
 After rescaling:
 
-C = v_eff^(1/3)y
+C = v_eff^(1/4)y
 
-t = v_eff^(−1/3)τ
+t = v_eff^(−1/2)τ
 
 the canonical form becomes:
 
@@ -180,7 +180,7 @@ dy/dτ = τy − y³
 
 The critical delay follows:
 
-t_delay ~ v_eff^(−1/3)
+t_delay ~ v_eff^(−1/2)
 
 ## Key Result
 

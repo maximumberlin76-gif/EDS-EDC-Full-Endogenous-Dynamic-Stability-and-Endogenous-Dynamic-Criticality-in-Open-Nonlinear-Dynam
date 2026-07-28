@@ -48,7 +48,7 @@ Synchronization must not be equated with coherence.
 | 6 | dC/dt = rC − C³ | reduced EDC dynamic regime |
 | 7 | r(t) ≈ v_eff t | endogenous operational drift |
 | 8 | dy/dτ = τy − y³ | canonical critical form |
-| 9 | t_delay ~ v_eff^(−1/3) | critical delay scaling law |
+| 9 | t_delay ~ v_eff^(−1/2) | critical delay scaling law |
 
 ## 2. Starting Point: EDS
 
@@ -273,27 +273,33 @@ we obtain:
 
 α = 1/2
 
-This relation alone is not the final operational rescaling for the slow critical passage form.
+From:
 
-For the reduced cubic critical equation:
+β + α = 3β
 
-dC/dt = v_eff t C − C³
+we obtain:
 
-the standard operational rescaling is chosen to absorb v_eff from the equation:
+α = 2β
 
-C = v_eff^(1/3)y
+Therefore:
 
-t = v_eff^(−1/3)τ
+β = 1/4
 
-This gives the parameter-free canonical form and the critical delay scaling.
+The consistent operational rescaling is:
+
+C = v_eff^(1/4)y
+
+t = v_eff^(−1/2)τ
+
+This rescaling absorbs v_eff from the reduced cubic critical equation.
 
 ## 12. Exact Rescaling
 
 Choose:
 
-C = v_eff^(1/3)y
+C = v_eff^(1/4)y
 
-t = v_eff^(−1/3)τ
+t = v_eff^(−1/2)τ
 
 Operational interpretation:
 
@@ -304,9 +310,9 @@ Operational interpretation:
 
 Given:
 
-C = v_eff^(1/3)y
+C = v_eff^(1/4)y
 
-t = v_eff^(−1/3)τ
+t = v_eff^(−1/2)τ
 
 Then:
 
@@ -314,13 +320,13 @@ dC/dt = (dC/dτ) / (dt/dτ)
 
 Compute:
 
-dC/dτ = v_eff^(1/3) dy/dτ
+dC/dτ = v_eff^(1/4) dy/dτ
 
-dt/dτ = v_eff^(−1/3)
+dt/dτ = v_eff^(−1/2)
 
 Therefore:
 
-dC/dt = v_eff^(2/3) dy/dτ
+dC/dt = v_eff^(3/4) dy/dτ
 
 ## 14. Substitution
 
@@ -330,23 +336,23 @@ dC/dt = v_eff t C − C³
 
 Left-hand side:
 
-v_eff^(2/3) dy/dτ
+v_eff^(3/4) dy/dτ
 
 Right-hand side:
 
-v_eff · (v_eff^(−1/3)τ) · (v_eff^(1/3)y) − (v_eff^(1/3)y)³
+v_eff · (v_eff^(−1/2)τ) · (v_eff^(1/4)y) − (v_eff^(1/4)y)³
 
 This becomes:
 
-v_eff^(2/3)(τy − y³)
+v_eff^(3/4)(τy − y³)
 
 Therefore:
 
-v_eff^(2/3) dy/dτ = v_eff^(2/3)(τy − y³)
+v_eff^(3/4) dy/dτ = v_eff^(3/4)(τy − y³)
 
 Divide by:
 
-v_eff^(2/3)
+v_eff^(3/4)
 
 Result:
 
@@ -372,7 +378,7 @@ Operational interpretation:
 
 The characteristic operational delay follows from:
 
-t = v_eff^(−1/3)τ
+t = v_eff^(−1/2)τ
 
 For:
 
@@ -380,7 +386,7 @@ For:
 
 the delay becomes:
 
-t_delay ~ v_eff^(−1/3)
+t_delay ~ v_eff^(−1/2)
 
 Operational interpretation:
 
@@ -390,7 +396,7 @@ Operational interpretation:
 
 The exponent:
 
-−1/3
+−1/2
 
 is the operational scaling signature of endogenous dynamic criticality in this reduced cubic critical regime.
 
@@ -398,7 +404,7 @@ is the operational scaling signature of endogenous dynamic criticality in this r
 
 The exponent:
 
-−1/3
+−1/2
 
 holds under the following operational conditions:
 
@@ -459,11 +465,11 @@ r(t) ≈ v_eff t
 
 dy/dτ = τy − y³
 
-t_delay ~ v_eff^(−1/3)
+t_delay ~ v_eff^(−1/2)
 
 The exponent:
 
-−1/3
+−1/2
 
 is not postulated.
 
