@@ -1,0 +1,515 @@
+name: Add Generalized Ramp-Scaling Lemma to EDS EDC
+
+"on":
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: add-generalized-ramp-scaling-lemma-eds-edc
+  cancel-in-progress: false
+
+jobs:
+  add-lemma:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Apply and verify generalized scaling lemma
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 <<'PYCODE'
+          from __future__ import annotations
+
+          from fractions import Fraction
+          from hashlib import sha256
+          from pathlib import Path
+          from textwrap import dedent
+
+          ROOT = Path.cwd()
+          EXPECTED = {
+              "README.md": "682fd2c2eac598cd75d19d61a2b3a1208cae4accc890ca3c01aa39913607e0f3",
+              "README_APPENDIX.md": "2b22152e645da07d6c456f76a993cd2d5a4f4d30b635405b25366315b2a8b393",
+              "chapters/part_4_edc.md": "71429d6323b4557eb04c598007055c3e9d5a063fdc38d258794875f6ccef3ce4",
+              ".github/workflows/correct-cubic-critical-scaling.yml": "05a89f5722ceccbec9088f5971fdd0f87799bd23c44175da2781a9bb31ae3fe5",
+          }
+
+
+          def digest(path: Path) -> str:
+              return sha256(path.read_bytes()).hexdigest()
+
+
+          def read(path: str) -> str:
+              return (ROOT / path).read_text(encoding="utf-8")
+
+
+          def write(path: str, text: str) -> None:
+              (ROOT / path).write_text(
+                  text.rstrip() + "\n",
+                  encoding="utf-8",
+                  newline="\n",
+              )
+
+
+          def replace_range(
+              text: str,
+              start: str,
+              end: str,
+              replacement: str,
+              label: str,
+          ) -> str:
+              if text.count(start) != 1 or text.count(end) != 1:
+                  raise SystemExit(
+                      f"{label}: replacement markers are not unique"
+                  )
+
+              left = text.index(start)
+              right = text.index(end, left)
+
+              return (
+                  text[:left]
+                  + replacement.rstrip()
+                  + "\n\n"
+                  + text[right:]
+              )
+
+
+          for relative, expected in EXPECTED.items():
+              path = ROOT / relative
+
+              if not path.is_file():
+                  raise SystemExit(
+                      f"Missing source file: {relative}"
+                  )
+
+              actual = digest(path)
+
+              if actual != expected:
+                  raise SystemExit(
+                      f"Source hash mismatch: {relative}\n"
+                      f"expected: {expected}\n"
+                      f"actual:   {actual}"
+                  )
+
+          readme = read("README.md")
+          appendix = read("README_APPENDIX.md")
+          chapter = read("chapters/part_4_edc.md")
+
+          for marker in [
+              "Generalized Ramp-Scaling Lemma",
+              "dC/dt = v_eff t C − g C^n",
+          ]:
+              if (
+                  marker in readme
+                  or marker in appendix
+                  or marker in chapter
+              ):
+                  raise SystemExit(
+                      f"Generalized lemma already exists: {marker}"
+                  )
+
+
+          def generalized_sections(
+              lemma_heading: str,
+              geometry_heading: str,
+          ) -> str:
+              return dedent(f'''\
+          {lemma_heading}
+
+          For the nonnegative endogenous coherence variable C ≥ 0, consider:
+
+          dC/dt = v_eff t C − g C^n
+
+          with v_eff > 0, g > 0, and n > 1.
+
+          Set:
+
+          t = v_eff^(−α) τ
+
+          C = g^(−1/(n−1)) v_eff^β y
+
+          The derivative, ramp, and saturation terms scale as:
+
+          β + α
+
+          1 − α + β
+
+          nβ
+
+          Canonical balance requires:
+
+          β + α = 1 − α + β = nβ
+
+          Therefore:
+
+          α = 1/2
+
+          β = 1/(2(n−1))
+
+          The exact rescaling is:
+
+          t = v_eff^(−1/2) τ
+
+          C = g^(−1/(n−1)) v_eff^(1/(2(n−1))) y
+
+          and the generalized parameter-free equation is:
+
+          dy/dτ = τy − y^n
+
+          Thus:
+
+          t_critical ~ v_eff^(−1/2)
+
+          t_delay ~ v_eff^(−1/2)
+
+          for every n > 1 in this linearly ramped class, while:
+
+          C_critical ~ g^(−1/(n−1)) v_eff^(1/(2(n−1)))
+
+          depends on the saturation order.
+
+          | n | amplitude exponent β | time exponent α |
+          |---:|---:|---:|
+          | 2 | 1/2 | 1/2 |
+          | 3 | 1/4 | 1/2 |
+          | 4 | 1/6 | 1/2 |
+          | 5 | 1/8 | 1/2 |
+
+          The temporal exponent is fixed by the derivative–ramp balance. Changing the saturation mechanism or order changes the amplitude exponent, but not the delay exponent, provided the critical ramp retains the form v_eff t C.
+
+          {geometry_heading}
+
+          Let a coherent endogenous structure have d independent characteristic linear extents C_i. Its coherent dimensional measure scales as:
+
+          V_coh,d ∝ ∏_(i=1)^d C_i
+
+          Under isotropy C_i ~ C:
+
+          V_coh,d ∝ C^d
+
+          When C is operationalized as a characteristic linear coherence extent and nonlinear saturation is closed by the coherent d-dimensional measure, the geometric hypothesis is:
+
+          n = d
+
+          For d > 1:
+
+          C_critical ~ g^(−1/(d−1)) v_eff^(1/(2(d−1)))
+
+          while:
+
+          t_delay ~ v_eff^(−1/2)
+
+          remains dimension-independent within the reduced ramp equation.
+
+          For the full-volume three-dimensional EDS realization:
+
+          V_coh,3 ∝ C_x C_y C_z
+
+          and under isotropy:
+
+          C_x ~ C_y ~ C_z ~ C
+
+          V_coh,3 ∝ C³
+
+          Therefore the cubic specialization gives:
+
+          C_critical ~ g^(−1/2) v_eff^(1/4)
+
+          t_delay ~ v_eff^(−1/2)
+
+          Geometric closure and symmetry closure are distinct model arguments. Geometric closure predicts a dimension-sensitive saturation order. For a signed scalar amplitude, the independent symmetry C → −C excludes even powers and selects cubic saturation as the leading nonlinear term. In the present nonnegative, full-volume three-dimensional EDS interpretation, geometric closure supplies the primary volumetric rationale, while the delay exponent remains independent of the saturation order.
+
+          A cross-dimensional realization can test the geometric component: changing effective dimension should change the amplitude exponent according to 1/(2(n−1)), while the delay exponent remains −1/2 as long as the ramp term remains v_eff t C.
+          ''')
+
+          readme_block = dedent('''\
+          ## Critical Delay Scaling
+
+          The operational transition delay follows:
+
+          t_delay ~ v_eff^(−1/2)
+
+          Slower endogenous drift produces longer delayed transitions; faster drift produces shorter delays. The exponent −1/2 is the temporal scaling signature of the linearly ramped EDC transition class and is not restricted to cubic saturation.
+
+          ''') + generalized_sections(
+              "## Generalized Ramp-Scaling Lemma",
+              (
+                  "## Geometric Dimensional Closure "
+                  "and the Cubic EDS Specialization"
+              ),
+          )
+
+          readme = replace_range(
+              readme,
+              "## Critical Delay Scaling\n",
+              "## Positive and Negative Regime Drift\n",
+              readme_block,
+              "README generalized scaling section",
+          )
+
+          appendix_block = dedent('''\
+          ## 16. Scaling Law
+
+          For τ = O(1), the characteristic operational delay is:
+
+          t_delay ~ v_eff^(−1/2)
+
+          The exponent −1/2 belongs to the linearly ramped EDC transition class and is not unique to cubic saturation.
+
+          ''') + generalized_sections(
+              "## 17. Generalized Ramp-Scaling Lemma",
+              "## 18. Geometric Dimensional Closure",
+          ) + dedent('''\
+
+          ## 19. Universality Conditions
+
+          The generalized temporal exponent −1/2 holds when:
+
+          - a finite saturation term gC^n with n > 1 is present;
+          - endogenous drift is smooth and r(t) ≈ v_eff t near criticality;
+          - the reduced EDC description remains valid in the analyzed critical window;
+          - the characteristic delay is evaluated at τ = O(1).
+
+          The cubic specialization additionally assumes n = d = 3 through full-volume geometric closure, or another independent mechanism selecting cubic saturation. Outside this domain, alternative scaling behavior may emerge.
+
+          ## 20. Positive and Negative Critical Windows
+          ''')
+
+          start = "## 16. Scaling Law\n"
+          end_heading = (
+              "## 18. Positive and Negative Critical Windows\n"
+          )
+
+          if (
+              appendix.count(start) != 1
+              or appendix.count(end_heading) != 1
+          ):
+              raise SystemExit(
+                  "README_APPENDIX range markers are not unique"
+              )
+
+          left = appendix.index(start)
+          right = (
+              appendix.index(end_heading, left)
+              + len(end_heading)
+          )
+
+          appendix = (
+              appendix[:left]
+              + appendix_block.rstrip()
+              + "\n"
+              + appendix[right:]
+          )
+
+          if appendix.count("## 19. Conclusion") != 1:
+              raise SystemExit(
+                  "README_APPENDIX conclusion heading mismatch"
+              )
+
+          appendix = appendix.replace(
+              "## 19. Conclusion",
+              "## 21. Conclusion",
+              1,
+          )
+
+          chapter_block = dedent('''\
+          ## 4I — Delay Scaling
+
+          For τ = O(1):
+
+          t_delay ~ v_eff^(−1/2)
+
+          If v_eff ≈ μP is used, then:
+
+          t_delay ~ (μP)^(−1/2)
+
+          Slower endogenous drift produces longer delayed transitions; faster drift produces shorter delays.
+
+          ''') + generalized_sections(
+              "## 4J — Generalized Ramp-Scaling Lemma",
+              "## 4K — Geometric Dimensional Closure",
+          ) + dedent('''\
+
+          ## 4L — Interpretation and Universality
+
+          The generalized exponent −1/2 applies when a finite saturation gC^n with n > 1 is present, endogenous drift is smooth, r(t) ≈ v_eff t near criticality, and the reduced EDC model remains valid at τ = O(1). The cubic specialization additionally assumes n = d = 3 through full-volume geometric closure, or another independent mechanism selecting cubic saturation.
+
+          Outside this operational domain, alternative scaling behavior may emerge.
+          ''')
+
+          if chapter.count("## 4I — Delay Scaling\n") != 1:
+              raise SystemExit(
+                  "Chapter delay heading mismatch"
+              )
+
+          chapter = (
+              chapter[
+                  :chapter.index("## 4I — Delay Scaling\n")
+              ]
+              + chapter_block.rstrip()
+              + "\n"
+          )
+
+          write("README.md", readme)
+          write("README_APPENDIX.md", appendix)
+          write("chapters/part_4_edc.md", chapter)
+
+          (
+              ROOT
+              / ".github/workflows/correct-cubic-critical-scaling.yml"
+          ).unlink()
+
+          for n in range(2, 21):
+              alpha = Fraction(1, 2)
+              beta = Fraction(
+                  1,
+                  2 * (n - 1),
+              )
+
+              if not (
+                  beta + alpha
+                  == 1 - alpha + beta
+                  == n * beta
+              ):
+                  raise SystemExit(
+                      f"Exponent balance failed for n={n}"
+                  )
+
+          required = [
+              "dC/dt = v_eff t C − g C^n",
+              "α = 1/2",
+              "β = 1/(2(n−1))",
+              (
+                  "C_critical ~ g^(−1/(n−1)) "
+                  "v_eff^(1/(2(n−1)))"
+              ),
+              "V_coh,3 ∝ C_x C_y C_z",
+              "t_delay ~ v_eff^(−1/2)",
+          ]
+
+          for relative in [
+              "README.md",
+              "README_APPENDIX.md",
+              "chapters/part_4_edc.md",
+          ]:
+              text = read(relative)
+
+              for marker in required:
+                  if marker not in text:
+                      raise SystemExit(
+                          f"Missing marker in {relative}: {marker}"
+                      )
+
+          stale = [
+              "t_delay ~ v_eff^(−1/3)",
+              "t_delay ~ v_eff^(-1/3)",
+              (
+                  "cubic saturation dominates "
+                  "nonlinear critical dynamics"
+              ),
+              (
+                  "A quadratic correction would "
+                  "describe pairwise or surface-like limitation."
+              ),
+              (
+                  "retained three-dimensional structural "
+                  "organization requires third-order "
+                  "nonlinear stabilization"
+              ),
+              (
+                  "follows from the complete reduced "
+                  "cubic critical equation"
+              ),
+              (
+                  "is the operational scaling signature "
+                  "of endogenous dynamic criticality in "
+                  "this reduced cubic critical regime"
+              ),
+          ]
+
+          for relative in [
+              "README.md",
+              "README_APPENDIX.md",
+              "chapters/part_4_edc.md",
+          ]:
+              text = read(relative)
+
+              for marker in stale:
+                  if marker in text:
+                      raise SystemExit(
+                          f"Stale statement remains in "
+                          f"{relative}: {marker}"
+                      )
+
+          print(
+              "Generalized EDS/EDC ramp-scaling "
+              "lemma applied and verified."
+          )
+          PYCODE
+
+      - name: Remove completed one-time workflow
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -f .github/workflows/add-generalized-ramp-scaling-lemma.yml
+
+      - name: Verify exact changed-file boundary
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          printf '%s\n' \
+            '.github/workflows/add-generalized-ramp-scaling-lemma.yml' \
+            '.github/workflows/correct-cubic-critical-scaling.yml' \
+            'README.md' \
+            'README_APPENDIX.md' \
+            'chapters/part_4_edc.md' \
+            | sort > /tmp/expected-files.txt
+
+          git status --porcelain=v1 \
+            | cut -c4- \
+            | sort > /tmp/actual-files.txt
+
+          diff -u \
+            /tmp/expected-files.txt \
+            /tmp/actual-files.txt
+
+          git diff --check
+
+          echo "Exact changed-file boundary verified."
+
+      - name: Verify Python syntax
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m py_compile modules/scm_v2x.py
+          rm -rf modules/__pycache__
+
+      - name: Commit generalized lemma
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+
+          if git diff --cached --quiet; then
+            echo "No generalized-lemma changes were staged."
+            exit 1
+          fi
+
+          git commit \
+            -m "Add generalized EDS EDC ramp-scaling lemma"
+
+          git push \
+            origin \
+            "HEAD:${GITHUB_REF_NAME}"
