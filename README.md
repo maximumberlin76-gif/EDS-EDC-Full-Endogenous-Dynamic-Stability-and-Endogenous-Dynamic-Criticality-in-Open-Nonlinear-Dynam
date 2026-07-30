@@ -970,6 +970,8 @@ The oscillator-based operational model is provided in:
 
 ## Status
 
+EDS/EDC Full v1.2.0.
+
 Canonical EDS/EDC formulation.
 
 Includes:
