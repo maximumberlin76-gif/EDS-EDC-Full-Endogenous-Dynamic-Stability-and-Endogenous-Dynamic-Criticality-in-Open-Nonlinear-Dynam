@@ -549,77 +549,114 @@ The operational transition delay follows:
 
 t_delay ~ v_eff^(−1/2)
 
-Operational interpretation:
+Slower endogenous drift produces longer delayed transitions; faster drift produces shorter delays. The exponent −1/2 is the temporal scaling signature of the linearly ramped EDC transition class and is not restricted to cubic saturation.
 
+## Generalized Ramp-Scaling Lemma
 
-- slower endogenous drift produces longer delayed transitions;
+For the nonnegative endogenous coherence variable C ≥ 0, consider:
 
-- faster endogenous drift produces shorter transition delays;
+dC/dt = v_eff t C − g C^n
 
-- stronger destabilizing pressure may increase v_eff and accelerate critical transition accessibility.
+with v_eff > 0, g > 0, and n > 1.
 
+Set:
 
+t = v_eff^(−α) τ
 
-The exponent:
+C = g^(−1/(n−1)) v_eff^β y
 
-−1/2
+The derivative, ramp, and saturation terms scale as:
 
-is the operational scaling signature of endogenous dynamic criticality in this reduced cubic critical regime.
+β + α
 
-## Why the Reduced Form Uses Cubic Saturation
+1 − α + β
 
-The exponent:
+nβ
 
-−1/2
+Canonical balance requires:
 
-is obtained by matching the derivative, linear drift, and cubic saturation terms in the reduced critical regime:
+β + α = 1 − α + β = nβ
 
-dC/dt = v_eff t C − C³
+Therefore:
 
-where:
+α = 1/2
 
-C(t) — endogenous structural coherence variable in the reduced critical regime;
+β = 1/(2(n−1))
 
-v_eff t C — drift-driven growth of endogenous structural coherence near the critical boundary;
+The exact rescaling is:
 
-−C³ — cubic nonlinear saturation of endogenous structural coherence growth.
+t = v_eff^(−1/2) τ
 
-The cubic term is used because retained structural stability is not treated as a one-dimensional or purely quadratic correction.
+C = g^(−1/(n−1)) v_eff^(1/(2(n−1))) y
 
-A retained structure must preserve organization as a volumetric dynamic condition.
+and the generalized parameter-free equation is:
 
-A quadratic correction would describe pairwise or surface-like limitation.
+dy/dτ = τy − y^n
 
-The cubic term represents third-order saturation of the retained regime, where coherence growth is constrained by volumetric stabilization, internal compatibility, nonlinear self-interaction, and the three-dimensional structural character of retained organization.
+Thus:
 
-Therefore, the reduced critical form uses:
-
-−C³
-
-rather than:
-
-−C²
-
-Under the consistent exponent balance, the delay scaling:
+t_critical ~ v_eff^(−1/2)
 
 t_delay ~ v_eff^(−1/2)
 
-follows from the complete reduced cubic critical equation.
+for every n > 1 in this linearly ramped class, while:
 
-Operationally:
+C_critical ~ g^(−1/(n−1)) v_eff^(1/(2(n−1)))
 
+depends on the saturation order.
 
-- linear endogenous drift moves the system toward the critical boundary;
+| n | amplitude exponent β | time exponent α |
+|---:|---:|---:|
+| 2 | 1/2 | 1/2 |
+| 3 | 1/4 | 1/2 |
+| 4 | 1/6 | 1/2 |
+| 5 | 1/8 | 1/2 |
 
-- cubic saturation limits the growth of endogenous structural coherence;
+The temporal exponent is fixed by the derivative–ramp balance. Changing the saturation mechanism or order changes the amplitude exponent, but not the delay exponent, provided the critical ramp retains the form v_eff t C.
 
-- retained three-dimensional structural organization requires third-order nonlinear stabilization;
+## Geometric Dimensional Closure and the Cubic EDS Specialization
 
-- faster endogenous drift compresses the available stabilization time.
+Let a coherent endogenous structure have d independent characteristic linear extents C_i. Its coherent dimensional measure scales as:
 
+V_coh,d ∝ ∏_(i=1)^d C_i
 
+Under isotropy C_i ~ C:
 
-Thus, the exponent −1/2 follows from the complete scaling balance of the reduced cubic critical equation and is not an external assumption.
+V_coh,d ∝ C^d
+
+When C is operationalized as a characteristic linear coherence extent and nonlinear saturation is closed by the coherent d-dimensional measure, the geometric hypothesis is:
+
+n = d
+
+For d > 1:
+
+C_critical ~ g^(−1/(d−1)) v_eff^(1/(2(d−1)))
+
+while:
+
+t_delay ~ v_eff^(−1/2)
+
+remains dimension-independent within the reduced ramp equation.
+
+For the full-volume three-dimensional EDS realization:
+
+V_coh,3 ∝ C_x C_y C_z
+
+and under isotropy:
+
+C_x ~ C_y ~ C_z ~ C
+
+V_coh,3 ∝ C³
+
+Therefore the cubic specialization gives:
+
+C_critical ~ g^(−1/2) v_eff^(1/4)
+
+t_delay ~ v_eff^(−1/2)
+
+Geometric closure and symmetry closure are distinct model arguments. Geometric closure predicts a dimension-sensitive saturation order. For a signed scalar amplitude, the independent symmetry C → −C excludes even powers and selects cubic saturation as the leading nonlinear term. In the present nonnegative, full-volume three-dimensional EDS interpretation, geometric closure supplies the primary volumetric rationale, while the delay exponent remains independent of the saturation order.
+
+A cross-dimensional realization can test the geometric component: changing effective dimension should change the amplitude exponent according to 1/(2(n−1)), while the delay exponent remains −1/2 as long as the ramp term remains v_eff t C.
 
 ## Positive and Negative Regime Drift
 

@@ -292,50 +292,125 @@ Operational interpretation:
 
 ## 4I — Delay Scaling
 
-The characteristic delay follows from:
-
-t = v_eff^(−1/2) τ
-
-For:
-
-τ = O(1)
-
-the delay scales as:
+For τ = O(1):
 
 t_delay ~ v_eff^(−1/2)
 
-If the simplified approximation:
-
-v_eff ≈ μP
-
-is used, then:
+If v_eff ≈ μP is used, then:
 
 t_delay ~ (μP)^(−1/2)
 
-Operational interpretation:
+Slower endogenous drift produces longer delayed transitions; faster drift produces shorter delays.
 
-- slower endogenous drift produces longer delayed transitions;
+## 4J — Generalized Ramp-Scaling Lemma
 
-- faster endogenous drift produces shorter delayed transitions;
+For the nonnegative endogenous coherence variable C ≥ 0, consider:
 
-- stronger destabilizing pressure may increase effective drift and accelerate critical transition accessibility.
+dC/dt = v_eff t C − g C^n
 
-## 4J — Interpretation
+with v_eff > 0, g > 0, and n > 1.
 
-The exponent:
+Set:
 
-−1/2
+t = v_eff^(−α) τ
 
-defines the scaling regime of the reduced cubic critical equation under the following operational conditions:
+C = g^(−1/(n−1)) v_eff^β y
 
-- cubic saturation dominates nonlinear critical dynamics;
+The derivative, ramp, and saturation terms scale as:
 
-- endogenous drift evolves smoothly;
+β + α
 
-- r(t) ≈ v_eff t near the critical regime;
+1 − α + β
 
-- the system remains open, dissipative, nonlinear, and dynamically coupled;
+nβ
 
-- the reduced EDC dynamics remain valid within the analyzed critical window.
+Canonical balance requires:
+
+β + α = 1 − α + β = nβ
+
+Therefore:
+
+α = 1/2
+
+β = 1/(2(n−1))
+
+The exact rescaling is:
+
+t = v_eff^(−1/2) τ
+
+C = g^(−1/(n−1)) v_eff^(1/(2(n−1))) y
+
+and the generalized parameter-free equation is:
+
+dy/dτ = τy − y^n
+
+Thus:
+
+t_critical ~ v_eff^(−1/2)
+
+t_delay ~ v_eff^(−1/2)
+
+for every n > 1 in this linearly ramped class, while:
+
+C_critical ~ g^(−1/(n−1)) v_eff^(1/(2(n−1)))
+
+depends on the saturation order.
+
+| n | amplitude exponent β | time exponent α |
+|---:|---:|---:|
+| 2 | 1/2 | 1/2 |
+| 3 | 1/4 | 1/2 |
+| 4 | 1/6 | 1/2 |
+| 5 | 1/8 | 1/2 |
+
+The temporal exponent is fixed by the derivative–ramp balance. Changing the saturation mechanism or order changes the amplitude exponent, but not the delay exponent, provided the critical ramp retains the form v_eff t C.
+
+## 4K — Geometric Dimensional Closure
+
+Let a coherent endogenous structure have d independent characteristic linear extents C_i. Its coherent dimensional measure scales as:
+
+V_coh,d ∝ ∏_(i=1)^d C_i
+
+Under isotropy C_i ~ C:
+
+V_coh,d ∝ C^d
+
+When C is operationalized as a characteristic linear coherence extent and nonlinear saturation is closed by the coherent d-dimensional measure, the geometric hypothesis is:
+
+n = d
+
+For d > 1:
+
+C_critical ~ g^(−1/(d−1)) v_eff^(1/(2(d−1)))
+
+while:
+
+t_delay ~ v_eff^(−1/2)
+
+remains dimension-independent within the reduced ramp equation.
+
+For the full-volume three-dimensional EDS realization:
+
+V_coh,3 ∝ C_x C_y C_z
+
+and under isotropy:
+
+C_x ~ C_y ~ C_z ~ C
+
+V_coh,3 ∝ C³
+
+Therefore the cubic specialization gives:
+
+C_critical ~ g^(−1/2) v_eff^(1/4)
+
+t_delay ~ v_eff^(−1/2)
+
+Geometric closure and symmetry closure are distinct model arguments. Geometric closure predicts a dimension-sensitive saturation order. For a signed scalar amplitude, the independent symmetry C → −C excludes even powers and selects cubic saturation as the leading nonlinear term. In the present nonnegative, full-volume three-dimensional EDS interpretation, geometric closure supplies the primary volumetric rationale, while the delay exponent remains independent of the saturation order.
+
+A cross-dimensional realization can test the geometric component: changing effective dimension should change the amplitude exponent according to 1/(2(n−1)), while the delay exponent remains −1/2 as long as the ramp term remains v_eff t C.
+
+## 4L — Interpretation and Universality
+
+The generalized exponent −1/2 applies when a finite saturation gC^n with n > 1 is present, endogenous drift is smooth, r(t) ≈ v_eff t near criticality, and the reduced EDC model remains valid at τ = O(1). The cubic specialization additionally assumes n = d = 3 through full-volume geometric closure, or another independent mechanism selecting cubic saturation.
 
 Outside this operational domain, alternative scaling behavior may emerge.
